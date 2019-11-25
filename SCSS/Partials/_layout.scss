@@ -1,0 +1,26 @@
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.head-inner {
+    padding: 20px 0;
+    vertical-align: middle;
+    display: table;
+    margin: 0;
+}
+
+.Main-nav {
+    height: 100%;
+}
+
+.Main-nav .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+
+}
