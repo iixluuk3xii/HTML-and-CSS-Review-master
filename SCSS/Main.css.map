@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "Main.scss",
+        "Partials/_Attributes.scss",
+        "Partials/_buttons.scss",
+        "Partials/_mixins.scss",
+        "Partials/_typography.scss",
+        "Partials/_layout.scss"
+    ],
+    "names": [],
+    "file": "Main.css"
+}
