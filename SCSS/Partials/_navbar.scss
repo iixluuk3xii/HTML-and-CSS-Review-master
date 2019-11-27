@@ -1,0 +1,11 @@
+.Main-nav {
+    display: flex;
+}
+
+.Main-nav .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $darkgrey;
+
+}

@@ -92,12 +92,12 @@ div {
   margin-left: 20px;
 }
 
-/* line 51, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_header.scss */
+/* line 1, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .Main-nav {
   display: flex;
 }
 
-/* line 55, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_header.scss */
+/* line 5, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .Main-nav .navbar-nav {
   display: flex;
   flex-direction: row;
