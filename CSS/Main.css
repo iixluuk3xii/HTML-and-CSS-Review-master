@@ -16,17 +16,6 @@ div {
   position: absolute;
 }
 
-/* line 17, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_layout.scss */
-.btn {
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  white-space: normal;
-}
-
 /* line 1, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_header.scss */
 .header {
   width: 100%;
@@ -79,9 +68,12 @@ div {
 .contact-btn {
   padding: 5px 15px;
   margin-left: 20px;
+  background-color: #999aa2;
+  color: #fff;
+  margin-left: 20px;
 }
 
-/* line 46, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_header.scss */
+/* line 49, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_header.scss */
 .menu-btn {
   padding: 5px 15px;
   margin-left: 20px;
@@ -98,6 +90,12 @@ div {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #333645;
+}
+
+/* line 1, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+.gallery-dot {
+  border-radius: 100%;
+  background-color: #fff;
 }
 
 /* line 8, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Main.scss */
