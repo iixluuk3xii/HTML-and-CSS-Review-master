@@ -1,13 +1,3 @@
-/* line 6, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Main.scss */
-* {
-  border: 1px solid red;
-}
-
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap");
-}
-
 /* line 2, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_layout.scss */
 div {
   display: block;
@@ -108,6 +98,12 @@ div {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #333645;
+}
+
+/* line 8, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Main.scss */
+* {
+  border: 1px solid red;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*# sourceMappingURL=Main.css.map */

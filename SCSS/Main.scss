@@ -3,13 +3,9 @@
 // font-family: 'Poppins', sans-serif;  ---
 // Fontfamilys ----------------------------
 
+@import  'Partials/Attributes', 'Partials/layout', 'Partials/header', 'Partials/navbar', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
+
 * {
     border: 1px solid red;
-}
-
-@font-face {
     font-family: 'Poppins', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap');
 }
-
-@import  'Partials/Attributes', 'Partials/layout', 'Partials/header', 'Partials/navbar', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
