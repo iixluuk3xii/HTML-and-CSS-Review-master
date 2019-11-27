@@ -3,9 +3,24 @@
 // font-family: 'Poppins', sans-serif;  ---
 // Fontfamilys ----------------------------
 
-@import  'Partials/Attributes', 'Partials/layout', 'Partials/header', 'Partials/navbar', 'Partials/gallery', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
+@import  'Partials/Attributes', 'Partials/layout', 'Partials/header', 'Partials/footer', 'Partials/navbar', 'Partials/gallery', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
 
 * {
+    box-sizing: border-box;
     border: 1px solid red;
     font-family: 'Poppins', sans-serif;
+    color: $white;
 }
+
+body {
+    font-size: 1rem;
+    letter-spacing: .4px;
+}
+
+// Clear fix
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

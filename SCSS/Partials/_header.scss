@@ -38,6 +38,10 @@
     float: right;
 }
 
+.support-btn {
+    background-color: $lightblue;
+}
+
 .contact-btn {
     padding: 5px 15px;
     margin-left: 20px;
@@ -47,6 +51,7 @@
 }
 
 .menu-btn {
+    background-color: $darkgrey;
     padding: 5px 15px;
     margin-left: 20px;
 }

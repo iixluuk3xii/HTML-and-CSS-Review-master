@@ -1,0 +1,21 @@
+footer {
+    background-color: $darkgrey;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-info ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info li {
+    align-content: flex-start;
+}
+
+.social-btn {
+    font-size: 28px;
+}

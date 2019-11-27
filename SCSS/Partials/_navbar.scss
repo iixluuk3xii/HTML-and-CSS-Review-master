@@ -1,11 +1,73 @@
 .Main-nav {
-    display: flex;
+    display: block;
+    background-color: $darkgrey;
 }
 
-.Main-nav .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: $darkgrey;
+.nav-container {
+    width: 100%;
+}
 
+.Main-nav li {
+    text-align: center;
+}
+
+small {
+    font-size: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.table {
+    display: table;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.web i {
+    color: $purple;
+}
+
+.IT i {
+    color: $lightblue;
+}
+
+.telecoms i {
+    color: $red;
+}
+
+.software i {
+    color: $steelblue;
+}
+
+.marketing i {
+    color: $lightgreen;
+}
+
+.security i {
+    color: $rose;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    // flex-grow: 1;
+    padding: 0;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 19px 0 18px;
+}
+
+.nav-menu li {
+    display: none;
 }
