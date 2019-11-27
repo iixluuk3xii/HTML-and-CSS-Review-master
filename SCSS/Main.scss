@@ -1,2 +1,6 @@
-@import 'Partials/Attributes', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/layout', 'Partials/popups';
 
+* {
+    border: 1px solid red;
+}
+
+@import  'Partials/Attributes', 'Partials/layout', 'Partials/header', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';

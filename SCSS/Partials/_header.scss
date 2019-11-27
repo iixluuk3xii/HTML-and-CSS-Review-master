@@ -1,0 +1,61 @@
+.header {
+    width: 100%;
+}
+
+.head-inner {
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-right {
+    width: 50%;
+    float: right;
+}
+
+.col-left {
+    width: 50%;
+    float: left;
+}
+
+.logo-container {
+    height: 100%;
+    width: 100%;
+}
+
+.NM-logo {
+    display: inline-block;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: stretch;
+    float: right;
+}
+
+.contact-btn {
+    padding: 5px 15px;
+    margin-left: 20px;
+}
+
+.menu-btn {
+    padding: 5px 15px;
+    margin-left: 20px;
+}
+
+.Main-nav {
+    display: flex;
+}
+
+.Main-nav .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $darkgrey;
+
+}

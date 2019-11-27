@@ -38,7 +38,7 @@
 
     <!-- Explicit css -->
 
-    <link rel="stylesheet" type="text/css" href="..\SCSS\Main.css">
+    <link rel="stylesheet" type="text/css" href="..\CSS\Main.css">
 
     <!-- /Explicit css -->
 
@@ -60,153 +60,168 @@
 
     <!------------ Header ------------>
 
-    <header>
+    <div class="header">
 
-        <div class="head-inner">
+        <header>
 
-            <div class="container">
+            <div class="head-inner">
 
-                <div class="header-row">
+                <div class="container">
 
-                    <div class="Main-logo">
-                        <a href="#">
-                            <img class="NM-logo" src="..\IMGs\NM-logo.png" alt="Netmatters logo">
-                        </a>
-                    </div>
+                    <div class="header-row">
 
-                    <div class="header-buttons">
-                        <a class="support-btn btn" href="#" role="button"><i class="fas fa-mouse"> Support</i></a>
-                        <a class="contact-button btn" href="#" role="button"><i class="fas fa-paper-plane">
-                                Contact</i></a>
-                        <a class="menu-btn btn" href="#" role="button"><i class="fas fa-bars"></i><br> menu</a>
+                        <div class="col-right">
+
+                            <div class="logo-container">
+
+                                <a class="NM-logo" href="#">
+                                    <img src="..\IMGs\NM-logo.png" alt="Netmatters logo">
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-left">
+
+                            <div class="header-buttons">
+                                <a class="support-btn btn" href="#" role="button"><i class="fas fa-mouse">
+                                        Support</i></a>
+                                <a class="contact-button btn" href="#" role="button"><i class="fas fa-paper-plane">
+                                        Contact</i></a>
+                                <a class="menu-btn btn" href="#" role="button"><i class="fas fa-bars"></i><br> menu</a>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
+        </header>
+
+        <!------------ /Header ------------>
+
+        <!-- Navigation bar -->
+
+        <div class="Main-nav">
+
+            <div class="container">
+
+                <ul class="navbar-nav">
+
+                    <li class="web">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-code"></i>
+                            <small>Web</small>
+                            Design
+                        </a>
+
+                        <ul class="nav-menu">
+                            <li>Stylish Websites</li>
+                            <li>eCommerce Stores</li>
+                            <li>Branding</li>
+                            <li>Mobile Apps</li>
+                            <li>Web Hosting</li>
+                            <li>Pay Monthly Websites</li>
+                        </ul>
+                    </li>
+
+                    <li class="IT">
+                        <a class="nav-link" href="#">
+                            <i class="fas desktop"></i>
+                            <small>IT</small>
+                            Support
+                        </a>
+
+                        <ul class="nav-menu">
+                            <li>Managed IT Support</li>
+                            <li>Business IT Support</li>
+                            <li>Office 365</li>
+                            <li>Consultancy</li>
+                            <li>Cloud Provider</li>
+                            <li>Data Backup</li>
+                        </ul>
+                    </li>
+
+                    <li class="telecoms">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-phone-alt"></i>
+                            <small>Telecoms</small>
+                            Services
+                        </a>
+
+                        <ul class="nav-menu">
+                            <li>Gigabit Voucher</li>
+                            <li>Hosted VoIP</li>
+                            <li>Business VoIP</li>
+                            <li>Business Broadband</li>
+                            <li>Leased Line</li>
+                            <li>3CX Systems</li>
+                        </ul>
+                    </li>
+
+                    <li class="software">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-th"></i>
+                            <small>Bespoke</small>
+                            Software
+                        </a>
+
+                        <ul class="nav-menu">
+                            <li>Workflow Solutions</li>
+                            <li>Automation</li>
+                            <li>System Integration</li>
+                            <li>Database Management</li>
+                            <li>SharePoint</li>
+                            <li>ERP</li>
+                        </ul>
+                    </li>
+
+                    <li class="marketing">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-chart-bar"></i>
+                            <small>Digital</small>
+                            Marketing
+                        </a>
+
+                        <ul class="nav-menu">
+                            <li>SEO</li>
+                            <li>PPC</li>
+                            <li>CRO</li>
+                            <li>Email</li>
+                            <li>Social</li>
+                            <li>Content</li>
+                        </ul>
+                    </li>
+
+                    <li class="security">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-shield-alt"></i>
+                            <small>Cyber</small>
+                            Security
+                        </a>
+
+                        <ul class="nav-menu">
+                            <li>Security Assessment</li>
+                            <li>Security Management</li>
+                            <li>Penetration Testing</li>
+                            <li>Cyber Essentials</li>
+                            <li>PCI Compliance</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
 
-    </header>
-
-    <!------------ /Header ------------>
-
-    <!-- Navigation bar -->
-
-    <div class="Main-nav">
-
-        <div class="container">
-
-            <ul class="navbar-nav">
-
-                <li class="web">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-code"></i>
-                        <small>Web</small>
-                        Design
-                    </a>
-
-                    <ul class="nav-menu">
-                        <li>Stylish Websites</li>
-                        <li>eCommerce Stores</li>
-                        <li>Branding</li>
-                        <li>Mobile Apps</li>
-                        <li>Web Hosting</li>
-                        <li>Pay Monthly Websites</li>
-                    </ul>
-                </li>
-
-                <li class="IT">
-                    <a class="nav-link" href="#">
-                        <i class="fas desktop"></i>
-                        <small>IT</small>
-                        Support
-                    </a>
-
-                    <ul class="nav-menu">
-                        <li>Managed IT Support</li>
-                        <li>Business IT Support</li>
-                        <li>Office 365</li>
-                        <li>Consultancy</li>
-                        <li>Cloud Provider</li>
-                        <li>Data Backup</li>
-                    </ul>
-                </li>
-
-                <li class="telecoms">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-phone-alt"></i>
-                        <small>Telecoms</small>
-                        Services
-                    </a>
-
-                    <ul class="nav-menu">
-                        <li>Gigabit Voucher</li>
-                        <li>Hosted VoIP</li>
-                        <li>Business VoIP</li>
-                        <li>Business Broadband</li>
-                        <li>Leased Line</li>
-                        <li>3CX Systems</li>
-                    </ul>
-                </li>
-
-                <li class="software">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-th"></i>
-                        <small>Bespoke</small>
-                        Software
-                    </a>
-
-                    <ul class="nav-menu">
-                        <li>Workflow Solutions</li>
-                        <li>Automation</li>
-                        <li>System Integration</li>
-                        <li>Database Management</li>
-                        <li>SharePoint</li>
-                        <li>ERP</li>
-                    </ul>
-                </li>
-
-                <li class="marketing">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-chart-bar"></i>
-                        <small>Digital</small>
-                        Marketing
-                    </a>
-
-                    <ul class="nav-menu">
-                        <li>SEO</li>
-                        <li>PPC</li>
-                        <li>CRO</li>
-                        <li>Email</li>
-                        <li>Social</li>
-                        <li>Content</li>
-                    </ul>
-                </li>
-
-                <li class="security">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-shield-alt"></i>
-                        <small>Cyber</small>
-                        Security
-                    </a>
-
-                    <ul class="nav-menu">
-                        <li>Security Assessment</li>
-                        <li>Security Management</li>
-                        <li>Penetration Testing</li>
-                        <li>Cyber Essentials</li>
-                        <li>PCI Compliance</li>
-                    </ul>
-                </li>
-
-            </ul>
-
-        </div>
+        <!-- /Navigation bar -->
 
     </div>
-
-    <!-- /Navigation bar -->
 
     <!-- Gallery -->
 
