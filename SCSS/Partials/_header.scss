@@ -82,3 +82,15 @@ header {
     display: inline-block;
     font-size: 12px;
 }
+
+.support-btn:hover {
+    background-color: $blue;
+}
+
+.contact-btn:hover {
+    background-color: $fadedgrey;
+}
+
+.menu-btn:hover {
+    background-color: $black;
+}

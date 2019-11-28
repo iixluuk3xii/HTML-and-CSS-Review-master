@@ -1,3 +1,65 @@
+a .btn {
+    display: inline;
+}
+
+.gallery {
+    display: block;
+}
+
+.gallery #photo1 {
+    background-image: url(../IMGs/Wacom-scroll-photo.jpg);
+    background-repeat: no-repeat;
+    height: 789px;
+}
+
+.gallery #photo2 {
+    background-image: url(../IMGs/Support-scroll-photo.jpg);
+    background-repeat: no-repeat;
+    height: 789px;
+}
+
+.gallery #photo3 {
+    background-image: url(../IMGs/phone-scroll-photo.jpg);
+    background-repeat: no-repeat;
+    height: 789px;
+}
+
+.gallery #photo4 {
+    background-image: url(../IMGs/graph-scroll-photo.jpg);
+    background-repeat: no-repeat;
+    height: 789px;
+}
+
+.gallery #photo5 {
+    background-image: url(../IMGs/home-scroll-photo.jpg);
+    background-repeat: no-repeat;
+    height: 789px;
+}
+
+.gallery #photo6 {
+    background-image: url(../IMGs/Lock-scroll-photo.jpg);
+    background-repeat: no-repeat;
+    height: 789px;
+}
+
+.gallery-controls {
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+
 .gallery-dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
     background-color: $white;
 }
+
+// Working here when you left
+
+.gallery-dot:active {
+    padding: 20px rgba(0,0,0,0.1);
+    border: 1px solid $white;
+}
+

@@ -86,7 +86,44 @@
 
 // Nav button icon colours //
 
-li .web:hover {
-    color: $white;
-    background-color: $purple; 
+.web:hover {
+    background-color: $purple;
+    i {
+        color: $white;
+    }
+}
+
+.IT:hover {
+    background-color: $lightblue;
+    i {
+        color: $white;
+    }
+}
+
+.telecoms:hover {
+    background-color: $red;
+    i {
+        color: $white;
+    }
+}
+
+.software:hover {
+    background-color: $steelblue;
+    i {
+        color: $white;
+    }
+}
+
+.marketing:hover {
+    background-color: $lightgreen;
+    i {
+        color: $white;
+    }
+}
+
+.security:hover {
+    background-color: $rose;
+    i {
+        color: $white;
+    }
 }
