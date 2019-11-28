@@ -6,7 +6,6 @@
 @import  'Partials/Attributes', 'Partials/layout', 'Partials/header', 'Partials/footer', 'Partials/navbar', 'Partials/gallery', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
 
 * {
-    box-sizing: border-box;
     border: 1px solid red;
     font-family: 'Poppins', sans-serif;
     color: $white;
@@ -16,6 +15,7 @@ body {
     font-size: 1rem;
     letter-spacing: .4px;
     margin: 0;
+    line-height: 1.42857143;
 }
 
 .table {
