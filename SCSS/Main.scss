@@ -15,6 +15,24 @@
 body {
     font-size: 1rem;
     letter-spacing: .4px;
+    margin: 0;
+}
+
+.table {
+    display: table;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+small {
+    font-size: 10px;
 }
 
 // Clear fix
