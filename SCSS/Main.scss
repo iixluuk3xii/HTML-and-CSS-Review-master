@@ -3,12 +3,11 @@
 // font-family: 'Poppins', sans-serif;  ---
 // Fontfamilys ----------------------------
 
-@import  'Partials/Attributes', 'Partials/layout', 'Partials/header', 'Partials/footer', 'Partials/navbar', 'Partials/gallery', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
+@import  'Partials/Attributes', 'Partials/layout', 'Partials/header', 'Partials/infocards', 'Partials/footer', 'Partials/navbar', 'Partials/gallery', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
 
 * {
     border: 1px solid red;
     font-family: 'Poppins', sans-serif;
-    color: $white;
 }
 
 body {

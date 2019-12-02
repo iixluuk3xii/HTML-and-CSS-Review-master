@@ -1,0 +1,185 @@
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.web-design,
+.IT-support,
+.Telecoms-services,
+.Bespoke-software,
+.Digital-marketing,
+.Cyber-security {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 30px;
+    margin: 0 15px;
+    margin-top: 30px;
+    box-shadow: 0 3px 35px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+    span {
+        height: 3px;
+        width: 28px;
+        margin: auto;
+        background-color: $darkgrey;
+    }
+}
+
+.web-design,
+.IT-support {
+    max-width: 570px;
+    flex-basis: 50%;
+}
+
+.Telecoms-services,
+.Bespoke-software,
+.Digital-marketing,
+.Cyber-security {
+    max-width: 270px;
+    flex-basis: 25%;
+}
+
+.cards h2 {
+    margin: 0 0 11px;
+    padding: 0 0 17px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 17px;
+
+    i {
+        font-size: 1.5em;
+    }
+}
+
+.cards p {
+    margin: 0 0 13px;
+    font-size: 13px;
+}
+
+.cards .btn {
+    display: flex;
+    align-items: center;
+    color: $white;
+    padding: 5px 15px;
+    width: 96.2px;
+    height: 34.4px;
+}
+
+.web-design {
+    .btn,
+    .icon {
+        background-color: $lightpurple;
+    }
+}
+
+.IT-support {
+    .btn,
+    .icon {
+    background-color: $lightblue;
+    }
+}
+
+.Telecoms-services {
+    .btn,
+    .icon {
+    background-color: $red;
+    }
+}
+
+.Bespoke-software {
+    .btn,
+    .icon {
+    background-color: $steelblue;
+    }
+}
+
+.Digital-marketing {
+    .btn,
+    .icon {
+    background-color: $lightgreen;
+    }
+}
+
+.Cyber-security {
+    .btn,
+    .icon {
+    background-color: $rose;
+    }
+}
+
+// Hover states
+
+.web-design:hover {
+    background-color: $lightpurple;
+    color: $white;
+    .btn,
+    .icon {
+        background-color: $white;
+        color: $lightpurple;
+    }
+}
+
+.IT-support:hover {
+    background-color: $lightblue;
+    color: $white;
+    .btn,
+    .icon {
+        background-color: $white;
+        color: $lightblue;
+    }
+}
+
+.Telecoms-services:hover {
+    background-color: $red;
+    color: $white;
+    .btn,
+    .icon {
+        background-color: $white;
+        color: $red;
+    }
+}
+
+.Bespoke-software:hover {
+    background-color: $steelblue;
+    color: $white;
+    .btn,
+    .icon {
+        background-color: $white;
+        color: $steelblue;
+    }
+}
+
+.Digital-marketing:hover {
+    background-color: $lightgreen;
+    color: $white;
+    .btn,
+    .icon {
+        background-color: $white;
+        color: $lightgreen;
+    }
+}
+
+.Cyber-security:hover {
+    background-color: $rose;
+    color: $white;
+    .btn,
+    .icon {
+        background-color: $white;
+        color: $rose;
+    }
+}
