@@ -1,0 +1,55 @@
+.brand-image {
+    background-image: url(../../IMGs/branded.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right center;
+    height: 550px;
+    background-color: $darkgrey;
+    color: $white;
+    position: relative;
+}
+
+.brand-image .container {
+    margin-left: 159px;
+    padding: 0;
+    width: 600px;
+    height: 450px;
+    float: left;
+    position: absolute;
+    top: 10%;
+}
+
+.culture {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    h1,
+    p {
+        margin: 0 0 25px;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-weight: 200;
+        line-height: 1.1;
+        letter-spacing: .4px;
+        font-size: 36px;
+    }
+    p {
+        line-height: 1.875rem;
+    }
+    .btn {
+        display: inline-block;
+        background-color: $white;
+        text-transform: uppercase;
+        font-size: 1.063rem;
+        line-height: 35px;
+        padding: 5px 15px;
+        height: auto;
+        color: $darkgrey;
+        white-space: normal;
+        margin-bottom: 0;
+        cursor: pointer;
+        border: none;
+    }
+}

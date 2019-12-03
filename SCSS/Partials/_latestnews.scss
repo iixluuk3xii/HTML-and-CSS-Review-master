@@ -1,0 +1,140 @@
+.bar {
+    height: 104px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 584.612px;
+    width: 364px;
+}
+
+.news-cards {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+
+    .container {
+        margin: 0 159px;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.card-body {
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        margin: 0 0 25px;
+        font-size: 13px;
+        line-height: 1.375rem;
+        color: #666;
+    }
+
+    h3 {
+        margin: 0 0 15px;
+        font-size: 16px;
+    }
+}
+
+#card1 {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+
+    .title {
+        color: $lightblue;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .btn {
+        background-color: $lightblue;
+        text-transform: uppercase;
+        color: $white;
+    }
+}
+
+#card2 {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+
+    .title {
+        color: $lightpurple;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .btn {
+        background-color: $lightpurple;
+        text-transform: uppercase;
+        color: $white;
+    }
+}
+
+#card3 {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+
+    .title {
+        color: $red;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .btn {
+        background-color: $red;
+        text-transform: uppercase;
+        color: $white;
+    }
+}
+
+.card-img-top {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.Author .icon {
+    margin: 0;
+    max-width: 47px;
+    max-height: 47px;
+    vertical-align: middle;
+}
+
+.Author {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    display: table;
+
+    .details {
+        padding: 0 0 0 20px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.card-body .btn {
+    display: flex;
+    width: 96.2px;
+    height: 34.400px;
+    align-items: center;
+    font-size: 17.008px;
+}
+
+.card-body #btn:hover {
+    text-decoration: none;
+}

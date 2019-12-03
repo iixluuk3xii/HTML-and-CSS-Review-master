@@ -73,18 +73,24 @@
     display: inline-flex;
     width: 11px;
     height: 11px;
-    background-color: $white;
+    background-color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     border-radius: 50%;
 }
 
+.gallery-dot:hover {
+    background-color: $fadedblack;
+}
+
+.gallery-dot:focus {
+    border: 2px solid $white;
+}
 
 // slides
 
 #photo1 {
     background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/Wacom-scroll-photo.jpg);
     background-repeat: no-repeat;
-    background-origin: content-box;
 
     a {
         background-color: $lightpurple;

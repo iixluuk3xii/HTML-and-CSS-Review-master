@@ -1,21 +1,11 @@
 footer {
     background-color: $darkgrey;
+    color: $white;
+    padding: 47px 0 43px;
 }
 
 .footer-info {
+    margin: 0 159px;
     display: flex;
-    justify-content: center;
-}
-
-.footer-info ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-info li {
-    align-content: flex-start;
-}
-
-.social-btn {
-    font-size: 28px;
+    justify-content: space-between;
 }
