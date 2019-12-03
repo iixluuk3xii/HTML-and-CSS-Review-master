@@ -133,13 +133,19 @@ header {
 }
 
 /* line 2, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+#info .container {
+  padding: 50px 0;
+  margin: 0 159px;
+}
+
+/* line 7, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-/* line 8, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 13, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .web-design,
 .IT-support,
 .Telecoms-services,
@@ -153,50 +159,49 @@ header {
   border-radius: 3px;
   cursor: pointer;
   padding: 30px;
-  margin: 0 15px;
-  margin-top: 30px;
+  margin: 15px 15px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
 }
 
-/* line 25, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
-.web-design span,
-.IT-support span,
-.Telecoms-services span,
-.Bespoke-software span,
-.Digital-marketing span,
-.Cyber-security span {
-  height: 3px;
-  width: 28px;
-  margin: auto;
-  background-color: #333645;
-}
-
-/* line 33, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 31, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .web-design,
 .IT-support {
-  max-width: 570px;
-  flex-basis: 50%;
+  max-width: 502px;
+  flex-basis: 2;
 }
 
-/* line 39, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 37, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Telecoms-services,
 .Bespoke-software,
 .Digital-marketing,
 .Cyber-security {
-  max-width: 270px;
-  flex-basis: 25%;
+  max-width: 204px;
+  flex-basis: 1;
 }
 
-/* line 47, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 45, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+span {
+  height: 3px;
+  width: 28px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #333645;
+}
+
+/* line 56, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .cards h2 {
   margin: 0 0 11px;
   padding: 0 0 17px;
   font-size: 18px;
   font-weight: 300;
+  position: relative;
 }
 
-/* line 54, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 64, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .icon {
   display: flex;
   align-items: center;
@@ -208,18 +213,18 @@ header {
   margin: 0 auto 17px;
 }
 
-/* line 64, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 74, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .icon i {
   font-size: 1.5em;
 }
 
-/* line 69, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 79, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .cards p {
   margin: 0 0 13px;
   font-size: 13px;
 }
 
-/* line 74, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 84, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .cards .btn {
   display: flex;
   align-items: center;
@@ -229,116 +234,122 @@ header {
   height: 34.4px;
 }
 
-/* line 84, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 94, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .web-design .btn,
 .web-design .icon {
   background-color: #926fb1;
 }
 
-/* line 91, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 101, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .IT-support .btn,
 .IT-support .icon {
   background-color: #4183d7;
 }
 
-/* line 98, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 108, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Telecoms-services .btn,
 .Telecoms-services .icon {
   background-color: #d64541;
 }
 
-/* line 105, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 115, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Bespoke-software .btn,
 .Bespoke-software .icon {
   background-color: #67809f;
 }
 
-/* line 112, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 122, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Digital-marketing .btn,
 .Digital-marketing .icon {
   background-color: #2ecc71;
 }
 
-/* line 119, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 129, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Cyber-security .btn,
 .Cyber-security .icon {
   background-color: #f62459;
 }
 
-/* line 127, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 137, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .web-design:hover {
   background-color: #926fb1;
   color: #fff;
 }
 
-/* line 130, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 140, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .web-design:hover .btn,
-.web-design:hover .icon {
+.web-design:hover .icon,
+.web-design:hover span {
   background-color: #fff;
   color: #926fb1;
 }
 
-/* line 137, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 148, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .IT-support:hover {
   background-color: #4183d7;
   color: #fff;
 }
 
-/* line 140, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 151, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .IT-support:hover .btn,
-.IT-support:hover .icon {
+.IT-support:hover .icon,
+.IT-support:hover span {
   background-color: #fff;
   color: #4183d7;
 }
 
-/* line 147, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 159, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Telecoms-services:hover {
   background-color: #d64541;
   color: #fff;
 }
 
-/* line 150, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 162, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Telecoms-services:hover .btn,
-.Telecoms-services:hover .icon {
+.Telecoms-services:hover .icon,
+.Telecoms-services:hover span {
   background-color: #fff;
   color: #d64541;
 }
 
-/* line 157, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 170, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Bespoke-software:hover {
   background-color: #67809f;
   color: #fff;
 }
 
-/* line 160, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 173, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Bespoke-software:hover .btn,
-.Bespoke-software:hover .icon {
+.Bespoke-software:hover .icon,
+.Bespoke-software:hover span {
   background-color: #fff;
   color: #67809f;
 }
 
-/* line 167, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 181, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Digital-marketing:hover {
   background-color: #2ecc71;
   color: #fff;
 }
 
-/* line 170, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 184, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Digital-marketing:hover .btn,
-.Digital-marketing:hover .icon {
+.Digital-marketing:hover .icon,
+.Digital-marketing:hover span {
   background-color: #fff;
   color: #2ecc71;
 }
 
-/* line 177, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 192, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Cyber-security:hover {
   background-color: #f62459;
   color: #fff;
 }
 
-/* line 180, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
+/* line 195, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_infocards.scss */
 .Cyber-security:hover .btn,
-.Cyber-security:hover .icon {
+.Cyber-security:hover .icon,
+.Cyber-security:hover span {
   background-color: #fff;
   color: #f62459;
 }

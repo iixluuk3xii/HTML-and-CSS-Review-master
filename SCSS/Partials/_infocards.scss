@@ -1,8 +1,13 @@
 
+#info .container {
+    padding: 50px 0;
+    margin: 0 159px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .web-design,
@@ -18,30 +23,34 @@
     border-radius: 3px;
     cursor: pointer;
     padding: 30px;
-    margin: 0 15px;
-    margin-top: 30px;
+    margin: 15px 15px;
     box-shadow: 0 3px 35px rgba(0,0,0,0.1);
     border: 1px solid #ccc;
-    span {
-        height: 3px;
-        width: 28px;
-        margin: auto;
-        background-color: $darkgrey;
-    }
 }
 
 .web-design,
 .IT-support {
-    max-width: 570px;
-    flex-basis: 50%;
+    max-width: 502px;
+    flex-basis: 2;
 }
 
 .Telecoms-services,
 .Bespoke-software,
 .Digital-marketing,
 .Cyber-security {
-    max-width: 270px;
-    flex-basis: 25%;
+    max-width: 204px;
+    flex-basis: 1;
+}
+
+span {
+    height: 3px;
+    width: 28px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $darkgrey;
 }
 
 .cards h2 {
@@ -49,6 +58,7 @@
     padding: 0 0 17px;
     font-size: 18px;
     font-weight: 300;
+    position: relative;
 }
 
 .icon {
@@ -128,7 +138,8 @@
     background-color: $lightpurple;
     color: $white;
     .btn,
-    .icon {
+    .icon,
+    span {
         background-color: $white;
         color: $lightpurple;
     }
@@ -138,7 +149,8 @@
     background-color: $lightblue;
     color: $white;
     .btn,
-    .icon {
+    .icon,
+    span {
         background-color: $white;
         color: $lightblue;
     }
@@ -148,7 +160,8 @@
     background-color: $red;
     color: $white;
     .btn,
-    .icon {
+    .icon,
+    span {
         background-color: $white;
         color: $red;
     }
@@ -158,7 +171,8 @@
     background-color: $steelblue;
     color: $white;
     .btn,
-    .icon {
+    .icon,
+    span {
         background-color: $white;
         color: $steelblue;
     }
@@ -168,7 +182,8 @@
     background-color: $lightgreen;
     color: $white;
     .btn,
-    .icon {
+    .icon,
+    span {
         background-color: $white;
         color: $lightgreen;
     }
@@ -178,7 +193,8 @@
     background-color: $rose;
     color: $white;
     .btn,
-    .icon {
+    .icon,
+    span {
         background-color: $white;
         color: $rose;
     }
