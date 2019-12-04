@@ -3,18 +3,18 @@
 // font-family: 'Poppins', sans-serif;  ---
 // Fontfamilys ----------------------------
 
-@import 'Partials/Attributes', 'Partials/layout', 'Partials/latestnews', 'Partials/stickyheader', 'Partials/header', 'Partials/infocards', 'Partials/footer', 'Partials/culturesection', 'Partials/navbar', 'Partials/gallery', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
+@import 'Partials/Attributes', 'Partials/layout', 'Partials/partners', 'Partials/clients', 'Partials/latestnews', 'Partials/stickyheader', 'Partials/header', 'Partials/infocards', 'Partials/footer', 'Partials/culturesection', 'Partials/navbar', 'Partials/gallery', 'Partials/buttons', 'Partials/mixins', 'Partials/typography', 'Partials/popups';
 
 * {
-    border: 1px solid red;
+    // border: 1px solid;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
     font-size: 1rem;
-    letter-spacing: .4px;
+    letter-spacing: 0.025rem;
     margin: 0;
-    line-height: 1.42857143;
+    line-height: 1.375rem;
 }
 
 .table {
@@ -31,7 +31,7 @@ ul {
 }
 
 small {
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 // Clear fix
@@ -40,69 +40,4 @@ small {
     content: "";
     clear: both;
     display: table;
-}
-
-.logos {
-    padding: 50px 0;
-}
-
-.logos .container {
-    margin: 0 159px;
-}
-
-.Clients {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.busseys,
-.crane,
-.beat,
-.northern {
-    display: inline-block;
-    padding: 0 20px;
-    position: relative;
-    vertical-align: middle;
-
-
-    img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-    }
-}
-
-.Clients .logo {
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.Clients .bw {
-    z-index: 2;
-}
-
-.busseys:hover {
-    .logo {
-        display: block;
-    }
-}
-
-.beat:hover {
-    .logo {
-        display: block;
-    }
-}
-
-.crane:hover {
-    .logo {
-        display: block;
-    }
-}
-
-.northern:hover {
-    .logo {
-        display: block;
-    }
 }

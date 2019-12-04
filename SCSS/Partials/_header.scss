@@ -4,61 +4,75 @@ header {
 }
 
 .head-inner {
-    padding: 20px 0;
-    text-align: center;
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: center;
 }
 
 .head-inner .container {
-    margin: 0 156.5px;
+    margin: 0 9.78125rem;
     padding: 0;
+    max-width: 75rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-row {
     display: flex;
-    align-items: center;
+    width: 75rem;
 }
 
 .header-buttons {
     display: flex;
-    padding: 7px 0;
+    padding: 0.4375rem 0;
     float: right;
 }
 
 .header-buttons .btn {
-    height: 44px;
-    font-size: 18px;
+    height: 2.75rem;
+    font-size: 1.125rem;
     color: $white;
 }
 
 .contact-btn,
 .menu-btn {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .support-btn i,
 .contact-btn i {
-    font-size: 23px;
-    margin: 0 12px 0 -4px;
+    font-size: 1.4375rem;
+    margin: 0 0.75rem 0 -0.25rem;
 }
 
 .menu-btn i {
-    font-size: 26px;
+    font-size: 1.625rem;
+}
+
+.menu-btn {
+    text-align: center;
+    vertical-align: middle;
 }
 
 .col-left {
     width: 50%;
-    padding: 0 15px;
+    padding-right: 0.9375rem ;
     float: left;
 }
 
 .NM-logo {
     display: flex;
     align-items: center;
+    cursor: default;
+    width: 100%;
+    img {
+        cursor: pointer;
+    }
 }
 
 .col-right {
     width: 50%;
-    padding: 0 15px;
+    padding-left: 0.9375rem;
     float: right;
 }
 
@@ -66,7 +80,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 111.012px;
+    width: 6.93825rem;
     background-color: $lightblue;
 }
 
@@ -74,14 +88,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 119.113px;
+    width: 7.4445625rem;
     background-color: $grey;
 }
 
 .header-buttons .menu-btn {
     background-color: $darkgrey;
     display: inline-block;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .support-btn:hover {

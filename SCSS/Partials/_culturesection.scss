@@ -3,19 +3,18 @@
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right center;
-    height: 550px;
+    height: 34.375rem;
     background-color: $darkgrey;
     color: $white;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .brand-image .container {
-    margin-left: 159px;
+    margin: 0 auto;
     padding: 0;
-    width: 600px;
-    height: 450px;
-    float: left;
-    position: absolute;
+    width: 75rem;
+    height: 28.125rem;
     top: 10%;
 }
 
@@ -24,16 +23,17 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 37.5rem;
     h1,
     p {
-        margin: 0 0 25px;
+        margin: 0 0 1.5625rem;
     }
     h1 {
         text-transform: uppercase;
         font-weight: 200;
         line-height: 1.1;
-        letter-spacing: .4px;
-        font-size: 36px;
+        letter-spacing: 0.025rem;
+        font-size: 2.25rem;
     }
     p {
         line-height: 1.875rem;
@@ -43,8 +43,8 @@
         background-color: $white;
         text-transform: uppercase;
         font-size: 1.063rem;
-        line-height: 35px;
-        padding: 5px 15px;
+        line-height: 2.1875rem;
+        padding: 0.3125rem 0.9375rem;
         height: auto;
         color: $darkgrey;
         white-space: normal;

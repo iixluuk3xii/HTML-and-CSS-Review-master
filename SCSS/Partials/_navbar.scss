@@ -1,7 +1,7 @@
 .Main-nav {
     background-color: $darkgrey;
     display: block;
-    height: 101.600px;
+    height: 6.35rem;
 }
 
 .Main-nav a {
@@ -9,33 +9,39 @@
     display: block;
     text-align: center;
     line-height: 1;
-    padding: 19px 0 18px;
+    padding: 1.1875rem 0 1.125rem;
+    width: 12.5rem;
 }
 
 .Main-nav .container {
-    padding: 0 15px;
-    margin: 0 156.500px;
+    margin: 0 auto;
+    padding: 0;
+    width: 75rem;
 }
 
 .navbar-nav {
     display: flex;
-    position: relative;
-    justify-content: center;
     text-transform: uppercase;
     padding: 0;
-    margin: 0;
-    border-right: 1px solid rgba(0,0,0,0.25);
-    border-left: 1px solid rgba(255,255,255,0.1);
+    border-right: 0.0625rem solid rgba(0,0,0,0.25);
+    border-left: 0.0625rem solid rgba(255,255,255,0.1);
 }
 
-.navbar-nav li {
-    flex-grow: 1;
+
+
+.web,
+.IT,
+.telecoms,
+.software,
+.marketing,
+.security {
+    border-right: 0.0625rem solid rgba(255,255,255,0.1);
+    border-left: 0.0625rem solid rgba(0,0,0,0.25);
+    width: 12.5rem;
 }
 
-.nav-link {
-    width: 192.663px;
-    border-right: 1px solid rgba(255,255,255,0.1);
-    border-left: 1px solid rgba(0,0,0,0.25);
+.nav-link { 
+    width: 12.5rem;
     color: $white;
 }
 
@@ -46,12 +52,12 @@
 }
 
 .nav-link i {
-    font-size: 23.008px;
-    padding-bottom: 10px;
+    font-size: 1.438rem;
+    padding-bottom: 0.625rem;
 }
 
 .nav-link small {
-    padding-bottom: 1px;
+    padding-bottom: 0.0625rem;
     display: inline-block;
 }
 

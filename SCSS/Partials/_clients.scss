@@ -1,0 +1,99 @@
+.logos {
+    padding: 3.125rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logos .container {
+    margin: 0 9.9375rem;
+    width: 75rem;
+}
+
+.Clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.busseys {
+    width: 16.453125rem;
+}
+
+.busseys-logo {
+    left: 15.8%;
+}
+
+.crane-logo {
+    left: 10.4%;
+}
+
+.beat-logo {
+    left: 28.7%;
+}
+
+.northern-diver-logo {
+    left: 9.05%;
+}
+
+.crane {
+    width: 22.640625rem;
+}
+
+.beat {
+    width: 9.203125rem;
+}
+
+.northern {
+    width: 24.828125rem;
+}
+
+.busseys,
+.crane,
+.beat,
+.northern {
+    display: inline-block;
+    padding: 0 1.25rem;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+}
+
+.Clients .logo {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.Clients .bw {
+    z-index: 2;
+}
+
+.busseys:hover {
+    .logo {
+        display: block;
+    }
+}
+
+.beat:hover {
+    .logo {
+        display: block;
+    }
+}
+
+.crane:hover {
+    .logo {
+        display: block;
+    }
+}
+
+.northern:hover {
+    .logo {
+        display: block;
+    }
+}

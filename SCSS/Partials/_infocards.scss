@@ -1,14 +1,16 @@
 
 #info .container {
-    padding: 50px 0;
-    margin: 0 159px;
+    display: flex;
+    justify-content: center;
+    padding: 3.125rem 0;
+    margin: 0 auto;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
+    align-items: stretch;
+    width: 75rem;
 }
 
 .web-design,
@@ -19,33 +21,46 @@
 .Cyber-security {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    align-items: center;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     cursor: pointer;
-    padding: 30px;
-    margin: 15px 15px;
-    box-shadow: 0 3px 35px rgba(0,0,0,0.1);
-    border: 1px solid #ccc;
+    padding: 1.875rem;
+    margin: 0.9375rem 0.9375rem;
+    box-shadow: 0 0.1875rem 2.1875rem rgba(0,0,0,0.1);
+    border: 0.0625rem solid #ccc;
 }
 
 .web-design,
 .IT-support {
-    max-width: 502px;
-    flex-basis: 2;
+    width: 31.75rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.web-design,
+.Telecoms-services {
+    margin: 0.9375rem 0.9375rem 0.9375rem 0;
+}
+
+.IT-support,
+.Cyber-security {
+    margin: 0.9375rem 0 0.9375rem 0.9375rem;
 }
 
 .Telecoms-services,
 .Bespoke-software,
 .Digital-marketing,
 .Cyber-security {
-    max-width: 204px;
-    flex-basis: 1;
+    width: 13rem;
 }
 
 span {
-    height: 3px;
-    width: 28px;
+    height: 0.1875rem;
+    width: 1.75rem;
     margin: auto;
     position: absolute;
     left: 0;
@@ -55,9 +70,9 @@ span {
 }
 
 .cards h2 {
-    margin: 0 0 11px;
-    padding: 0 0 17px;
-    font-size: 18px;
+    margin: 0 0 0.6875rem;
+    padding: 0 0 1.0625rem;
+    font-size: 1.125rem;
     font-weight: 300;
     position: relative;
 }
@@ -68,9 +83,9 @@ span {
     justify-content: center;
     color: $white;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 17px;
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 0 auto 1.0625rem;
 
     i {
         font-size: 1.5em;
@@ -78,17 +93,17 @@ span {
 }
 
 .cards p {
-    margin: 0 0 13px;
-    font-size: 13px;
+    margin: 0 0 0.8125rem;
+    font-size: 0.8125rem;
 }
 
 .cards .btn {
     display: flex;
     align-items: center;
     color: $white;
-    padding: 5px 15px;
-    width: 96.2px;
-    height: 34.4px;
+    padding: 0.3125rem 0.9375rem;
+    width: 6.0125rem;
+    height: 2.15rem;
 }
 
 .web-design {

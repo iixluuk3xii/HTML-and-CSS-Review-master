@@ -1,13 +1,13 @@
 .gallery {
     width: 100%;
-    height: 491px;
+    height: 40.625rem;
     overflow: hidden;
     clear: both;
 }
 
 .photo-holder {
-    width: 1920px;
-    height: 491px;
+    width: 100%;
+    height: 40.625rem;
 
     display: flex;
 
@@ -24,33 +24,36 @@
 }
 
 .gallery-image {
-    width: 1920px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: $white;
-    .container {
-        margin: 0 159px;
-    }
     h1 {
         text-transform: uppercase;
         font-weight: 200;
-        font-size: 48px;
-        margin: 0 0 25px;
+        font-size: 3rem;
+        margin: 0 0 1.5625rem;
     }
     p,
     a {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     p {
-        margin: 0 0 35px;
+        margin: 0 0 2.1875rem;
         line-height: 2.25rem;
     }
     a {
-        padding: 15px 20px;
+        padding: 0.9375rem 1.25rem;
         display: inline-block;
         cursor: pointer;
         vertical-align: middle;
         text-align: center;
+    }
+    .container {
+        margin: 0 auto;
+        width: 75rem;
+        padding: 0;
     }
 }
 
@@ -59,11 +62,11 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 60px;
+    bottom: 3.75rem;
 }
 
 .controls-spacing {
-    width: 186px;
+    width: 11.625rem;
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -71,8 +74,8 @@
 
 .gallery-controls a {
     display: inline-flex;
-    width: 11px;
-    height: 11px;
+    width: 0.6875rem;
+    height: 0.6875rem;
     background-color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     border-radius: 50%;
@@ -83,7 +86,7 @@
 }
 
 .gallery-dot:focus {
-    border: 2px solid $white;
+    border: 0.125rem solid $white;
 }
 
 // slides

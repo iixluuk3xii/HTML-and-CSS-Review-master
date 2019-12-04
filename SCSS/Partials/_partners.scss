@@ -1,0 +1,84 @@
+.google,
+.microsoft,
+.f50,
+.qms,
+.carbon {
+    display: inline-block;
+    padding: 0 1.25rem;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+}
+
+.accreditations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .logo {
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    .bw {
+        z-index: 2;
+    }
+}
+
+.google {
+    width: 18.025rem;
+}
+
+.microsoft {
+    width: 11.4625rem;
+}
+
+.f50 {
+    width: 7.025rem;
+    position: relative;
+    .logo {
+        position: absolute;
+        left: 36%;
+    }
+}
+
+.qms {
+    width: 8.025rem;
+    position: relative;
+    .logo {
+        position: absolute;
+        left: 32%;
+    } 
+}
+
+.carbon {
+    width: 15.2125rem;
+    position: relative;
+    .logo {
+        position: absolute;
+        left: 19.15%;
+    }
+}
+
+
+.f50:hover {
+    .logo {
+        display: block;
+    }
+}
+
+.qms:hover {
+    .logo {
+        display: block;
+    } 
+}
+
+.carbon:hover {
+    .logo {
+        display: block;
+    }
+}
