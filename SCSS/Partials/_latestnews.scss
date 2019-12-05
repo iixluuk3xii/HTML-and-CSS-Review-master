@@ -1,7 +1,38 @@
 .bar {
     height: 6.5rem;
     box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: $darkgrey;
+    font-size: 1.25rem;
+    ul {
+        height: 6.5rem;
+        width: 75rem;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    h4 {
+        margin: 0;
+    }
+
+    li {
+        padding-top: auto;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .block {
+        width: 4.168rem;
+        height: 0.3125rem;
+        background-color: $darkgrey;
+    }
 }
+
+
 
 .card {
     display: flex;
