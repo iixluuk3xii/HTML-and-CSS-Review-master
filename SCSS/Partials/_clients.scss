@@ -6,7 +6,8 @@
 
 .logos .container {
     margin: 0 9.9375rem;
-    width: 75rem;
+    width: 73.125rem;
+    ;
 }
 
 .Clients {
@@ -20,11 +21,11 @@
 }
 
 .busseys-logo {
-    left: 15.7%;
+    left: 14.8%;
 }
 
 .crane-logo {
-    left: 10.4%;
+    left: 9.5%;
 }
 
 .beat-logo {
@@ -32,7 +33,7 @@
 }
 
 .northern-diver-logo {
-    left: 9.05%;
+    left: 8.05%;
 }
 
 .crane {
@@ -78,11 +79,22 @@
     .logo {
         display: block;
     }
+
+    .tooltip {
+        visibility: visible;
+        opacity: 1;
+
+    }
 }
 
 .beat:hover {
     .logo {
         display: block;
+    }
+    .tooltip {
+        visibility: visible;
+        opacity: 1;
+
     }
 }
 
@@ -90,10 +102,92 @@
     .logo {
         display: block;
     }
+
+    .tooltip {
+        visibility: visible;
+        opacity: 1;
+
+    }
 }
 
 .northern:hover {
     .logo {
         display: block;
+    }
+    .tooltip {
+        visibility: visible;
+        opacity: 1;
+
+    }
+}
+
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: -180px;
+    left: -20px;
+    width: 220px;
+    background-color: $darkgrey;
+    color: $white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: none;
+    transition: visibility 0s, opacity 0s linear;
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        font-size: .9rem;
+        margin: 0;
+    }
+
+    span {
+        width: 28px;
+        height: 3px;
+        background-color: $white;
+        margin: 10px 0 10px;
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: -40px;
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid $darkgrey;
+    }
+}
+
+.crane {
+    .tooltip {
+        top: -245px;
+        left: 10px;
+        width: 220px;
+    }
+}
+
+.beat {
+    .tooltip {
+        top: -182px;
+        left: -63px;
+        width: 220px;
+    }
+}
+
+.northern {
+    .tooltip {
+        top: -245px;
+        left: 40px;
+        width: 220px;
     }
 }

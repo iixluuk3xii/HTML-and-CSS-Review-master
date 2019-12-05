@@ -6,7 +6,7 @@
     font-size: 1.25rem;
     ul {
         height: 6.5rem;
-        width: 75rem;
+        width: 73.125rem;;
         padding: 0;
         margin: 0 auto;
         display: flex;
@@ -51,7 +51,7 @@
     .container {
         margin: 0 9.9375rem;
         padding: 3.125rem 0;
-        width: 75rem;
+        width: 73.125rem;;
         display: flex;
         justify-content: space-between;
     }
@@ -81,29 +81,6 @@
     box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
 
     .title {
-        color: $lightblue;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    .btn {
-        background-color: $lightblue;
-        text-transform: uppercase;
-        color: $white;
-    }
-
-    .btn:hover {
-        background-color: $blue;
-    }
-}
-
-#card2 {
-    box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
-
-    .title {
         color: $lightpurple;
     }
 
@@ -120,6 +97,29 @@
 
     .btn:hover {
         background-color: $purple;
+    }
+}
+
+#card2 {
+    box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
+
+    .title {
+        color: $lightblue;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .btn {
+        background-color: $lightblue;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    .btn:hover {
+        background-color: $blue;
     }
 }
 
@@ -146,8 +146,13 @@
     }
 }
 
-.card-img-top {
+.img-container {
+    height: 100%;
+    display: block;
     overflow: hidden;
+}
+
+.card-img-top {
     height: 213.86px;
     position: relative;
 
@@ -161,9 +166,73 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        transition: background-color .2s;
+        transition: background-color .2s linear;
         z-index: 50;
     }
+}
+
+.category {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 10px;
+    color: $white;
+    text-transform: uppercase;
+    z-index: 51;
+    .tooltip {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        padding: 10px 20px;
+        position: absolute;
+        top: -65px;
+        left: -68px;
+        width: 150px;
+        height: 30px;
+        background-color: rgba(0, 0, 22, 0.651);
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.5;
+        text-transform: none;
+        transition: visibility 0s, opacity .2s linear;
+        p {
+            margin: 0;
+        }
+        .arrow {
+            position: absolute;
+            bottom: -10px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid rgba(0, 0, 0, 0.651);
+        }
+    }
+}
+
+.category:hover {
+    .tooltip {
+        visibility: visible;
+        opacity: 1;
+        
+    }
+}
+
+#card1 .category {
+    background-color: $lightpurple;
+}
+
+#card2 .category {
+    background-color: $lightblue;
+}
+
+#card3 .category {
+    background-color: $red;
 }
 
 .card-img-top:hover {

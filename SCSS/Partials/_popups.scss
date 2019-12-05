@@ -1,5 +1,5 @@
 .popup {
-    display: none;
+    // display: none;
     position: absolute;
 }
 
@@ -11,14 +11,24 @@
     top: 1.25rem;
     left: 1.25rem;
     color: $white;
-    background-color: $lightblue;
+    background-color: #509bd6;
     border-radius: 50%;
-    width: 3.5625rem;
-    height: 3.5625rem;
+    width: 3.75rem;
+    height: 3.75rem;
     text-align: center;
     z-index: 101;
     cursor: pointer;
     i {
         font-size: 1.875rem;
     }
+}
+
+.notification {
+    position: absolute;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    top: 0;
+    right: 0;
 }
