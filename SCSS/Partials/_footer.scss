@@ -5,7 +5,8 @@ footer {
 }
 
 .footer-info {
-    margin: 0 9.9375rem;
+    margin: 0 auto;
+    width: 75rem;
     height: 15.15rem;
     display: flex;
     justify-content: space-between;
@@ -55,3 +56,14 @@ h4 {
     text-decoration: none;
 }
 
+#facebook:hover{
+    background-color: $facebook;
+}
+
+#twitter:hover{
+    background-color: $twitter;
+}
+
+#linkedin:hover{
+    background-color: $linkedin;
+}

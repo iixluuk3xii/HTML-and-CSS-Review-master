@@ -8,14 +8,15 @@
     flex-direction: column;
     border: 0.0625rem solid #ccc;
     border-radius: 0.1875rem;
-    height: 36.53825rem;
-    width: 22.75rem;
+    height: 36.49125rem;
+    width: 23.125rem;
 }
 
 .news-cards {
     box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
+
     .container {
         margin: 0 9.9375rem;
         padding: 3.125rem 0;
@@ -27,10 +28,11 @@
 
 .card-body {
     padding: 1.875rem;
-    height: 100%;
+    height: 19.3125rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     p {
         margin: 0 0 1.5625rem;
         font-size: 0.8125rem;
@@ -61,6 +63,10 @@
         text-transform: uppercase;
         color: $white;
     }
+
+    .btn:hover {
+        background-color: $blue;
+    }
 }
 
 #card2 {
@@ -79,6 +85,10 @@
         background-color: $lightpurple;
         text-transform: uppercase;
         color: $white;
+    }
+
+    .btn:hover {
+        background-color: $purple;
     }
 }
 
@@ -99,14 +109,44 @@
         text-transform: uppercase;
         color: $white;
     }
+
+    .btn:hover {
+        background-color: $darkred;
+    }
 }
 
 .card-img-top {
+    overflow: hidden;
+    height: 213.86px;
+    position: relative;
+
     img {
         width: 100%;
-        height: 12.9008125rem;
+        height: 100%;
+        transition: transform .2s;
+    }
+
+    .fog {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: background-color .2s;
+        z-index: 50;
     }
 }
+
+.card-img-top:hover {
+
+    .fog {
+        background-color: rgba(255, 255, 255, 0.400);
+    }
+
+    img {
+        transform: scale(1.1);
+    }
+}
+
+
 
 .Author .icon {
     margin: 0;
