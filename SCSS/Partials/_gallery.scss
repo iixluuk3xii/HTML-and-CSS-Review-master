@@ -44,15 +44,17 @@
         line-height: 2.25rem;
     }
     a {
-        padding: 0.9375rem 1.25rem;
+        padding: 1.25rem 1.25rem 0;
         display: inline-block;
         cursor: pointer;
         vertical-align: middle;
         text-align: center;
+        height: 2.625rem;
     }
     .container {
+        text-align: center;
         margin: 0 auto;
-        width: 73.125rem;;
+        width: 73.125rem;
         padding: 0;
     }
 }

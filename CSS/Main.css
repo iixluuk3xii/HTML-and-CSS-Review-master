@@ -174,6 +174,685 @@ div {
   opacity: 1;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 5, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .decription .popup .tooltip {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: -158px;
+    left: -20px;
+    width: 220px;
+    background-color: #333645;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: none;
+    transition: visibility 0s, opacity 0s linear;
+  }
+  /* line 22, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .decription .popup .tooltip h2 {
+    margin: 0;
+  }
+  /* line 26, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .decription .popup .tooltip p {
+    font-size: .9rem;
+    margin: 0;
+  }
+  /* line 31, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .decription .popup .tooltip span {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px 0 10px;
+  }
+  /* line 38, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .decription .popup .tooltip .arrow {
+    position: absolute;
+    bottom: -40px;
+    right: 88px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #333645;
+  }
+  /* line 51, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .Clients .crane .tooltip {
+    top: -223px;
+    left: 15px;
+    width: 220px;
+  }
+  /* line 59, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .Clients .beat .tooltip {
+    top: -158px;
+    left: -63px;
+    width: 220px;
+  }
+  /* line 67, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .Clients .northern .tooltip {
+    top: -223px;
+    left: 40px;
+    width: 220px;
+  }
+  /* line 74, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .google .popup {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px;
+    position: absolute;
+    left: -10px;
+    top: -80px;
+    color: #848584;
+    font-size: 13px;
+    width: 130px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .2s ease-in;
+  }
+  /* line 75, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .google .popup small {
+    display: inline-block;
+  }
+  /* line 99, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .google .popup .arrow {
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #fff;
+    box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
+    z-index: 101;
+  }
+  /* line 112, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .card-img-top .category {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 10px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 51;
+  }
+  /* line 123, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .card-img-top .category .tooltip {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 20px;
+    position: absolute;
+    top: -65px;
+    left: -68px;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(0, 0, 22, 0.651);
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: none;
+    transition: visibility 0s, opacity .2s linear;
+  }
+  /* line 143, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .card-img-top .category .tooltip p {
+    margin: 0;
+    font-size: 10px;
+  }
+  /* line 148, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .card-img-top .category .tooltip .middle {
+    padding-top: 8px;
+  }
+  /* line 152, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .card-img-top .category .tooltip .arrow {
+    position: absolute;
+    bottom: -10px;
+    left: 90px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.651);
+  }
+  /* line 166, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .web:hover {
+    background-color: #926fb1;
+    border-right: 0.0625rem solid #926fb1;
+    border-left: 0.0625rem solid #926fb1;
+  }
+  /* line 171, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .web:hover i {
+    color: #fff;
+  }
+  /* line 175, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .web:hover .strip {
+    display: block;
+    position: absolute;
+  }
+  /* line 181, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .IT:hover {
+    background-color: #4183d7;
+    border-right: 0.0625rem solid #4183d7;
+    border-left: 0.0625rem solid #4183d7;
+  }
+  /* line 186, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .IT:hover i {
+    color: #fff;
+  }
+  /* line 190, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .IT:hover .strip {
+    display: block;
+    position: absolute;
+  }
+  /* line 196, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .telecoms:hover {
+    background-color: #d64541;
+    border-right: 0.0625rem solid #d64541;
+    border-left: 0.0625rem solid #d64541;
+  }
+  /* line 201, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .telecoms:hover i {
+    color: #fff;
+  }
+  /* line 205, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .telecoms:hover .strip {
+    display: block;
+    position: absolute;
+  }
+  /* line 211, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .software:hover {
+    background-color: #67809f;
+    border-right: 0.0625rem solid #67809f;
+    border-left: 0.0625rem solid #67809f;
+  }
+  /* line 216, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .software:hover i {
+    color: #fff;
+  }
+  /* line 220, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .software:hover .strip {
+    display: block;
+    position: absolute;
+  }
+  /* line 226, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .marketing:hover {
+    background-color: #2ecc71;
+    border-right: 0.0625rem solid #2ecc71;
+    border-left: 0.0625rem solid #2ecc71;
+  }
+  /* line 231, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .marketing:hover i {
+    color: #fff;
+  }
+  /* line 235, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .marketing:hover .strip {
+    display: block;
+    position: absolute;
+  }
+  /* line 241, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .security:hover {
+    background-color: #f62459;
+    border-right: 0.0625rem solid #f62459;
+    border-left: 0.0625rem solid #f62459;
+  }
+  /* line 246, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .security:hover i {
+    color: #fff;
+  }
+  /* line 250, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .security:hover .strip {
+    display: block;
+    position: absolute;
+  }
+  /* line 256, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .strip .nav-menu {
+    display: flex;
+    position: static;
+    text-transform: uppercase;
+    font-size: 1rem;
+    height: 2.8125rem;
+    width: 73.125rem;
+    color: #fff;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+  /* line 267, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .navbar-nav .strip .nav-menu li:not(:first-child) {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  /* line 281, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  header .head-inner .container {
+    margin: 0 auto;
+    max-width: 46.875rem;
+  }
+  /* line 285, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  header .head-inner .container .support-btn,
+  header .head-inner .container .contact-btn {
+    display: none;
+  }
+  /* line 295, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #main-nav {
+    display: none;
+  }
+  /* line 303, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #holder,
+  #gallery {
+    height: 36.8125rem;
+  }
+  /* line 308, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #photo1 .container,
+  #photo2 .container,
+  #photo3 .container,
+  #photo4 .container,
+  #photo5 .container,
+  #photo6 .container {
+    max-width: 46.875rem;
+    text-align: center;
+  }
+  /* line 322, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .cards {
+    justify-content: center;
+  }
+  /* line 325, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .cards .web-design,
+  .cards .IT-support,
+  .cards .Telecoms-services,
+  .cards .Bespoke-software,
+  .cards .Digital-marketing,
+  .cards .Cyber-security {
+    width: 17.6875rem;
+    margin: 15px;
+  }
+  /* line 340, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture {
+    background-image: none;
+  }
+  /* line 343, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture .container {
+    width: 46.875rem;
+  }
+  /* line 346, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture .container .culture {
+    width: 46.875rem;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  /* line 359, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #bar ul {
+    width: 46.875rem;
+  }
+  /* line 363, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #news-cards .container {
+    width: 46.875rem;
+    margin: 0 auto;
+  }
+  /* line 368, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card3 {
+    display: none;
+  }
+  /* line 372, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card1,
+  #card2 {
+    width: 21.5625rem;
+  }
+  /* line 377, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card1 {
+    margin-right: 15px;
+  }
+  /* line 381, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card2 {
+    margin-left: 15px;
+  }
+  /* line 385, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #logos .container {
+    width: 46.875rem;
+  }
+  /* line 393, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  footer {
+    height: 27.375rem;
+  }
+  /* line 397, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot {
+    width: 46.875rem;
+    height: 27.375rem;
+    flex-wrap: wrap;
+  }
+  /* line 402, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .contact {
+    width: 23.4375rem;
+    height: 12.3125rem;
+    padding: 0;
+  }
+  /* line 408, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .about {
+    width: 23.4375rem;
+    height: 13.6875rem;
+    padding: 0;
+  }
+  /* line 414, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .website {
+    width: 23.4375rem;
+    height: 6.8125rem;
+    padding: 0;
+  }
+  /* line 420, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot #social {
+    width: 23.4375rem;
+    height: 11.8125rem;
+    padding: 0;
+  }
+  /* line 427, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .social-btns a {
+    width: 9.8125rem;
+    height: 3.4375rem;
+  }
+  /* line 438, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #partners .container {
+    width: 46.875rem;
+    margin: 0 auto;
+  }
+  /* line 442, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #partners .container .accreditations {
+    width: 46.875rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  /* line 457, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  header .head-inner .container {
+    margin: 0 auto;
+    max-width: 46.875rem;
+  }
+  /* line 461, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  header .head-inner .container .support-btn,
+  header .head-inner .container .contact-btn {
+    display: none;
+  }
+  /* line 471, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #main-nav {
+    display: none;
+  }
+  /* line 479, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #holder,
+  #gallery {
+    height: 36.8125rem;
+  }
+  /* line 484, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #photo1 .container,
+  #photo2 .container,
+  #photo3 .container,
+  #photo4 .container,
+  #photo5 .container,
+  #photo6 .container {
+    max-width: 46.875rem;
+    text-align: center;
+  }
+  /* line 498, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .cards {
+    justify-content: center;
+  }
+  /* line 501, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .cards .web-design,
+  .cards .IT-support,
+  .cards .Telecoms-services,
+  .cards .Bespoke-software,
+  .cards .Digital-marketing,
+  .cards .Cyber-security {
+    width: 17.6875rem;
+    margin: 15px;
+  }
+  /* line 516, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture {
+    background-image: none;
+  }
+  /* line 519, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture .container {
+    width: 46.875rem;
+  }
+  /* line 522, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture .container .culture {
+    width: 46.875rem;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  /* line 535, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #bar ul {
+    width: 46.875rem;
+  }
+  /* line 539, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #news-cards .container {
+    width: 46.875rem;
+    margin: 0 auto;
+  }
+  /* line 544, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card3 {
+    display: none;
+  }
+  /* line 548, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card1,
+  #card2 {
+    width: 21.5625rem;
+  }
+  /* line 553, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card1 {
+    margin-right: 15px;
+  }
+  /* line 557, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card2 {
+    margin-left: 15px;
+  }
+  /* line 561, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #logos .container {
+    width: 46.875rem;
+  }
+  /* line 569, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  footer {
+    height: 27.375rem;
+  }
+  /* line 573, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot {
+    width: 46.875rem;
+    height: 27.375rem;
+    flex-wrap: wrap;
+  }
+  /* line 578, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .contact {
+    width: 23.4375rem;
+    height: 12.3125rem;
+    padding: 0;
+  }
+  /* line 584, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .about {
+    width: 23.4375rem;
+    height: 13.6875rem;
+    padding: 0;
+  }
+  /* line 590, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .website {
+    width: 23.4375rem;
+    height: 6.8125rem;
+    padding: 0;
+  }
+  /* line 596, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot #social {
+    width: 23.4375rem;
+    height: 11.8125rem;
+    padding: 0;
+  }
+  /* line 603, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .social-btns a {
+    width: 9.8125rem;
+    height: 3.4375rem;
+  }
+  /* line 614, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #partners .container {
+    width: 46.875rem;
+    margin: 0 auto;
+  }
+  /* line 618, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #partners .container .accreditations {
+    width: 46.875rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 635, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  header .head-inner .container {
+    margin: 0 auto;
+    max-width: 46.875rem;
+  }
+  /* line 639, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  header .head-inner .container .support-btn,
+  header .head-inner .container .contact-btn {
+    display: none;
+  }
+  /* line 649, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #main-nav {
+    display: none;
+  }
+  /* line 657, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #holder,
+  #gallery {
+    height: 36.8125rem;
+  }
+  /* line 662, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #photo1 .container,
+  #photo2 .container,
+  #photo3 .container,
+  #photo4 .container,
+  #photo5 .container,
+  #photo6 .container {
+    max-width: 46.875rem;
+    text-align: center;
+  }
+  /* line 676, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .cards {
+    justify-content: center;
+  }
+  /* line 679, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  .cards .web-design,
+  .cards .IT-support,
+  .cards .Telecoms-services,
+  .cards .Bespoke-software,
+  .cards .Digital-marketing,
+  .cards .Cyber-security {
+    width: 45.875rem;
+    margin: 15px;
+  }
+  /* line 694, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture {
+    background-image: none;
+  }
+  /* line 697, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture .container {
+    width: 46.875rem;
+  }
+  /* line 700, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #culture .container .culture {
+    width: 46.875rem;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  /* line 713, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #bar ul {
+    width: 46.875rem;
+  }
+  /* line 717, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #news-cards .container {
+    width: 46.875rem;
+    margin: 0 auto;
+  }
+  /* line 722, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card3 {
+    display: none;
+  }
+  /* line 726, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card1,
+  #card2 {
+    width: 21.5625rem;
+  }
+  /* line 731, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card1 {
+    margin-right: 15px;
+  }
+  /* line 735, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #card2 {
+    margin-left: 15px;
+  }
+  /* line 739, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #logos .container {
+    width: 46.875rem;
+  }
+  /* line 747, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  footer {
+    height: 27.375rem;
+  }
+  /* line 751, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot {
+    width: 46.875rem;
+    height: 27.375rem;
+    flex-wrap: wrap;
+  }
+  /* line 756, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .contact {
+    width: 23.4375rem;
+    height: 12.3125rem;
+    padding: 0;
+  }
+  /* line 762, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .about {
+    width: 23.4375rem;
+    height: 13.6875rem;
+    padding: 0;
+  }
+  /* line 768, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .website {
+    width: 23.4375rem;
+    height: 6.8125rem;
+    padding: 0;
+  }
+  /* line 774, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot #social {
+    width: 23.4375rem;
+    height: 11.8125rem;
+    padding: 0;
+  }
+  /* line 781, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #foot .social-btns a {
+    width: 9.8125rem;
+    height: 3.4375rem;
+  }
+  /* line 792, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #partners .container {
+    width: 46.875rem;
+    margin: 0 auto;
+  }
+  /* line 796, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_mediaq.scss */
+  #partners .container .accreditations {
+    width: 46.875rem;
+  }
+}
+
 /* line 1, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_clients.scss */
 .logos {
   padding: 3.125rem 0;
@@ -616,7 +1295,7 @@ div {
   height: 30px;
   background-color: rgba(0, 0, 22, 0.651);
   font-weight: 500;
-  font-size: 12px;
+  font-size: 8px;
   text-align: center;
   line-height: 1.5;
   text-transform: none;
@@ -1185,9 +1864,10 @@ footer {
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: left;
 }
 
-/* line 13, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
+/* line 14, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
 .brand-image .container {
   margin: 0 auto;
   padding: 0;
@@ -1196,7 +1876,7 @@ footer {
   top: 10%;
 }
 
-/* line 21, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
+/* line 22, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
 .culture {
   display: flex;
   flex-direction: column;
@@ -1205,13 +1885,13 @@ footer {
   width: 35.625rem;
 }
 
-/* line 27, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
+/* line 28, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
 .culture h1,
 .culture p {
   margin: 0 0 1.5625rem;
 }
 
-/* line 31, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
+/* line 32, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
 .culture h1 {
   text-transform: uppercase;
   font-weight: 200;
@@ -1220,12 +1900,12 @@ footer {
   font-size: 2.25rem;
 }
 
-/* line 38, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
+/* line 39, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
 .culture p {
   line-height: 1.875rem;
 }
 
-/* line 41, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
+/* line 42, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
 .culture .btn {
   display: inline-block;
   background-color: #fff;
@@ -1241,7 +1921,7 @@ footer {
   border: none;
 }
 
-/* line 55, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
+/* line 56, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_culturesection.scss */
 .culture .btn:hover {
   background-color: #d6d6d6;
 }
@@ -1257,20 +1937,21 @@ footer {
 /* line 8, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .Main-nav a {
   text-decoration: none;
+  color: #fff;
   display: block;
   text-align: center;
   line-height: 1;
   padding: 1.1875rem 0 1.125rem;
 }
 
-/* line 16, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
+/* line 17, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .Main-nav .container {
   margin: 0 auto;
   padding: 0;
   width: 75rem;
 }
 
-/* line 22, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
+/* line 23, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .navbar-nav {
   display: flex;
   justify-content: space-evenly;
@@ -1281,7 +1962,7 @@ footer {
   border-left: 0.0625rem solid rgba(255, 255, 255, 0.1);
 }
 
-/* line 34, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
+/* line 35, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .web,
 .IT,
 .telecoms,
@@ -1293,34 +1974,33 @@ footer {
   width: 12.1875rem;
 }
 
-/* line 45, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
+/* line 46, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .nav-link {
   color: #fff;
 }
 
-/* line 49, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
+/* line 50, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .nav-link i,
 .nav-link small {
   width: 100%;
   text-align: center;
 }
 
-/* line 55, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
+/* line 56, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .nav-link i {
   font-size: 1.438rem;
   padding-bottom: 0.625rem;
 }
 
-/* line 60, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
+/* line 61, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .nav-link small {
   padding-bottom: 0.0625rem;
   display: inline-block;
 }
 
-/* line 65, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
+/* line 66, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_navbar.scss */
 .nav-menu {
   position: absolute;
-  left: 22.84375rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1580,21 +2260,23 @@ footer {
 
 /* line 46, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 .gallery-image a {
-  padding: 0.9375rem 1.25rem;
+  padding: 1.25rem 1.25rem 0;
   display: inline-block;
   cursor: pointer;
   vertical-align: middle;
   text-align: center;
+  height: 2.625rem;
 }
 
-/* line 53, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 54, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 .gallery-image .container {
+  text-align: center;
   margin: 0 auto;
   width: 73.125rem;
   padding: 0;
 }
 
-/* line 60, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 62, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 .gallery-controls {
   display: flex;
   align-items: center;
@@ -1603,7 +2285,7 @@ footer {
   bottom: 3.75rem;
 }
 
-/* line 68, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 70, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 .controls-spacing {
   width: 11.625rem;
   display: flex;
@@ -1611,7 +2293,7 @@ footer {
   justify-content: space-between;
 }
 
-/* line 75, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 77, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 .gallery-controls a {
   display: inline-flex;
   width: 0.6875rem;
@@ -1621,108 +2303,108 @@ footer {
   border-radius: 50%;
 }
 
-/* line 84, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 86, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 .gallery-dot:hover {
   background-color: #444;
 }
 
-/* line 88, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 90, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 .gallery-dot:focus {
   border: 0.125rem solid #fff;
 }
 
-/* line 94, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 96, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo1 {
   background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/Wacom-scroll-photo.jpg);
   background-repeat: no-repeat;
 }
 
-/* line 98, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 100, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo1 a {
   background-color: #926fb1;
 }
 
-/* line 101, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 103, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo1 a:hover {
   background-color: #79539a;
 }
 
-/* line 106, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 108, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo2 {
   background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/Support-scroll-photo.jpg);
   background-repeat: no-repeat;
 }
 
-/* line 110, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 112, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo2 a {
   background-color: #4183d7;
 }
 
-/* line 113, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 115, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo2 a:hover {
   background-color: #286abd;
 }
 
-/* line 118, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 120, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo3 {
   background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/phone-scroll-photo.jpg);
   background-repeat: no-repeat;
 }
 
-/* line 122, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 124, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo3 a {
   background-color: #d64541;
 }
 
-/* line 125, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 127, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo3 a:hover {
   background-color: #c42e2a;
 }
 
-/* line 130, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 132, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo4 {
   background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/graph-scroll-photo.jpg);
   background-repeat: no-repeat;
 }
 
-/* line 134, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 136, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo4 a {
   background-color: #67809f;
 }
 
-/* line 137, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 139, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo4 a:hover {
   background-color: #566c88;
 }
 
-/* line 142, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 144, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo5 {
   background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/home-scroll-photo.jpg);
   background-repeat: no-repeat;
 }
 
-/* line 146, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 148, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo5 a {
   background-color: #2ecc71;
 }
 
-/* line 149, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 151, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo5 a:hover {
   background-color: #25a25a;
 }
 
-/* line 154, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 156, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo6 {
   background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/Lock-scroll-photo.jpg);
   background-repeat: no-repeat;
 }
 
-/* line 158, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 160, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo6 a {
   background-color: #f62459;
 }
 
-/* line 161, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
+/* line 163, ../../Netmatters Ltd/Data - Scions/Luke Youngman - Project Files/HTML-and-CSS-Review-master-clone/HTML-and-CSS-Review-master/SCSS/Partials/_gallery.scss */
 #photo6 a:hover {
   background-color: #e80a42;
 }
