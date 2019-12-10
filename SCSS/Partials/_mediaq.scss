@@ -312,7 +312,32 @@
     #photo5 .container,
     #photo6 .container {
         max-width: 46.875rem;
-        text-align: center;
+    }
+
+    #photo1 {
+        background-size: cover;
+
+    }
+
+    #photo2 {
+        background-size: cover;
+
+    }
+
+    #photo3 {
+        background-size: cover;
+    }
+
+    #photo4 {
+        background-size: cover;
+    }
+
+    #photo5 {
+        background-size: cover;
+    }
+
+    #photo6 {
+        background-size: cover;
     }
 
     // --------------------------------------------
@@ -632,9 +657,28 @@
 
     // Header
 
+    #chat {
+        display: none;
+    }
+
     header .head-inner .container {
         margin: 0 auto;
-        max-width: 46.875rem;
+        width: 100%;
+        min-width: 520px;
+
+        .header-row {
+            width: 100%;
+            min-width: 520px;
+            box-sizing: border-box;
+        }
+
+        .col-left {
+            margin-left: 15px;
+        }
+
+        .col-right {
+            margin-right: 15px;
+        }
 
         .support-btn,
         .contact-btn {
@@ -656,7 +700,8 @@
 
     #holder,
     #gallery {
-        height: 36.8125rem;
+        width: 100%;
+        min-width: 520px;
     }
 
     #photo1 .container,
@@ -665,7 +710,8 @@
     #photo4 .container,
     #photo5 .container,
     #photo6 .container {
-        max-width: 46.875rem;
+        width: 100%;
+        min-width: 100%;
         text-align: center;
     }
 
@@ -673,8 +719,10 @@
 
     // Info card links
 
-    .cards {
+    #cards {
         justify-content: center;
+        width: 100%;
+        min-width: 520px;
 
         .web-design,
         .IT-support,
@@ -682,8 +730,14 @@
         .Bespoke-software,
         .Digital-marketing,
         .Cyber-security {
-            width: 45.875rem;
-            margin: 15px;
+            width: 672px;
+            min-width: 288px;
+            margin: 30px 15px 0;
+            padding: 30px;
+        }
+
+        .web-design {
+            margin-top: 0;
         }
     }
 
@@ -693,12 +747,18 @@
 
     #culture {
         background-image: none;
+        width: 100%;
+        min-width: 520px;
 
         .container {
-            width: 46.875rem;
+            width: 100%;
+            min-width: 520px;
+            padding: 50px 15px;
+            box-sizing: border-box;
 
             .culture {
-                width: 46.875rem;
+                width: 100%;
+                min-width: 490px;
                 justify-content: center;
                 align-content: center;
                 margin: 0 auto;
@@ -710,13 +770,29 @@
 
     // Latest News
 
-    #bar ul {
-        width: 46.875rem;
+    #bar {
+        width: 100%;
     }
 
-    #news-cards .container {
-        width: 46.875rem;
-        margin: 0 auto;
+    #bar ul {
+        width: 100%;
+        min-width: 520px;
+        padding-left: 15px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #news-cards {
+        width: 100%;
+        min-width: 520px;
+
+        .container {
+            width: 100%;
+            min-width: 490px;
+            padding: 50px 15px;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     #card3 {
@@ -725,19 +801,35 @@
 
     #card1,
     #card2 {
-        width: 21.5625rem;
-    }
+        width: 100%;
+        min-width: 114px;
+        height: auto;
+        margin: 0 15px;
 
-    #card1 {
-        margin-right: 15px;
+        .card-img-top,
+        .card-body {
+
+            .img-container {
+                box-sizing: border-box;
+            }
+            display: table;
+            height: fit-content;
+            box-sizing: border-box;
+        }
+
+
     }
 
     #card2 {
-        margin-left: 15px;
+        margin-top: 50px;
     }
 
-    #logos .container {
-        width: 46.875rem;
+    // --------------------------------------------
+
+    // clients ----------------------------------
+
+    #logos {
+        display: none;
     }
 
     // --------------------------------------------
@@ -745,43 +837,80 @@
     // Footer
 
     footer {
-        height: 27.375rem;
+        height: fit-content;
+    }
+
+    #feet {
+        padding: 47px 15px;
+        box-sizing: border-box;
     }
 
     #foot {
-        width: 46.875rem;
-        height: 27.375rem;
+        width: 100%;
+        min-width: 490px;
+        margin: 0;
+        height: auto;
         flex-wrap: wrap;
+        box-sizing: border-box;
 
         .contact {
             width: 23.4375rem;
             height: 12.3125rem;
             padding: 0;
+            margin-bottom: 30px;
         }
 
         .about {
             width: 23.4375rem;
             height: 13.6875rem;
             padding: 0;
+            margin-bottom: 30px;
         }
 
         .website {
             width: 23.4375rem;
             height: 6.8125rem;
             padding: 0;
+            margin-bottom: 30px;
         }
 
         #social {
-            width: 23.4375rem;
+            width: 100%;
             height: 11.8125rem;
             padding: 0;
+            box-sizing: border-box;
         }
 
         .social-btns {
+            box-sizing: border-box;
+            width: 100%;
+            justify-content: space-between;
+
             a {
-                width: 9.8125rem;
-                height: 3.4375rem;
+                box-sizing: border-box;
+                width: 100%;
+                height: 55px;
+                margin: 30px 0 0 0;
             }
+
+            #padding1 {
+                width: 50%;
+                padding-right: 15px;
+                box-sizing: border-box;
+            }
+
+            #padding2 {
+                width: 50%;
+                padding-left: 15px;
+                box-sizing: border-box;
+            }
+
+            #padding3 {
+                width: 50%;
+                padding-right: 15px;
+                box-sizing: border-box;
+            }
+
         }
     }
 
@@ -789,13 +918,8 @@
 
     // acreditations
 
-    #partners .container {
-        width: 46.875rem;
-        margin: 0 auto;
-
-        .accreditations {
-            width: 46.875rem;
-        }
+    #partners {
+        display: none;
     }
 
     // --------------------------------------------

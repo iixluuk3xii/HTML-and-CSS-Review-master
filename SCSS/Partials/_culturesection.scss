@@ -14,8 +14,8 @@
 .brand-image .container {
     margin: 0 auto;
     padding: 0;
-    width: 73.125rem;;
-    height: 28.125rem;
+    width: 73.125rem;
+    height: fit-content;
     top: 10%;
 }
 
@@ -25,9 +25,11 @@
     justify-content: space-between;
     height: 100%;
     width: 35.625rem;
+    box-sizing: border-box;
     h1,
     p {
         margin: 0 0 1.5625rem;
+        box-sizing: border-box;
     }
     h1 {
         text-transform: uppercase;
@@ -35,6 +37,7 @@
         line-height: 1.1;
         letter-spacing: 0.025rem;
         font-size: 2.25rem;
+        box-sizing: border-box;
     }
     p {
         line-height: 1.875rem;

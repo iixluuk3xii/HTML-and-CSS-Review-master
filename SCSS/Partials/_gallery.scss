@@ -52,7 +52,6 @@
         height: 2.625rem;
     }
     .container {
-        text-align: center;
         margin: 0 auto;
         width: 73.125rem;
         padding: 0;
@@ -96,6 +95,8 @@
 #photo1 {
     background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/Wacom-scroll-photo.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     a {
         background-color: $lightpurple;
@@ -108,6 +109,8 @@
 #photo2 {
     background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/Support-scroll-photo.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
     a {
         background-color: $lightblue;
@@ -120,6 +123,8 @@
 #photo3 {
     background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/phone-scroll-photo.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     a {
         background-color: $red;
@@ -132,6 +137,8 @@
 #photo4 {
     background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/graph-scroll-photo.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     a {
         background-color: $steelblue;
@@ -144,6 +151,8 @@
 #photo5 {
     background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/home-scroll-photo.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     a {
         background-color: $lightgreen;
@@ -156,6 +165,8 @@
 #photo6 {
     background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/Lock-scroll-photo.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     a {
         background-color: $rose;

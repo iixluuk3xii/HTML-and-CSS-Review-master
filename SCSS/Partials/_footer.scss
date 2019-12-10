@@ -2,12 +2,15 @@ footer {
     background-color: $darkgrey;
     color: $white;
     padding: 2.9375rem 0 2.6875rem;
+    height: auto;
+    box-sizing: border-box;
 }
 
 .footer-info {
     margin: 0 auto;
     width: 73.125rem;;
-    height: 15.15rem;
+    height: auto;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }

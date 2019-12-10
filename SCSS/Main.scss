@@ -10,6 +10,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    width: 100%;
+    min-width: 520px;
+}
+
 body {
     font-size: 1rem;
     letter-spacing: 0.025rem;
@@ -41,3 +46,4 @@ small {
     clear: both;
     display: table;
 }
+
