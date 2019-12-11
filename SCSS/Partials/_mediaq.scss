@@ -271,38 +271,83 @@
     }
 }
 
+@media only screen and (-ms-high-contrast: none) and (max-width : 1260px),
+only screen and (-ms-high-contrast: active) and (max-width : 1260px) {
+
+    #head,
+    #news-cards,
+    #partners,
+    #logos {
+        justify-content: flex-start;
+    }
+
+}
+
+@media only screen and (-ms-high-contrast: none) and (max-width : 990px),
+only screen and (-ms-high-contrast: active) and (max-width : 990px) {
+
+    #head,
+    #news-cards,
+    #partners,
+    #logos {
+        justify-content: flex-start;
+    }
+
+}
+
+@media only screen and (-ms-high-contrast: none) and (max-width : 768px),
+only screen and (-ms-high-contrast: active) and (max-width : 768px) {}
+
+
+
+
 // IE fix // -------------------------------------------------------
+
+// min-width : 1260px  ---------------------------------------------
+
+@media only screen and (min-width : 1260px) {
+    // latest news -----------------------------------
+
+    #card1,
+    #card2,
+    #card3 {
+        width: 455px;
+    }
+
+    #card2 {
+        margin: 0 15px;
+        box-sizing: border-box;
+    }
+
+}
+
+// --------------------------------------------
+
+
+// --------------------------------------------
 
 // max-width : 1260px  ---------------------------------------------
 
 @media only screen and (max-width : 1260px) {
-    // Header
 
     header .head-inner .container {
         margin: 0 auto;
-        max-width: 46.875rem;
-
-        .support-btn,
-        .contact-btn {
-            display: none;
-        }
+        max-width: 58.75rem;
     }
-
-    // --------------------------------------------
-
-    // NavBar
 
     #main-nav {
-        display: none;
-    }
-
-    // --------------------------------------------
-
-    // Gallery
-
-    #holder,
-    #gallery {
-        height: 36.8125rem;
+        max-width: 78.75rem;
+        .container { 
+            max-width: 58.75rem;
+        }
+        .navbar-nav {
+            max-width: 58.75rem;
+            .nav-menu {
+                max-width: 58.75rem;
+                font-size: 12px;
+        
+            }
+        }
     }
 
     #photo1 .container,
@@ -311,38 +356,8 @@
     #photo4 .container,
     #photo5 .container,
     #photo6 .container {
-        max-width: 46.875rem;
+        max-width: 58.75rem;
     }
-
-    #photo1 {
-        background-size: cover;
-
-    }
-
-    #photo2 {
-        background-size: cover;
-
-    }
-
-    #photo3 {
-        background-size: cover;
-    }
-
-    #photo4 {
-        background-size: cover;
-    }
-
-    #photo5 {
-        background-size: cover;
-    }
-
-    #photo6 {
-        background-size: cover;
-    }
-
-    // --------------------------------------------
-
-    // Info card links
 
     .cards {
         justify-content: center;
@@ -353,23 +368,21 @@
         .Bespoke-software,
         .Digital-marketing,
         .Cyber-security {
-            width: 17.6875rem;
+            width: 393px;
             margin: 15px;
         }
     }
 
-    // --------------------------------------------
-
-    // Culture
-
     #culture {
-        background-image: none;
+        background-position: center;
+        background-position: right;
+        height: 28.9375rem;
 
         .container {
-            width: 46.875rem;
+            width: 58.75rem;
 
             .culture {
-                width: 46.875rem;
+                width: 58.75rem;
                 justify-content: center;
                 align-content: center;
                 margin: 0 auto;
@@ -377,17 +390,8 @@
         }
     }
 
-    // --------------------------------------------
-
-    // Latest News
-
     #bar ul {
-        width: 46.875rem;
-    }
-
-    #news-cards .container {
-        width: 46.875rem;
-        margin: 0 auto;
+        width: 58.75rem;
     }
 
     #card3 {
@@ -396,7 +400,7 @@
 
     #card1,
     #card2 {
-        width: 21.5625rem;
+        width: 455px;
     }
 
     #card1 {
@@ -407,71 +411,10 @@
         margin-left: 15px;
     }
 
-    #logos .container {
-        width: 46.875rem;
-    }
-
-    // --------------------------------------------
-
-    // Footer
-
-    footer {
-        height: 27.375rem;
-    }
-
-    #foot {
-        width: 46.875rem;
-        height: 27.375rem;
-        flex-wrap: wrap;
-
-        .contact {
-            width: 23.4375rem;
-            height: 12.3125rem;
-            padding: 0;
-        }
-
-        .about {
-            width: 23.4375rem;
-            height: 13.6875rem;
-            padding: 0;
-        }
-
-        .website {
-            width: 23.4375rem;
-            height: 6.8125rem;
-            padding: 0;
-        }
-
-        #social {
-            width: 23.4375rem;
-            height: 11.8125rem;
-            padding: 0;
-        }
-
-        .social-btns {
-            a {
-                width: 9.8125rem;
-                height: 3.4375rem;
-            }
-        }
-    }
-
-    // --------------------------------------------
-
-    // acreditations
-
-    #partners .container {
-        width: 46.875rem;
-        margin: 0 auto;
-
-        .accreditations {
-            width: 46.875rem;
-        }
-    }
-
-    // --------------------------------------------
-
 }
+
+// --------------------------------------------
+
 
 // max-width : 990px ----------------------------------------------
 
@@ -702,6 +645,7 @@
     #gallery {
         width: 100%;
         min-width: 520px;
+        height: 697px;
     }
 
     #photo1 .container,
@@ -748,7 +692,9 @@
     #culture {
         background-image: none;
         width: 100%;
+        height: auto;
         min-width: 520px;
+        box-sizing: border-box;
 
         .container {
             width: 100%;
@@ -796,13 +742,15 @@
     }
 
     #card3 {
-        display: none;
+        display: flex;
     }
 
     #card1,
-    #card2 {
+    #card2,
+    #card3 {
         width: 100%;
         min-width: 114px;
+        max-height: 649px;
         height: auto;
         margin: 0 15px;
 
@@ -812,15 +760,21 @@
             .img-container {
                 box-sizing: border-box;
             }
+
             display: table;
             height: fit-content;
             box-sizing: border-box;
+
+            .Author {
+                display: flex;
+            }
         }
 
 
     }
 
-    #card2 {
+    #card2,
+    #card3 {
         margin-top: 50px;
     }
 
