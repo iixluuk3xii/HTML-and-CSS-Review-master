@@ -139,6 +139,7 @@
     line-height: 1.5;
     text-transform: none;
     transition: visibility 0s, opacity 0s linear;
+    z-index: 10000;
 
     h2 {
         margin: 0;
