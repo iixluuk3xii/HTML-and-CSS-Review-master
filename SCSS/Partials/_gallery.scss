@@ -1,6 +1,8 @@
+// gallery --------------------------------
+
 .gallery {
     width: 100%;
-    height: 40.625rem;
+    height: 727px;
     overflow: hidden;
     clear: both;
     box-sizing: border-box;
@@ -8,7 +10,7 @@
 
 .photo-holder {
     width: 100%;
-    height: 40.625rem;
+    height: 727px;
 
     display: flex;
 
@@ -23,6 +25,8 @@
     }
 
 }
+
+// content ---------------------------------
 
 .gallery-image {
     width: 100%;
@@ -60,6 +64,8 @@
     }
 }
 
+// controls ----------------------------------------
+
 .gallery-controls {
     display: flex;
     align-items: center;
@@ -92,7 +98,7 @@
     border: 0.125rem solid $white;
 }
 
-// slides
+// slides ---------------------------------------------------------------------------------------------------------------------------
 
 #photo1 {
     background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/Wacom-scroll-photo.jpg);

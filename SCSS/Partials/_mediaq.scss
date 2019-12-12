@@ -281,96 +281,96 @@ only screen and (-ms-high-contrast: active) and (max-width : 1260px) {
         justify-content: flex-start;
     }
 
-         // clients ---------------------------
+    // clients ---------------------------
 
-         #logos .container {
+    #logos .container {
 
-            .busseys .busseys-logo {
-                width: 174.34px;
-                height: 64.91px;
-                left: 9.5%;
-    
-            }
-    
-            .crane .crane-logo {
-                width: 244.34px;
-                height: 59.59px;
-                left: 7.3%;
-            }
-    
-            .beat .beat-logo {
-                width: 65.57px;
-                height: 63.74px;
-                left: 26.3%;
-    
-            }
-    
-            .beat-logo-BW {
-                width: 65.57px;
-                height: 63.74px;
-            }
-    
-            .northern .northern-diver-logo {
-                width: 268.99px;
-                height: 58.47px;
-                left: 6.6%;
-    
-            }
-    
-            .busseys .decription {
-                .tooltip {
-                    top: -180px;
-                    left: -45px;
-                }
-            }
-    
-            .crane .decription {
-                .tooltip {
-                    top: -242px;
-                    left: -15px;
-                }
-            }
-    
-            .beat .decription {
-                .tooltip {
-                    top: -180px;
-                    left: -80px;
-                }
-            }
-    
-            .northern .decription {
-                .tooltip {
-                    top: -240px;
-                    left: 0px;
-                }
+        .busseys .busseys-logo {
+            width: 174.34px;
+            height: 64.91px;
+            left: 9.5%;
+
+        }
+
+        .crane .crane-logo {
+            width: 244.34px;
+            height: 59.59px;
+            left: 7.3%;
+        }
+
+        .beat .beat-logo {
+            width: 65.57px;
+            height: 63.74px;
+            left: 26.3%;
+
+        }
+
+        .beat-logo-BW {
+            width: 65.57px;
+            height: 63.74px;
+        }
+
+        .northern .northern-diver-logo {
+            width: 268.99px;
+            height: 58.47px;
+            left: 6.6%;
+
+        }
+
+        .busseys .decription {
+            .tooltip {
+                top: -180px;
+                left: -45px;
             }
         }
 
-        #partners .container {
-        
-            .accreditations {
-                
-                #f50 {
-                    .logo {
-                        left: 32.5%;
-                    }
+        .crane .decription {
+            .tooltip {
+                top: -242px;
+                left: -15px;
+            }
+        }
+
+        .beat .decription {
+            .tooltip {
+                top: -180px;
+                left: -80px;
+            }
+        }
+
+        .northern .decription {
+            .tooltip {
+                top: -240px;
+                left: 0px;
+            }
+        }
+    }
+
+    #partners .container {
+
+        .accreditations {
+
+            #f50 {
+                .logo {
+                    left: 32.5%;
                 }
-    
-                #qms {
-                    .logo {
-                        left: 27.8%;
-                    }
+            }
+
+            #qms {
+                .logo {
+                    left: 27.8%;
                 }
-    
-                #carbon {
-                    .logo {
-                        height: 70px;
-                        width: 175px;
-                        left: 12%;
-                    }
+            }
+
+            #carbon {
+                .logo {
+                    height: 70px;
+                    width: 175px;
+                    left: 12%;
                 }
             }
         }
+    }
 
 }
 
@@ -419,7 +419,7 @@ only screen and (-ms-high-contrast: active) and (max-width : 990px) {
     }
 
     #partners .container {
-        
+
         .accreditations {
             width: 46.875rem;
 
@@ -464,9 +464,6 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
     }
 }
 
-
-
-
 // IE fix // -------------------------------------------------------
 
 // min-width : 1260px  ---------------------------------------------
@@ -496,6 +493,8 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
 
 @media only screen and (max-width : 1260px) {
 
+    // header -------------------------------
+
     header .head-inner .container {
         margin: 0 auto;
         max-width: 58.75rem;
@@ -519,6 +518,16 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
         }
     }
 
+    // 
+
+    // gallery ----------------------------------------------------
+
+    #gallery,
+    .photo-holder {
+        height: 598px;
+    }
+
+
     #photo1 .container,
     #photo2 .container,
     #photo3 .container,
@@ -527,6 +536,10 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
     #photo6 .container {
         max-width: 58.75rem;
     }
+
+    // 
+
+    // info link cards -----------------------------------------
 
     .cards {
         justify-content: center;
@@ -541,6 +554,10 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
             margin: 15px;
         }
     }
+
+    // 
+
+    // culture section -------------------------------------------
 
     #culture {
         background-position: center;
@@ -558,6 +575,10 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
             }
         }
     }
+
+    // 
+
+    // latest news ---------------------------------------------
 
     #bar ul {
         width: 58.75rem;
@@ -593,9 +614,11 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
         }
     }
 
-     // clients ---------------------------
+    // --------------------------------------
 
-     #logos .container {
+    // clients ---------------------------
+
+    #logos .container {
 
         .busseys-logo {
             width: 175.5px;
@@ -724,6 +747,8 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
         }
     }
 
+    // partners ----------------------------------------
+
     #partners .container {
         width: 58.75rem;
         margin: 0 auto;
@@ -791,7 +816,7 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
 
     #holder,
     #gallery {
-        height: 36.8125rem;
+        height: 697px;
     }
 
     #photo1 .container,
@@ -852,6 +877,7 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
     #news-cards .container {
         width: 46.875rem;
         margin: 0 auto;
+
         .img-container {
             max-height: 200px;
         }
@@ -1043,10 +1069,6 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
 @media only screen and (max-width : 768px) {
 
     // Header
-
-    #chat {
-        display: none;
-    }
 
     header .head-inner .container {
         margin: 0 auto;
