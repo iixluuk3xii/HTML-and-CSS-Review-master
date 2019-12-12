@@ -34,6 +34,41 @@ header {
     color: $white;
 }
 
+.phone {
+    display: none;
+    position: relative;
+    width: 30px;
+    padding: 5px 15px;
+    transform: rotate(90deg);
+    .fa-wifi,
+    .fa-phone,
+    .hide-dot { 
+        color: $darkgrey;
+        position: absolute;
+        cursor: pointer;
+    }
+    .hide-dot {
+        content: "";
+        background-color: white;
+        border-radius: 50%;
+        height: 6px;
+        width: 6px;
+        z-index: 20;
+        bottom: 25.8px;
+        right: 30px;
+    }
+    .fa-wifi {
+        font-size: 15px;
+        transform: rotate(-45deg);
+        top: 14px;
+        left: 14px;
+    }
+    .fa-phone{
+        font-size: 27px;
+        top: 13px;
+    }
+}
+
 .contact-btn,
 .menu-btn {
     margin-left: 1.25rem;

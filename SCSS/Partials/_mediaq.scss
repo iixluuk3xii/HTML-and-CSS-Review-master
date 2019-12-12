@@ -281,6 +281,97 @@ only screen and (-ms-high-contrast: active) and (max-width : 1260px) {
         justify-content: flex-start;
     }
 
+         // clients ---------------------------
+
+         #logos .container {
+
+            .busseys .busseys-logo {
+                width: 174.34px;
+                height: 64.91px;
+                left: 9.5%;
+    
+            }
+    
+            .crane .crane-logo {
+                width: 244.34px;
+                height: 59.59px;
+                left: 7.3%;
+            }
+    
+            .beat .beat-logo {
+                width: 65.57px;
+                height: 63.74px;
+                left: 26.3%;
+    
+            }
+    
+            .beat-logo-BW {
+                width: 65.57px;
+                height: 63.74px;
+            }
+    
+            .northern .northern-diver-logo {
+                width: 268.99px;
+                height: 58.47px;
+                left: 6.6%;
+    
+            }
+    
+            .busseys .decription {
+                .tooltip {
+                    top: -180px;
+                    left: -45px;
+                }
+            }
+    
+            .crane .decription {
+                .tooltip {
+                    top: -242px;
+                    left: -15px;
+                }
+            }
+    
+            .beat .decription {
+                .tooltip {
+                    top: -180px;
+                    left: -80px;
+                }
+            }
+    
+            .northern .decription {
+                .tooltip {
+                    top: -240px;
+                    left: 0px;
+                }
+            }
+        }
+
+        #partners .container {
+        
+            .accreditations {
+                
+                #f50 {
+                    .logo {
+                        left: 32.5%;
+                    }
+                }
+    
+                #qms {
+                    .logo {
+                        left: 27.8%;
+                    }
+                }
+    
+                #carbon {
+                    .logo {
+                        height: 70px;
+                        width: 175px;
+                        left: 12%;
+                    }
+                }
+            }
+        }
+
 }
 
 @media only screen and (-ms-high-contrast: none) and (max-width : 990px),
@@ -293,14 +384,81 @@ only screen and (-ms-high-contrast: active) and (max-width : 990px) {
         justify-content: flex-start;
     }
 
+    #logos .container .Clients {
+
+        .busseys-logo {
+            left: 11.5%;
+            width: 131px;
+            height: 48.77px;
+        }
+
+        .crane-logo {
+            width: 186.84px;
+            height: 45.57px;
+            left: 9%;
+        }
+
+        .beat-logo {
+
+            left: 18.8%;
+
+        }
+
+        .northern-diver-logo {
+            width: 206.51px;
+            height: 44.89px;
+            left: 8.05%;
+
+        }
+
+        .decription {
+            .tooltip {
+                bottom: 48px;
+            }
+        }
+    }
+
+    #partners .container {
+        
+        .accreditations {
+            width: 46.875rem;
+
+            #f50 {
+                .logo {
+                    left: 27%;
+                }
+            }
+
+            #qms {
+                .logo {
+                    left: 22%;
+                }
+            }
+
+            #carbon {
+                .logo {
+                    height: 57.54px;
+                    width: 143.86px;
+                    left: 11%;
+                }
+            }
+        }
+
+        .google .description {
+            right: 11%;
+
+        }
+    }
+
 }
 
 @media only screen and (-ms-high-contrast: none) and (max-width : 768px),
 only screen and (-ms-high-contrast: active) and (max-width : 768px) {
+
     #card1,
     #card2,
     #card3 {
-        display: block!important;
+        display: block !important;
         max-height: 750px;
         min-height: 645px;
     }
@@ -345,15 +503,18 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
 
     #main-nav {
         max-width: 78.75rem;
-        .container { 
+
+        .container {
             max-width: 58.75rem;
         }
+
         .navbar-nav {
             max-width: 58.75rem;
+
             .nav-menu {
                 max-width: 58.75rem;
                 font-size: 12px;
-        
+
             }
         }
     }
@@ -419,14 +580,85 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
         margin-left: 15px;
     }
 
-    .news-cards {
+    #news-cards {
 
         .container {
-            
+
             width: 58.75rem;
-           
+
+            .img-container {
+                max-height: 263px;
+            }
+
         }
     }
+
+     // clients ---------------------------
+
+     #logos .container {
+
+        .busseys-logo {
+            width: 175.5px;
+            height: 65.344px;
+            left: 9.5%;
+
+        }
+
+        .crane-logo {
+            width: 241.500px;
+            height: 58.891px;
+            left: 7.3%;
+        }
+
+        .beat-logo {
+            width: 65.563px;
+            height: 63.734px;
+            left: 26.3%;
+
+        }
+
+        .beat-logo-BW {
+            width: 65.57px;
+            height: 63.74px;
+        }
+
+        .northern-diver-logo {
+            width: 264.828px;
+            height: 57.563px;
+            left: 6.6%;
+
+        }
+
+        .busseys .decription {
+            .tooltip {
+                top: -180px;
+                left: -45px;
+            }
+        }
+
+        .crane .decription {
+            .tooltip {
+                top: -242px;
+                left: -15px;
+            }
+        }
+
+        .beat .decription {
+            .tooltip {
+                top: -180px;
+                left: -80px;
+            }
+        }
+
+        .northern .decription {
+            .tooltip {
+                top: -240px;
+                left: 0px;
+            }
+        }
+    }
+
+    // --------------------------------------------
 
     // footer --------------------------
 
@@ -471,8 +703,8 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
             box-sizing: border-box;
 
             a {
-               width: 100%;
-                
+                width: 100%;
+
                 height: 3.4375rem;
             }
 
@@ -498,6 +730,29 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
 
         .accreditations {
             width: 58.75rem;
+
+            .f50 {
+                .logo {
+                    left: 33%;
+                }
+            }
+
+            .qms {
+                .logo {
+                    left: 28.5%;
+                }
+            }
+
+            .carbon {
+                .logo {
+                    left: 11.5%;
+                }
+            }
+        }
+
+        .google .description {
+            right: 11%;
+
         }
     }
 
@@ -597,6 +852,9 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
     #news-cards .container {
         width: 46.875rem;
         margin: 0 auto;
+        .img-container {
+            max-height: 200px;
+        }
     }
 
     #card3 {
@@ -616,8 +874,70 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
         margin-left: 15px;
     }
 
+    // clients ---------------------------
+
     #logos .container {
         width: 46.875rem;
+
+        .busseys-logo {
+            width: 132.75px;
+            height: 49.42px;
+            left: 12%;
+
+        }
+
+        .crane-logo {
+            width: 182.67px;
+            height: 44.45px;
+            left: 9%;
+        }
+
+        .beat-logo {
+            width: 65.57px;
+            height: 63.74px;
+            left: 21.8%;
+
+        }
+
+        .beat-logo-BW {
+            width: 65.57px;
+            height: 63.74px;
+        }
+
+        .northern-diver-logo {
+            width: 200.33px;
+            height: 43.55px;
+            left: 8.05%;
+
+        }
+
+        .busseys .decription {
+            .tooltip {
+                top: -180px;
+                left: -64px;
+            }
+        }
+
+        .crane .decription {
+            .tooltip {
+                top: -242px;
+                left: -50px;
+            }
+        }
+
+        .beat .decription {
+            .tooltip {
+                top: -180px;
+                left: -88px;
+            }
+        }
+
+        .northern .decription {
+            .tooltip {
+                top: -240px;
+                left: -32px;
+            }
+        }
     }
 
     // --------------------------------------------
@@ -626,6 +946,15 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
 
     footer {
         height: 27.375rem;
+
+    }
+
+    #feet {
+        padding-left: 15px;
+    }
+
+    #foot .social-btns #padding2 {
+        padding-left: 0;
     }
 
     #foot {
@@ -675,6 +1004,31 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
 
         .accreditations {
             width: 46.875rem;
+
+            .f50 {
+                .logo {
+                    left: 29%;
+                }
+            }
+
+            .qms {
+                .logo {
+                    left: 24%;
+                }
+            }
+
+            .carbon {
+                .logo {
+                    height: 56px;
+                    width: 140.03px;
+                    left: 11%;
+                }
+            }
+        }
+
+        .google .description {
+            right: 11%;
+
         }
     }
 
@@ -717,6 +1071,11 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
         .contact-btn {
             display: none;
         }
+
+        .phone {
+            display: inline-block;
+        }
+
     }
 
     // --------------------------------------------
@@ -821,13 +1180,22 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
     #news-cards {
         width: 100%;
         min-width: 520px;
+        box-sizing: border-box;
 
         .container {
             width: 100%;
+            max-width: 575px;
             min-width: 490px;
             padding: 50px 15px;
             flex-direction: column;
             align-items: center;
+            align-content: center;
+            box-sizing: border-box;
+
+            .img-container,
+            .fog {
+                max-height: 315px;
+            }
         }
     }
 
@@ -838,6 +1206,7 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
     #card1,
     #card2,
     #card3 {
+        max-width: 545px;
         width: 100%;
         min-width: 114px;
         height: auto;
