@@ -4,6 +4,9 @@ const cookieButtonYes = document.createElement('A');
 const cookieButtonNo = document.createElement('A');
 const head = document.querySelector('.header');
 
+// Adding Content to the Cookie and styling the elements for the web page -----------------------------------------------------------------------------
+
+// Styles for the cookie banner and giving it the class of cookie in case i need to target it later in css
 cookie.classList.add('cookie');
 cookie.style.position = "fixed";
 cookie.style.bottom = "0";
@@ -16,9 +19,11 @@ cookie.style.alignItems = "center";
 cookie.style.justifyContent = "center";
 cookie.style.color = "white";
 
+// Added strong text using innerhtml and the rest of the text to appear in the cookie
 cookieText.innerHTML = `<strong>We use cookies on this site to enhance your user experience</strong><br>
                          By clicking any link on this page you are giving consent for us to set cookies.`;
 
+// CookieButtonYes
 cookieButtonYes.innerText = "Yes, I agree";
 cookieButtonYes.classList.add("btn");
 cookieButtonYes.style.marginLeft = "20px";
@@ -29,6 +34,7 @@ cookieButtonYes.style.display = "flex";
 cookieButtonYes.style.alignItems = "center";
 cookieButtonYes.style.cursor = "pointer";
 
+// cookieButtonNo
 cookieButtonNo.innerText = "No, I want to find out more";
 cookieButtonNo.classList.add("btn");
 cookieButtonNo.style.marginLeft = "20px";
@@ -39,10 +45,12 @@ cookieButtonNo.style.display = "flex";
 cookieButtonNo.style.alignItems = "center";
 cookieButtonNo.style.cursor = "pointer";
 
+// Adding the generated elements together
 cookie.appendChild(cookieText);
 cookie.appendChild(cookieButtonYes);
 cookie.appendChild(cookieButtonNo);
 
+// Adding the cookie to the HTML
 head.append(cookie);
 
 
