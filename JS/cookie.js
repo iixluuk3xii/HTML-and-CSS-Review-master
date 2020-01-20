@@ -3,7 +3,6 @@ const cookieText = document.createElement('DIV');
 const cookieButtonYes = document.createElement('A');
 const cookieButtonNo = document.createElement('A');
 const header = document.querySelector('.header');
-const links = document.querySelector('a');
 
 // Adding Content to the Cookie and styling the elements for the web page -----------------------------------------------------------------------------
 
@@ -95,8 +94,24 @@ const reverseNo = () => {
 }
 
 
+// functions that can be used to target elements and make them hidden or visible with an event handler
+const visible = () => {
+    cookie.style.opacity = '1';
+    cookie.style.visibilty = 'visible';
+    cookie.style.transition = 'opacity 2s  linear';
+}
+
+const hidden = () => {
+    cookie.style.opacity = '0';
+    cookie.style.visibility = 'hidden';
+    cookie.style.transition = 'visibility 0s 1s, opacity 1s linear';
+}
+
+
+
+
 // event listeners
-cookieButtonYes.addEventListener('click', removeCookie);
+cookieButtonYes.addEventListener('click', hidden);
 cookieButtonNo.addEventListener('click', openCookies);
 
 cookieButtonYes.addEventListener('mouseover', hoverYes);
