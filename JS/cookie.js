@@ -2,7 +2,7 @@ const cookie = document.createElement('DIV');
 const cookieText = document.createElement('DIV');
 const cookieButtonYes = document.createElement('A');
 const cookieButtonNo = document.createElement('A');
-const head = document.querySelector('.header');
+const header = document.querySelector('.header');
 
 // Adding Content to the Cookie and styling the elements for the web page -----------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ cookieText.innerHTML = `<strong>We use cookies on this site to enhance your user
 
 // CookieButtonYes
 cookieButtonYes.innerText = "Yes, I agree";
-cookieButtonYes.classList.add("btn");
+cookieButtonYes.classList.add("btn", "cookieYes");
 cookieButtonYes.style.marginLeft = "20px";
 cookieButtonYes.style.height = "50px";
 cookieButtonYes.style.color = "black";
@@ -45,13 +45,22 @@ cookieButtonNo.style.display = "flex";
 cookieButtonNo.style.alignItems = "center";
 cookieButtonNo.style.cursor = "pointer";
 
-// Adding the generated elements together
-cookie.appendChild(cookieText);
-cookie.appendChild(cookieButtonYes);
-cookie.appendChild(cookieButtonNo);
-
 // Adding the cookie to the HTML
-head.append(cookie);
+const addCookieToPage = () => {
+    cookie.appendChild(cookieText);
+    cookie.appendChild(cookieButtonYes);
+    cookie.appendChild(cookieButtonNo);
+    header.append(cookie);
+}
 
+// removing the cookie from the HTML
+const removeCookie = () => {
+    const cookie = document.querySelector('.cookie');
+    header.removeChild(cookie);
+}
+
+addCookieToPage();
+
+cookieButtonYes.addEventListener('click', removeCookie);
 
 
