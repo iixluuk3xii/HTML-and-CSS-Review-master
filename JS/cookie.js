@@ -3,6 +3,7 @@ const cookieText = document.createElement('DIV');
 const cookieButtonYes = document.createElement('A');
 const cookieButtonNo = document.createElement('A');
 const header = document.querySelector('.header');
+const links = document.querySelector('a');
 
 // Adding Content to the Cookie and styling the elements for the web page -----------------------------------------------------------------------------
 
@@ -36,7 +37,7 @@ cookieButtonYes.style.cursor = "pointer";
 
 // cookieButtonNo
 cookieButtonNo.innerText = "No, I want to find out more";
-cookieButtonNo.classList.add("btn");
+cookieButtonNo.classList.add('btn', 'cookieNo');
 cookieButtonNo.style.marginLeft = "20px";
 cookieButtonNo.style.height = "50px";
 cookieButtonNo.style.color = "black";
@@ -53,14 +54,54 @@ const addCookieToPage = () => {
     header.append(cookie);
 }
 
+// Checks to see if the user has accepted the cookies or not
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (localStorage.getItem('cookieConsent') != 'accepted') {
+
+        addCookieToPage();
+        localStorage.setItem('cookieConsent', 'waiting');
+
+    }
+});
+
 // removing the cookie from the HTML
 const removeCookie = () => {
     const cookie = document.querySelector('.cookie');
     header.removeChild(cookie);
+    localStorage.setItem('cookieConsent', 'accepted');
 }
 
-addCookieToPage();
+// Makes the find out more button open a new window to the google documentation page for cookies
+const openCookies = () => window.open('https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage');
 
+// Hover states for the buttons on the cookie
+const hoverYes = () => {
+    cookieButtonYes.style.backgroundColor = '#848584';
+    cookieButtonYes.style.color = '#fff';
+}
+const reverseYes = () => {
+    cookieButtonYes.style.backgroundColor = '#fff';
+    cookieButtonYes.style.color = '#000';
+}
+
+const hoverNo = () => {
+    cookieButtonNo.style.backgroundColor = '#848584';
+    cookieButtonNo.style.color = '#fff';
+}
+const reverseNo = () => {
+    cookieButtonNo.style.backgroundColor = '#fff';
+    cookieButtonNo.style.color = '#000';
+}
+
+
+// event listeners
 cookieButtonYes.addEventListener('click', removeCookie);
+cookieButtonNo.addEventListener('click', openCookies);
 
+cookieButtonYes.addEventListener('mouseover', hoverYes);
+cookieButtonYes.addEventListener('mouseleave', reverseYes);
+
+cookieButtonNo.addEventListener('mouseover', hoverNo);
+cookieButtonNo.addEventListener('mouseleave', reverseNo);
 
