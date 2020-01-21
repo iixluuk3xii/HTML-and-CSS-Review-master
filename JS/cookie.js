@@ -45,6 +45,10 @@ cookieButtonNo.style.display = "flex";
 cookieButtonNo.style.alignItems = "center";
 cookieButtonNo.style.cursor = "pointer";
 
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Function definitions -----------------------------------------------------------------------------
+
 // Adding the cookie to the HTML
 const addCookieToPage = () => {
     cookie.appendChild(cookieText);
@@ -52,17 +56,6 @@ const addCookieToPage = () => {
     cookie.appendChild(cookieButtonNo);
     header.append(cookie);
 }
-
-// Checks to see if the user has accepted the cookies or not
-document.addEventListener("DOMContentLoaded", () => {
-
-    if (localStorage.getItem('cookieConsent') != 'accepted') {
-
-        addCookieToPage();
-        localStorage.setItem('cookieConsent', 'waiting');
-
-    }
-});
 
 // removing the cookie from the HTML
 const removeCookie = () => {
@@ -93,30 +86,41 @@ const reverseNo = () => {
     cookieButtonNo.style.color = '#000';
 }
 
-
-// functions that can be used to target elements and make them hidden or visible with an event handler
-const visible = () => {
-    cookie.style.opacity = '1';
-    cookie.style.visibilty = 'visible';
-    cookie.style.transition = 'opacity 2s  linear';
+// function that can be used to target elements and make them hidden
+const hide = (x ,element) => {
+    element.style.opacity = '0';
+    element.style.visibility = 'hidden';
+    element.style.transition = 'visibility 0s 1s, opacity 1s linear';
+    setTimeout(() => {
+        return x();
+    },1000)
 }
 
-const hidden = () => {
-    cookie.style.opacity = '0';
-    cookie.style.visibility = 'hidden';
-    cookie.style.transition = 'visibility 0s 1s, opacity 1s linear';
-}
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+// event listeners -----------------------------------------------------------------------------
 
+// Checks to see if the user has accepted the cookies or not
+document.addEventListener("DOMContentLoaded", () => {
 
+    if (localStorage.getItem('cookieConsent') != 'accepted') {
 
-// event listeners
-cookieButtonYes.addEventListener('click', hidden);
+        addCookieToPage();
+        localStorage.setItem('cookieConsent', 'waiting');
+
+    }
+});
+
+//adds event listeners to the cookies buttons
+cookieButtonYes.addEventListener('click', () => hide(removeCookie, cookie));
 cookieButtonNo.addEventListener('click', openCookies);
 
+// hover styles for buttons on cookie, I tried to add them with css and give the buttons classes, but they would work
 cookieButtonYes.addEventListener('mouseover', hoverYes);
 cookieButtonYes.addEventListener('mouseleave', reverseYes);
 
 cookieButtonNo.addEventListener('mouseover', hoverNo);
 cookieButtonNo.addEventListener('mouseleave', reverseNo);
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
 
