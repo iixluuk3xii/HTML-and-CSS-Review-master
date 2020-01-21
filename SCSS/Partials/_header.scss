@@ -1,18 +1,21 @@
-header {
+.header {
     background-color: $white;
     display: block;
+    width: 100%;
+    position: relative;
 }
 
 .head-inner {
     padding: 1.25rem 0;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .head-inner .container {
     margin: 0 9.78125rem;
     padding: 0;
-    max-width: 73.125rem;;
+    max-width: 100%;;
     display: flex;
     justify-content: space-between;
 }

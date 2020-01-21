@@ -64,3 +64,24 @@ small {
     clear: both;
     display: table;
 }
+
+// fix header to browser and hide out of view
+
+.fix {
+    position: fixed;
+    z-index: 500;
+}
+
+.overflow {
+    overflow: visible;
+    // background-color: red;
+    width: 100%;
+}
+
+.margin {
+    margin-top: 211.59px;
+}
+
+.top {
+    transform: translateY(-211.59px);
+}

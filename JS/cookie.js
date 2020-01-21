@@ -2,7 +2,7 @@ const cookie = document.createElement('DIV');
 const cookieText = document.createElement('DIV');
 const cookieButtonYes = document.createElement('A');
 const cookieButtonNo = document.createElement('A');
-const header = document.querySelector('.header');
+const footer = document.querySelector('.feet');
 
 // Adding Content to the Cookie and styling the elements for the web page -----------------------------------------------------------------------------
 
@@ -54,13 +54,13 @@ const addCookieToPage = () => {
     cookie.appendChild(cookieText);
     cookie.appendChild(cookieButtonYes);
     cookie.appendChild(cookieButtonNo);
-    header.append(cookie);
+    feet.append(cookie);
 }
 
 // removing the cookie from the HTML
 const removeCookie = () => {
     const cookie = document.querySelector('.cookie');
-    header.removeChild(cookie);
+    feet.removeChild(cookie);
     localStorage.setItem('cookieConsent', 'accepted');
 }
 
