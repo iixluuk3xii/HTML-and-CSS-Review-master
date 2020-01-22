@@ -1,53 +1,41 @@
 const overflow = document.querySelector('.overflow');
 const gallery = document.querySelector('.gallery');
-const header = document.querySelector('.header');
+const header = document.querySelector('#header');
 let position = document.documentElement.scrollTop;
 
-const fixToWindow = (element) => {
-    if (window.scrollY > 260) {
-        element.classList.add("fix");
-        element.style.height = "256.56px";
-    } else {
-        element.classList.remove("fix");
-        element.style.height = "";
-      
-
-    }
-}
-
-const toggleTopMargin = (element) => {
-    if (window.scrollY > 260) {
-        element.classList.add("margin");
-    } else {
-        element.classList.remove("margin");
-    }
-}
+// on Scroll reveal the sticky browser when past the original header 
 
 document.addEventListener('scroll', () => {
 
     var scroll = document.documentElement.scrollTop;
 
-    fixToWindow(overflow);
-    toggleTopMargin(gallery);
-
-    if (scroll > position && window.scrollY > 256) {
-        console.log('down');
+// if scrolling down move the header into the hidden part of the overflow div
+    if (scroll > position) {
+        overflow.style.height = "256.56px";
         setTimeout(() => {
             header.style.transform = "translateY(-211.59px)";
             header.style.transition = "transform 0.25s";
         }, 200);
-    } else {
-        console.log('up');
+        if (position >= 310) {
+            setTimeout(() => {
+                overflow.style.visibility = "visible";
+        }, 500);
+    }
+    } 
+// if scrolling up slide the header into frame 
+    else if (scroll < position) {
         setTimeout(() => {
             header.style.transform = "translateY(0px)";
             header.style.transition = "transform 0.25s";
         }, 200);
-        
+        if (position <= 5) {
+            overflow.style.visibility = "hidden";
+        }
     }
-
-
 
     position = scroll;
 
 });
+
+
 

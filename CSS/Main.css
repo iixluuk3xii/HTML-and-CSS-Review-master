@@ -2571,16 +2571,16 @@ small {
   display: table;
 }
 
-.fix {
+.overflow {
+  visibility: hidden;
+  overflow: hidden;
+  width: 100%;
   position: fixed;
   z-index: 500;
+  top: 0;
 }
 
-.overflow {
-  overflow: visible;
-  width: 100%;
-}
-
-.margin {
-  margin-top: 211.59px;
+#header {
+  background-color: white;
+  transform: translateY(translateY(-211.59px));
 }
