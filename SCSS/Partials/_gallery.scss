@@ -14,13 +14,9 @@
 
     display: flex;
 
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-
-    scroll-behavior: smooth;
+    transform-style: preserve-3d;
 
     div {
-        scroll-snap-align: start;
         flex-shrink: 0;
     }
 
@@ -33,7 +29,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    transform: translateX(0);
+    transition: transform .4s;
     color: $white;
     h1 {
         text-transform: uppercase;
@@ -81,22 +78,38 @@
     justify-content: space-between;
 }
 
-.gallery-controls a {
+.gallery-controls span {
     display: inline-flex;
     width: 0.6875rem;
     height: 0.6875rem;
     background-color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     border-radius: 50%;
+    cursor: pointer;
+    position: relative;
 }
 
 .gallery-dot:hover {
-    background-color: $fadedblack;
+    background-color: $grey;
 }
 
-.gallery-dot:focus {
-    border: 0.125rem solid $white;
+div .focus-dot {
+    background: $white;
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 100%;
+        height: 17px;
+        width: 17px;
+        border: 2px $white solid;
+        left: -5px;
+        top: -5px;
+    }
+    &:hover {
+        background-color: $white;
+    }
 }
+
 
 // slides ---------------------------------------------------------------------------------------------------------------------------
 

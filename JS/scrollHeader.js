@@ -9,7 +9,7 @@ document.addEventListener('scroll', () => {
 
     var scroll = document.documentElement.scrollTop;
 
-// if scrolling down move the header into the hidden part of the overflow div
+    // if scrolling down move the header into the hidden part of the overflow div
     if (scroll > position) {
         overflow.style.height = "256.56px";
         setTimeout(() => {
@@ -19,10 +19,10 @@ document.addEventListener('scroll', () => {
         if (position >= 310) {
             setTimeout(() => {
                 overflow.style.visibility = "visible";
-        }, 500);
+            }, 500);
+        }
     }
-    } 
-// if scrolling up slide the header into frame 
+    // if scrolling up slide the header into frame 
     else if (scroll < position) {
         setTimeout(() => {
             header.style.transform = "translateY(0px)";
@@ -36,6 +36,4 @@ document.addEventListener('scroll', () => {
     position = scroll;
 
 });
-
-
 
