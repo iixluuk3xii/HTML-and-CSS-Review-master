@@ -3,6 +3,7 @@ const cookieText = document.createElement('DIV');
 const cookieButtonYes = document.createElement('A');
 const cookieButtonNo = document.createElement('A');
 const footer = document.querySelector('.feet');
+const body = document.querySelector('body');
 
 // Adding Content to the Cookie and styling the elements for the web page -----------------------------------------------------------------------------
 
@@ -54,13 +55,13 @@ const addCookieToPage = () => {
     cookie.appendChild(cookieText);
     cookie.appendChild(cookieButtonYes);
     cookie.appendChild(cookieButtonNo);
-    feet.append(cookie);
+    body.append(cookie);
 }
 
 // removing the cookie from the HTML
 const removeCookie = () => {
     const cookie = document.querySelector('.cookie');
-    feet.removeChild(cookie);
+    body.removeChild(cookie);
     localStorage.setItem('cookieConsent', 'accepted');
 }
 
@@ -112,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //adds event listeners to the cookies buttons
+document.addEventListener('click', () => hide(removeCookie, cookie));
 cookieButtonYes.addEventListener('click', () => hide(removeCookie, cookie));
 cookieButtonNo.addEventListener('click', openCookies);
 

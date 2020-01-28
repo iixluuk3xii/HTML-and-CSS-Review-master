@@ -1,35 +1,57 @@
 const overflow = document.querySelector('.overflow');
 const gallery = document.querySelector('.gallery');
 const header = document.querySelector('#header');
-let position = document.documentElement.scrollTop;
+const viewPort = document.querySelector('#viewport');
+let position = viewPort.scrollTop;
 
-// on Scroll reveal the sticky browser when past the original header 
 
-document.addEventListener('scroll', () => {
+function slideElementDown(element) {
+    setTimeout(() => {
+        element.style.transform = "translateY(0)";
+        element.style.transition = "transform 0.25s";
+    }, 200);
+}
 
-    var scroll = document.documentElement.scrollTop;
+function slideElementUp(element) {
+    setTimeout(() => {
+        element.style.transform = "translateY(-211.59px)";
+        element.style.transition = "transform 0.25s";
+    }, 200);
+}
+
+function makeElementSticky(element) {
+        element.style.position = 'sticky';
+        element.style.top = '0';
+}
+
+function removeElementSticky(element) {
+    element.style.position = 'static';
+}
+
+function hideElement(element) {
+    element.style.display = 'hidden';
+}
+
+function hideElement(element) {
+    element.style.display = 'block';
+}
+
+viewPort.addEventListener('scroll', () => {
+
+    let scroll = viewPort.scrollTop;
 
     // if scrolling down move the header into the hidden part of the overflow div
     if (scroll > position) {
-        overflow.style.height = "256.56px";
-        setTimeout(() => {
-            header.style.transform = "translateY(-211.59px)";
-            header.style.transition = "transform 0.25s";
-        }, 200);
-        if (position >= 310) {
-            setTimeout(() => {
-                overflow.style.visibility = "visible";
-            }, 500);
+        if (scroll > 300) {
+            slideElementUp(header)
+            makeElementSticky(overflow)
         }
     }
     // if scrolling up slide the header into frame 
     else if (scroll < position) {
-        setTimeout(() => {
-            header.style.transform = "translateY(0px)";
-            header.style.transition = "transform 0.25s";
-        }, 200);
-        if (position <= 5) {
-            overflow.style.visibility = "hidden";
+        slideElementDown(header)
+        if (scroll === 0) {
+            removeElementSticky(overflow)
         }
     }
 
