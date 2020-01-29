@@ -3,7 +3,7 @@
 // font-family: 'Poppins', sans-serif;  ---
 // Fontfamilys ----------------------------
 
-@import 'Partials/Attributes', 'Partials/partners', 'Partials/mediaq', 'Partials/clients', 'Partials/latestnews', 'partials/StickeyHeaderOnScroll', 'Partials/header', 'Partials/infocards', 'Partials/footer', 'Partials/culturesection', 'Partials/navbar', 'Partials/gallery', 'Partials/livechat';
+@import 'Partials/Attributes', 'Partials/partners', 'Partials/mediaq', 'Partials/clients', 'Partials/latestnews', 'partials/StickeyHeaderOnScroll', 'Partials/header', 'Partials/infocards', 'Partials/footer', 'Partials/culturesection', 'Partials/navbar', 'Partials/gallery', 'Partials/livechat', 'Partials/Mobilemenu';
 
 * {
     // border: 1px solid;
@@ -26,7 +26,10 @@ body {
     overflow-x: hidden;
     height: 100vh;
     width: 100vw;
-    transform: translateX(-350px);
+    position: absolute;
+    z-index: 1;
+    transform: translateX(0);
+    transition: transform .5s;
 }
 
 body {

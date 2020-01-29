@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //adds event listeners to the cookies buttons
-document.addEventListener('click', () => hide(removeCookie, cookie));
+// document.addEventListener('click', () => hide(removeCookie, cookie));
 cookieButtonYes.addEventListener('click', () => hide(removeCookie, cookie));
 cookieButtonNo.addEventListener('click', openCookies);
 

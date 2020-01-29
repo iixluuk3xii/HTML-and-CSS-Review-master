@@ -4,6 +4,7 @@
     text-transform: uppercase;
     color: $darkgrey;
     font-size: 1.25rem;
+    background-color: $white;
     ul {
         height: 6.5rem;
         width: 73.125rem;;
@@ -44,8 +45,9 @@
 }
 
 .news-cards {
-    box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
     display: block;
+    background-color: $white;
+    box-shadow: inset 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
 
     .container {
         margin: 0 auto;
@@ -53,6 +55,7 @@
         width: 73.125rem;;
         display: flex;
         justify-content: center;
+        
     }
 }
 
