@@ -7,21 +7,24 @@ let position = viewPort.scrollTop;
 
 function slideElementDown(element) {
     setTimeout(() => {
-        element.style.transform = "translateY(0)";
+        element.style.transform = "";
         element.style.transition = "transform 0.25s";
     }, 200);
 }
 
-function slideElementUp(element) {
+function slideElementUp(element, callback) {
     setTimeout(() => {
         element.style.transform = "translateY(-211.59px)";
         element.style.transition = "transform 0.25s";
     }, 200);
+    callback();
 }
 
 function makeElementSticky(element) {
+    setTimeout(() => {
         element.style.position = 'sticky';
         element.style.top = '0';
+    }, 450);
 }
 
 function removeElementSticky(element) {
@@ -43,8 +46,7 @@ viewPort.addEventListener('scroll', () => {
     // if scrolling down move the header into the hidden part of the overflow div
     if (scroll > position) {
         if (scroll > 300) {
-            slideElementUp(header)
-            makeElementSticky(overflow)
+            slideElementUp(header, () => makeElementSticky(overflow))
         }
     }
     // if scrolling up slide the header into frame 

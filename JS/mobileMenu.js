@@ -71,80 +71,118 @@ trainingLi.classList.add('training');
 trainingLi.appendChild(trainingUl);
 trainingUl.appendChild(wdLi);
 wdLi.appendChild(wdLiA);
-wdLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> WEB DEVELOPER COURSE';
+wdLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>WEB DEVELOPER COURSE';
+wdLiA.href = '#';
 trainingLi.insertBefore(trainingA, trainingLi.childNodes[0]);
 trainingA.innerHTML = 'TRAINING';
+trainingA.href = '#';
 
 // adds the content into the company section of the menu
 companyLi.classList.add('company');
 companyLi.appendChild(companyUl);
 companyUl.appendChild(ocLi);
 ocLi.appendChild(ocLiA);
-ocLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> OUR CULTURE';
+ocLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>OUR CULTURE';
+ocLiA.href = '#';
 companyUl.appendChild(ootLi);
 ootLi.appendChild(ootLiA);
-ootLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> OUR OFFICE TOUR';
+ootLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>OUR OFFICE TOUR';
+ootLiA.href = '#';
 companyUl.appendChild(otLi);
 otLi.appendChild(otLiA);
-otLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> OUR TEAM';
+otLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>OUR TEAM';
+otLiA.href = '#';
 companyUl.appendChild(ocaLi);
 ocaLi.appendChild(ocaLiA);
-ocaLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> OUR CAREERS';
+ocaLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>OUR CAREERS';
+ocaLiA.href = '#';
 companyUl.appendChild(obLi);
 obLi.appendChild(obLiA);
-obLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> OUR BENEFITS';
+obLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>OUR BENEFITS';
+obLiA.href = '#';
 companyUl.appendChild(ogyoLi);
 ogyoLi.appendChild(ogyoLiA);
-ogyoLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> &nbsp OUR GREAT YARMOUTH OFFICE';
+ogyoLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>OUR GREAT YARMOUTH OFFICE';
+ogyoLiA.href = '#';
 companyLi.insertBefore(companyA, companyLi.childNodes[0]);
 companyA.innerHTML = 'OUR COMPANY';
+companyA.href = '#';
 
 // adds the content into the work section of the menu
 workLi.classList.add('work');
 workLi.appendChild(workUl);
 workUl.appendChild(csLi);
 csLi.appendChild(csLiA);
-csLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> CASE STUDIES';
+csLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>CASE STUDIES';
+csLiA.href = '#';
 workUl.appendChild(pLi);
 pLi.appendChild(pLiA);
-pLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> PORTFOLIO';
+pLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>PORTFOLIO';
+pLiA.href = '#';
 workLi.insertBefore(workA, workLi.childNodes[0]);
 workA.innerHTML = 'OUR WORK';
+workA.href = '#';
 
 // adds the content into the knowledge section of the menu
 knowledgeLi.classList.add('knowledge');
 knowledgeLi.appendChild(knowledgeUl);
 knowledgeUl.appendChild(gLi);
 gLi.appendChild(gLiA);
-gLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> GUIDES';
+gLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>GUIDES';
+gLiA.href = '#';
 knowledgeUl.appendChild(nLi);
 nLi.appendChild(nLiA);
-nLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> NEWS';
+nLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>NEWS';
+nLiA.href = '#';
 knowledgeUl.appendChild(iLi);
 iLi.appendChild(iLiA);
-iLiA.innerHTML = '<i class="fas fa-angle-double-right"></i> INSIGHTS';
+iLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>INSIGHTS';
+iLiA.href = '#';
 knowledgeLi.insertBefore(knowledgeA, knowledgeLi.childNodes[0]);
 knowledgeA.innerHTML = 'OUR KNOWLEDGE';
+knowledgeA.href = '#';
+
+function setZindexBefore(element, value, callabck) {
+    element.style.zIndex = value;
+    callabck()
+}
+
+function setZindexAfter(element, value) {
+    setTimeout(() => {
+        element.style.zIndex = value;
+    }, 500);
+}
+
+function setOpacity(element, value, callback) {
+    element.style.opacity = value;
+    callback()
+}
+
+function TranslateX350px(element1, element2) {
+    element1.style.transform = 'translateX(-350px)';
+    element2.style.transform = 'translateX(-350px)';
+}
+
+function TranslateX0px(element1, element2) {
+    element1.style.transform = '';
+    element2.style.transform = '';
+}
 
 // the clcik event that triggers the menu to open and fades in the overlay
 menuBtn.addEventListener('click', () => {
 
-    viewPort.style.transform = 'translateX(-350px)';
-    overlay.style.transform = 'translateX(-350px)';
-    overlay.style.zIndex = '1000';
-    overlay.style.opacity = '1';
+    TranslateX350px(viewPort, overlay)
+    setZindexBefore(overlay, '1000', () => setOpacity(overlay, '1'));
 
 });
 
 // the click event that closes the menu and fades out the overlay
 overlay.addEventListener('click', () => {
 
-    viewPort.style.transform = 'translateX(0)';
-    overlay.style.transform = 'translateX(0)';
-    overlay.style.opacity = '0';
+    TranslateX0px(viewPort, overlay)
+    setOpacity(overlay, '0', () => setZindexAfter(overlay, '-1')); 
 
-    setTimeout(() => {
-        overlay.style.zIndex = '-1';
-    }, 500);
-    
 })
+
+// ADD HREFS TO YOUR A TAGS
+
