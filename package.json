@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "proejcts-for-scion-scheme",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon --exec babel-node JS/cookie.js",
-    "build": "babel JS --out-dir ES5"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iixluuk3xii/HTML-and-CSS-Review-master.git"
@@ -31,6 +28,7 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.3"
+    "@babel/polyfill": "^7.8.3",
+    "core-js": "^2.6.11"
   }
 }

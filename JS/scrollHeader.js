@@ -1,4 +1,4 @@
-require("@babel/core").transform("code", options);
+// require("@babel/core").transform("code", options);
 
 const overflow = document.querySelector('.overflow');
 const gallery = document.querySelector('.gallery');

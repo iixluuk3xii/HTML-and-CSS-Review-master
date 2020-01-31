@@ -1,4 +1,4 @@
-require("@babel/core").transform("code", options);
+// require("@babel/core").transform("code", options);
 
 // HTML Elements
 const menuBtn = document.querySelector('.menu-btn');
@@ -144,9 +144,9 @@ knowledgeLi.insertBefore(knowledgeA, knowledgeLi.childNodes[0]);
 knowledgeA.innerHTML = 'OUR KNOWLEDGE';
 knowledgeA.href = '#';
 
-function setZindexBefore(element, value, callabck) {
+function setZindexBefore(element, value, callback) {
     element.style.zIndex = value;
-    callabck()
+    callback()
 }
 
 function setZindexAfter(element, value) {
