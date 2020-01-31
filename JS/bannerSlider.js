@@ -1,3 +1,5 @@
+require("@babel/core").transform("code", options);
+
 const photos = gallery.querySelectorAll('.gallery-image');
 const length = photos.length;
 let currentFrame = 1;
