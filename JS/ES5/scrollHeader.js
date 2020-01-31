@@ -1,6 +1,9 @@
 "use strict";
 
-// require("@babel/core").transform("code", options);
+require("core-js/stable");
+
+require("regenerator-runtime/runtime");
+
 var overflow = document.querySelector('.overflow');
 var gallery = document.querySelector('.gallery');
 var header = document.querySelector('#header');

@@ -1,4 +1,5 @@
-
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 const cookie = document.createElement('DIV');
 const cookieText = document.createElement('DIV');

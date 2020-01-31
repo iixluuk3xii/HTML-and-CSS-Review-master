@@ -1,6 +1,9 @@
 "use strict";
 
-// require("@babel/core").transform("code", options);
+require("core-js/stable");
+
+require("regenerator-runtime/runtime");
+
 // HTML Elements
 var menuBtn = document.querySelector('.menu-btn');
 var overlay = document.querySelector('#overlay'); // creates the container for the mobile Menu

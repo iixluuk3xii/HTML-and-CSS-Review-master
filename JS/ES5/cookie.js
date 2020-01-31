@@ -1,6 +1,9 @@
 "use strict";
 
-// require("@babel/core").transform("code", options);
+require("core-js/stable");
+
+require("regenerator-runtime/runtime");
+
 var cookie = document.createElement('DIV');
 var cookieText = document.createElement('DIV');
 var cookieButtonYes = document.createElement('A');

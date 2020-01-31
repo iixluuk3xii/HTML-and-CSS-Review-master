@@ -1,4 +1,5 @@
-
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 // HTML Elements
 const menuBtn = document.querySelector('.menu-btn');
