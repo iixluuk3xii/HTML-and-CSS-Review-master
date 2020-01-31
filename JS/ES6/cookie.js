@@ -1,4 +1,4 @@
-// require("@babel/core").transform("code", options);
+
 
 const cookie = document.createElement('DIV');
 const cookieText = document.createElement('DIV');
