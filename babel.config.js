@@ -6,7 +6,7 @@ module.exports={
         targets:{
           browsers: ["last 2 versions"]
         },
-        useBuiltIns:"usage"
+        useBuiltIns:"core-js@2e"
       }
     ]
   ]
