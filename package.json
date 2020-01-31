@@ -1,0 +1,31 @@
+{
+  "name": "scion-reflection",
+  "version": "1.0.0",
+  "description": "proejcts-for-scion-scheme",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iixluuk3xii/HTML-and-CSS-Review-master.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "luke-youngman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iixluuk3xii/HTML-and-CSS-Review-master/issues"
+  },
+  "homepage": "https://github.com/iixluuk3xii/HTML-and-CSS-Review-master#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3"
+  }
+}

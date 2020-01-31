@@ -35,7 +35,7 @@ function hideElement(element) {
     element.style.display = 'hidden';
 }
 
-function hideElement(element) {
+function ShowElement(element) {
     element.style.display = 'block';
 }
 
@@ -49,7 +49,7 @@ viewPort.addEventListener('scroll', () => {
             slideElementUp(header, () => makeElementSticky(overflow))
         }
     }
-    // if scrolling up slide the header into frame 
+    // if scrolling up slide the header into frame
     else if (scroll < position) {
         slideElementDown(header)
         if (scroll === 0) {
@@ -60,4 +60,3 @@ viewPort.addEventListener('scroll', () => {
     position = scroll;
 
 });
-
