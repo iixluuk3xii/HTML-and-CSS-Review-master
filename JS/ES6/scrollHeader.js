@@ -1,6 +1,3 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
-
 const overflow = document.querySelector('.overflow');
 const gallery = document.querySelector('.gallery');
 const header = document.querySelector('#header');

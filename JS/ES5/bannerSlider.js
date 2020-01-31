@@ -1,9 +1,5 @@
 "use strict";
 
-require("core-js/stable");
-
-require("regenerator-runtime/runtime");
-
 var photos = gallery.querySelectorAll('.gallery-image');
 var length = photos.length;
 var currentFrame = 1;

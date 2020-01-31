@@ -1,9 +1,5 @@
 "use strict";
 
-require("core-js/stable");
-
-require("regenerator-runtime/runtime");
-
 var overflow = document.querySelector('.overflow');
 var gallery = document.querySelector('.gallery');
 var header = document.querySelector('#header');
