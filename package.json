@@ -4,7 +4,7 @@
   "description": "proejcts-for-scion-scheme",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node JS",
+    "start": "nodemon --exec babel-node JS/cookie.js",
     "build": "babel JS --out-dir ES5"
   },
   "repository": {
