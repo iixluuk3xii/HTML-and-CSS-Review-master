@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "proejcts-for-scion-scheme",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "compile": "npx babel JS/ES6 -d JS/ES5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iixluuk3xii/HTML-and-CSS-Review-master.git"
