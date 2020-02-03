@@ -1,9 +1,5 @@
 "use strict";
 
-require("core-js/modules/es.array.for-each");
-
-require("core-js/modules/web.dom-collections.for-each");
-
 var photos = gallery.querySelectorAll('.gallery-image');
 var length = photos.length;
 var currentFrame = 1;
@@ -33,42 +29,42 @@ function getOffset(el) {
 
 
 function moveCarousleTo0px() {
-  for (i = 0; i < photos.length; i++) {
+  for (var i = 0; i < photos.length; i++) {
     photos[i].style.transform = 'translateX(0px)';
   }
 } // this function sets the carousel to image 2
 
 
 function moveCarousleTo1903px() {
-  for (i = 0; i < photos.length; i++) {
+  for (var i = 0; i < photos.length; i++) {
     photos[i].style.transform = 'translateX(-1903px)';
   }
 } // this function sets the carousel to image 3
 
 
 function moveCarousleTo3806px() {
-  for (i = 0; i < photos.length; i++) {
+  for (var i = 0; i < photos.length; i++) {
     photos[i].style.transform = 'translateX(-3806px)';
   }
 } // this function sets the carousel to image 4
 
 
 function moveCarousleTo5709px() {
-  for (i = 0; i < photos.length; i++) {
+  for (var i = 0; i < photos.length; i++) {
     photos[i].style.transform = 'translateX(-5709px)';
   }
 } // this function sets the carousel to image 5
 
 
 function moveCarousleTo7612px() {
-  for (i = 0; i < photos.length; i++) {
+  for (var i = 0; i < photos.length; i++) {
     photos[i].style.transform = 'translateX(-7612px)';
   }
 } // this function sets the carousel to image 6
 
 
 function moveCarousleTo9515px() {
-  for (i = 0; i < photos.length; i++) {
+  for (var i = 0; i < photos.length; i++) {
     photos[i].style.transform = 'translateX(-9515px)';
   }
 } // Carousel Movement functions // ----------------------------------------------------------------------
@@ -81,7 +77,7 @@ function addFocus(dot) {
 
 
 function removeFocus(callback) {
-  for (i = 0; i < galleryDots.length; i++) {
+  for (var i = 0; i < galleryDots.length; i++) {
     galleryDots[i].classList.remove('focus-dot');
   }
 
@@ -146,10 +142,12 @@ function moveCarousel(eventTarget) {
 frame1.style.transform = 'translateX(0px)'; // the event lsitener for the carousel/gallery buttons
 
 galleryDots.forEach(function (dot) {
-  dot.addEventListener('click', function () {
+  dot.addEventListener('click', function (dot) {
     moveCarousel(dot);
   });
-}); // this block starts the automatic looping for the carousel and changes the frame every 5 seconds
+}); 
+
+// this block starts the automatic looping for the carousel and changes the frame every 5 seconds
 
 setInterval(function () {
   if (frame1.style.transform === 'translateX(0px)') {

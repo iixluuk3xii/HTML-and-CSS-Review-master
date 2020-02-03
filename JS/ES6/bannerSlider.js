@@ -31,37 +31,37 @@ function getOffset(el) {
 }
 // this function sets the carousel to image 1
 function moveCarousleTo0px() {
-    for (i = 0; i < photos.length; i++) {
+    for (let i = 0; i < photos.length; i++) {
         photos[i].style.transform = 'translateX(0px)';
     }
 }
 // this function sets the carousel to image 2
 function moveCarousleTo1903px() {
-    for (i = 0; i < photos.length; i++) {
+    for (let i = 0; i < photos.length; i++) {
         photos[i].style.transform = 'translateX(-1903px)';
     }
 }
 // this function sets the carousel to image 3
 function moveCarousleTo3806px() {
-    for (i = 0; i < photos.length; i++) {
+    for (let i = 0; i < photos.length; i++) {
         photos[i].style.transform = 'translateX(-3806px)';
     }
 }
 // this function sets the carousel to image 4
 function moveCarousleTo5709px() {
-    for (i = 0; i < photos.length; i++) {
+    for (let i = 0; i < photos.length; i++) {
         photos[i].style.transform = 'translateX(-5709px)';
     }
 }
 // this function sets the carousel to image 5
 function moveCarousleTo7612px() {
-    for (i = 0; i < photos.length; i++) {
+    for (let i = 0; i < photos.length; i++) {
         photos[i].style.transform = 'translateX(-7612px)';
     }
 }
 // this function sets the carousel to image 6
 function moveCarousleTo9515px() {
-    for (i = 0; i < photos.length; i++) {
+    for (let i = 0; i < photos.length; i++) {
         photos[i].style.transform = 'translateX(-9515px)';
     }
 }
@@ -74,7 +74,7 @@ function addFocus(dot) {
 }
 // removes the focus class to the dot corresponding with that frame of the gallery
 function removeFocus(callback) {
-    for (i = 0; i < galleryDots.length; i++) {
+    for (let i = 0; i < galleryDots.length; i++) {
         galleryDots[i].classList.remove('focus-dot');
     }
     callback()
