@@ -1,12 +1,11 @@
 "use strict";
 
-require("core-js/modules/es.array.for-each");
+import("core-js/modules/es.array.for-each");
 
-require("core-js/modules/web.dom-collections.for-each");
+import("core-js/modules/web.dom-collections.for-each");
+import("core-js/stable");
 
-require("core-js/stable");
-
-require("regenerator-runtime/runtime");
+import("regenerator-runtime/runtime");
 
 var photos = gallery.querySelectorAll('.gallery-image');
 var length = photos.length;
