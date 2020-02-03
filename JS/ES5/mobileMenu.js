@@ -144,8 +144,7 @@ function setZindexAfter(element, value) {
 
 function setOpacity(element, value, callback) {
   element.style.opacity = value;
-  if (typeof callback === 'undefined') { callback = 'default'; } else {callback();};
-  
+  callback();
 }
 
 function TranslateX350px(element1, element2) {

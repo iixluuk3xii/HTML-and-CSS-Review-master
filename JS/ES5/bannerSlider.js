@@ -1,5 +1,9 @@
 "use strict";
 
+require("core-js/modules/es.array.for-each");
+
+require("core-js/modules/web.dom-collections.for-each");
+
 var photos = gallery.querySelectorAll('.gallery-image');
 var length = photos.length;
 var currentFrame = 1;
@@ -142,12 +146,10 @@ function moveCarousel(eventTarget) {
 frame1.style.transform = 'translateX(0px)'; // the event lsitener for the carousel/gallery buttons
 
 galleryDots.forEach(function (dot) {
-  dot.addEventListener('click', function (dot) {
+  dot.addEventListener('click', function () {
     moveCarousel(dot);
   });
-}); 
-
-// this block starts the automatic looping for the carousel and changes the frame every 5 seconds
+}); // this block starts the automatic looping for the carousel and changes the frame every 5 seconds
 
 setInterval(function () {
   if (frame1.style.transform === 'translateX(0px)') {
