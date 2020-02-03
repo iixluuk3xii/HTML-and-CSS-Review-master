@@ -5,8 +5,6 @@ require("core-js/modules/es.array.for-each");
 require("core-js/modules/web.dom-collections.for-each");
 
 var photos = gallery.querySelectorAll('.gallery-image');
-var length = photos.length;
-var currentFrame = 1;
 var frame1 = photos[0];
 var frame2 = photos[1];
 var frame3 = photos[2];
@@ -14,7 +12,6 @@ var frame4 = photos[3];
 var frame5 = photos[4];
 var frame6 = photos[5];
 var galleryDots = document.querySelectorAll('.gallery-dot');
-var galleryControl = document.querySelector('.controls-spacing');
 var dot1 = galleryDots[0];
 var dot2 = galleryDots[1];
 var dot3 = galleryDots[2];

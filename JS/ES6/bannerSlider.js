@@ -1,6 +1,4 @@
 const photos = gallery.querySelectorAll('.gallery-image');
-const length = photos.length;
-let currentFrame = 1;
 
 const frame1 = photos[0];
 const frame2 = photos[1];
@@ -10,7 +8,6 @@ const frame5 = photos[4];
 const frame6 = photos[5];
 
 const galleryDots = document.querySelectorAll('.gallery-dot');
-const galleryControl = document.querySelector('.controls-spacing');
 
 const dot1 = galleryDots[0];
 const dot2 = galleryDots[1];
