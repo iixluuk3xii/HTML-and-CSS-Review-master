@@ -1,3 +1,6 @@
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 const photos = gallery.querySelectorAll('.gallery-image');
 const length = photos.length;
 let currentFrame = 1;
