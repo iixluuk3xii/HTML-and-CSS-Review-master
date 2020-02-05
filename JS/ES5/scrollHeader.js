@@ -6,6 +6,9 @@ var header = document.querySelector('#header');
 var viewPort = document.querySelector('#viewport');
 var position = viewPort.scrollTop;
 
+var ua = window.navigator.userAgent;
+var msie = ua.indexOf("MSIE ");
+
 function slideElementDown(element) {
   setTimeout(function () {
     element.style.transform = "";
@@ -28,6 +31,13 @@ function makeElementSticky(element) {
   }, 450);
 }
 
+function makeElementFixed(element) {
+  setTimeout(function () {
+    element.style.position = 'fixed';
+    element.style.top = '0';
+  }, 450);
+}
+
 function removeElementSticky(element) {
   element.style.position = 'static';
 }
@@ -40,23 +50,56 @@ function ShowElement(element) {
   element.style.display = 'block';
 }
 
-viewPort.addEventListener('scroll', function () {
-  var scroll = viewPort.scrollTop; // if scrolling down move the header into the hidden part of the overflow div
+// If Internet Explorer
+if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
 
-  if (scroll > position) {
-    if (scroll > 300) {
-      slideElementUp(header, function () {
-        return makeElementSticky(overflow);
-      });
-    }
-  } // if scrolling up slide the header into frame
-  else if (scroll < position) {
-      slideElementDown(header);
+    overflow.style.width = (screen.width - 17) + 'px';
 
-      if (scroll === 0) {
-        removeElementSticky(overflow);
+    viewPort.addEventListener('scroll', function () {
+      var scroll = viewPort.scrollTop; // if scrolling down move the header into the hidden part of the overflow div
+    
+      if (scroll > position) {
+        if (scroll > 300) {
+          slideElementUp(header, function () {
+            makeElementFixed(overflow);
+            setTimeout(function () {
+              gallery.style.marginTop = '211.59px';
+            }, 450);
+            
+          });
+        }
+      } // if scrolling up slide the header into frame
+      else if (scroll < position) {
+          slideElementDown(header);
+    
+          if (scroll === 0) {
+            gallery.style.marginTop = '';
+            removeElementSticky(overflow);
+          }
+        }
+    
+      position = scroll;
+    });
+} else {
+  viewPort.addEventListener('scroll', function () {
+    var scroll = viewPort.scrollTop; // if scrolling down move the header into the hidden part of the overflow div
+  
+    if (scroll > position) {
+      if (scroll > 300) {
+        slideElementUp(header, function () {
+          return makeElementSticky(overflow);
+        });
       }
-    }
-
-  position = scroll;
-});
+    } // if scrolling up slide the header into frame
+    else if (scroll < position) {
+        slideElementDown(header);
+  
+        if (scroll === 0) {
+          removeElementSticky(overflow);
+        }
+      }
+  
+    position = scroll;
+  });
+}
+  

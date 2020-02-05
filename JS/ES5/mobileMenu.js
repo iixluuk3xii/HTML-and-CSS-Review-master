@@ -50,7 +50,7 @@ var iLiA = document.createElement('a'); // adds the class sideMenu-container to 
 
 slideMenuContainer.classList.add('sideMenu-container'); // adds the mobile menu into the html at the start of the body
 
-body.prepend(slideMenuContainer); // adds each Li section to the mobile menu
+body.insertBefore(slideMenuContainer, body.childNodes[1]); // adds each Li section to the mobile menu
 
 sideMenu.classList.add('sideMenu');
 slideMenuContainer.appendChild(sideMenu);
@@ -66,6 +66,7 @@ wdLi.appendChild(wdLiA);
 wdLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>WEB DEVELOPER COURSE';
 wdLiA.href = '#';
 trainingLi.insertBefore(trainingA, trainingLi.childNodes[0]);
+trainingA.classList.add('trainingA');
 trainingA.innerHTML = 'TRAINING';
 trainingA.href = '#'; // adds the content into the company section of the menu
 
@@ -96,6 +97,7 @@ ogyoLi.appendChild(ogyoLiA);
 ogyoLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>OUR GREAT YARMOUTH OFFICE';
 ogyoLiA.href = '#';
 companyLi.insertBefore(companyA, companyLi.childNodes[0]);
+companyA.classList.add('companyA');
 companyA.innerHTML = 'OUR COMPANY';
 companyA.href = '#'; // adds the content into the work section of the menu
 
@@ -110,6 +112,7 @@ pLi.appendChild(pLiA);
 pLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>PORTFOLIO';
 pLiA.href = '#';
 workLi.insertBefore(workA, workLi.childNodes[0]);
+workA.classList.add('workA');
 workA.innerHTML = 'OUR WORK';
 workA.href = '#'; // adds the content into the knowledge section of the menu
 
@@ -128,6 +131,7 @@ iLi.appendChild(iLiA);
 iLiA.innerHTML = '<i class="fas fa-angle-double-right"></i>INSIGHTS';
 iLiA.href = '#';
 knowledgeLi.insertBefore(knowledgeA, knowledgeLi.childNodes[0]);
+knowledgeA.classList.add('knowledgeA');
 knowledgeA.innerHTML = 'OUR KNOWLEDGE';
 knowledgeA.href = '#';
 
@@ -158,16 +162,40 @@ function TranslateX0px(element1, element2) {
 } // the clcik event that triggers the menu to open and fades in the overlay
 
 
-menuBtn.addEventListener('click', function () {
-  TranslateX350px(viewPort, overlay);
-  setZindexBefore(overlay, '1000', function () {
-    return setOpacity(overlay, '1');
-  });
-}); // the click event that closes the menu and fades out the overlay
+// If Internet Explorer
+if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+  menuBtn.addEventListener('click', function () {
+    var scroll = viewPort.scrollTop;
+    TranslateX350px(viewPort, overlay);
+    if (scroll > 300) {
+      overflow.style.transform = 'translateX(-350px)';
+    }
+    setZindexBefore(overlay, '1000', function () {
+      return setOpacity(overlay, '1');
+    });
+  }); // the click event that closes the menu and fades out the overlay
+  
+  overlay.addEventListener('click', function () {
+    TranslateX0px(viewPort, overlay);
+    overflow.style.transform = '';
+    setOpacity(overlay, '0', function () {
+      return setZindexAfter(overlay, '-1');
+    });
+  }); 
+} else {
+  menuBtn.addEventListener('click', function () {
+    TranslateX350px(viewPort, overlay);
+    setZindexBefore(overlay, '1000', function () {
+      return setOpacity(overlay, '1');
+    });
+  }); // the click event that closes the menu and fades out the overlay
+  
+  overlay.addEventListener('click', function () {
+    TranslateX0px(viewPort, overlay);
+    setOpacity(overlay, '0', function () {
+      return setZindexAfter(overlay, '-1');
+    });
+  }); 
+}
 
-overlay.addEventListener('click', function () {
-  TranslateX0px(viewPort, overlay);
-  setOpacity(overlay, '0', function () {
-    return setZindexAfter(overlay, '-1');
-  });
-}); // ADD HREFS TO YOUR A TAGS
+// ADD HREFS TO YOUR A TAGS
