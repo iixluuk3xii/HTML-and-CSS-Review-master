@@ -29,7 +29,7 @@ function getOffset(el) {
 // this function sets the carousel to image 1
 function moveCarousleTo0px() {
   for (var i = 0; i < photos.length; i++) {
-    photos[i].style.transform = '';
+    photos[i].style.transform = 'translateX(0px)';
   }
 } 
 
