@@ -1,5 +1,3 @@
-"use strict";
-
 // HTML Elements
 var menuBtn = document.querySelector('.menu-btn');
 var overlay = document.querySelector('#overlay'); // creates the container for the mobile Menu
@@ -166,6 +164,7 @@ function TranslateX0px(element1, element2) {
 if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
   menuBtn.addEventListener('click', function () {
     var scroll = viewPort.scrollTop;
+    menuBtn.classList.add('is-active');
     TranslateX350px(viewPort, overlay);
     if (scroll > 300) {
       overflow.style.transform = 'translateX(-350px)';
@@ -177,6 +176,7 @@ if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
   
   overlay.addEventListener('click', function () {
     TranslateX0px(viewPort, overlay);
+    menuBtn.classList.remove('is-active');
     overflow.style.transform = '';
     setOpacity(overlay, '0', function () {
       return setZindexAfter(overlay, '-1');
@@ -184,6 +184,7 @@ if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
   }); 
 } else {
   menuBtn.addEventListener('click', function () {
+    menuBtn.classList.add('is-active');
     TranslateX350px(viewPort, overlay);
     setZindexBefore(overlay, '1000', function () {
       return setOpacity(overlay, '1');
@@ -192,6 +193,7 @@ if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
   
   overlay.addEventListener('click', function () {
     TranslateX0px(viewPort, overlay);
+    menuBtn.classList.remove('is-active');
     setOpacity(overlay, '0', function () {
       return setZindexAfter(overlay, '-1');
     });

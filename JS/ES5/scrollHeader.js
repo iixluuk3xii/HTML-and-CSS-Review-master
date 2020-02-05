@@ -1,5 +1,3 @@
-"use strict";
-
 var overflow = document.querySelector('.overflow');
 var gallery = document.querySelector('.gallery');
 var header = document.querySelector('#header');

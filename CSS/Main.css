@@ -1592,10 +1592,21 @@
   float: right;
 }
 
+.menu-btn {
+  text-align: center;
+  height: 54px;
+  border-style: none;
+}
+
+.menu-btn:focus {
+  outline: none;
+}
+
 .header-buttons .btn {
-  height: 2.75rem;
   font-size: 1.125rem;
   color: #fff;
+  height: 56px;
+  box-sizing: border-box;
 }
 
 .phone {
@@ -1648,15 +1659,6 @@
   margin: 0 0.75rem 0 -0.25rem;
 }
 
-.menu-btn i {
-  font-size: 1.625rem;
-}
-
-.menu-btn {
-  text-align: center;
-  vertical-align: middle;
-}
-
 .col-left {
   width: 50%;
   padding-right: 0.9375rem;
@@ -1685,7 +1687,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 6.93825rem;
   background-color: #4183d7;
 }
 
@@ -1693,7 +1694,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7.4445625rem;
   background-color: #999aa2;
 }
 

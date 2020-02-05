@@ -15,14 +15,16 @@
 .head-inner .container {
     margin: 0 9.78125rem;
     padding: 0;
-    max-width: 100%;;
+    max-width: 100%;
+    ;
     display: flex;
     justify-content: space-between;
 }
 
 .header-row {
     display: flex;
-    width: 73.125rem;;
+    width: 73.125rem;
+    ;
 }
 
 .header-buttons {
@@ -31,10 +33,21 @@
     float: right;
 }
 
+.menu-btn {
+    text-align: center;
+    height: 54px;
+    border-style: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
 .header-buttons .btn {
-    height: 2.75rem;
     font-size: 1.125rem;
     color: $white;
+    height: 56px;
+    box-sizing: border-box;
 }
 
 .phone {
@@ -43,13 +56,15 @@
     width: 30px;
     padding: 5px 15px;
     transform: rotate(90deg);
+
     .fa-wifi,
     .fa-phone,
-    .hide-dot { 
+    .hide-dot {
         color: $darkgrey;
         position: absolute;
         cursor: pointer;
     }
+
     .hide-dot {
         content: "";
         background-color: white;
@@ -60,13 +75,15 @@
         bottom: 25.8px;
         right: 30px;
     }
+
     .fa-wifi {
         font-size: 15px;
         transform: rotate(-45deg);
         top: 14px;
         left: 14px;
     }
-    .fa-phone{
+
+    .fa-phone {
         font-size: 27px;
         top: 13px;
     }
@@ -83,18 +100,9 @@
     margin: 0 0.75rem 0 -0.25rem;
 }
 
-.menu-btn i {
-    font-size: 1.625rem;
-}
-
-.menu-btn {
-    text-align: center;
-    vertical-align: middle;
-}
-
 .col-left {
     width: 50%;
-    padding-right: 0.9375rem ;
+    padding-right: 0.9375rem;
     float: left;
 }
 
@@ -103,6 +111,7 @@
     align-items: center;
     cursor: default;
     width: 100%;
+
     img {
         cursor: pointer;
         min-height: 70px;
@@ -119,7 +128,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6.93825rem;
     background-color: $lightblue;
 }
 
@@ -127,7 +135,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 7.4445625rem;
     background-color: $grey;
 }
 

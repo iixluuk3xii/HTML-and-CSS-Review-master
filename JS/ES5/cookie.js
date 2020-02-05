@@ -1,5 +1,3 @@
-"use strict";
-
 var cookie = document.createElement('DIV');
 var cookieText = document.createElement('DIV');
 var cookieButtonYes = document.createElement('A');
