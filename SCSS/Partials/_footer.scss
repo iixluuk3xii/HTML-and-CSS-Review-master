@@ -4,15 +4,20 @@ footer {
     padding: 2.9375rem 0 2.6875rem;
     height: auto;
     box-sizing: border-box;
+    
 }
 
 .footer-info {
     margin: 0 auto;
-    width: 73.125rem;;
+    width: 73.125rem;
     height: auto;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
 }
 
 .social,
@@ -20,6 +25,7 @@ footer {
 .about,
 .contact {
     padding: 0 0.9375rem;
+
     li {
         font-size: 0.8125rem;
         line-height: 1.375rem;
@@ -28,6 +34,7 @@ footer {
 
 #social {
     width: 18.4375rem;
+
     h4 {
         margin: 0;
     }
@@ -36,7 +43,7 @@ footer {
 .social-btns {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 .footer-info h4 {
@@ -51,7 +58,7 @@ footer {
     height: 3.4rem;
     width: 7.03125rem;
     margin: 1.875rem 1.875rem 0 0;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.25);
     font-size: 1.75rem;
     display: flex;
     justify-content: center;
@@ -59,14 +66,14 @@ footer {
     text-decoration: none;
 }
 
-#facebook:hover{
+#facebook:hover {
     background-color: $facebook;
 }
 
-#twitter:hover{
+#twitter:hover {
     background-color: $twitter;
 }
 
-#linkedin:hover{
+#linkedin:hover {
     background-color: $linkedin;
 }

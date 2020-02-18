@@ -26,11 +26,13 @@
     height: 100%;
     width: 35.625rem;
     box-sizing: border-box;
+
     h1,
     p {
         margin: 0 0 1.5625rem;
         box-sizing: border-box;
     }
+
     h1 {
         text-transform: uppercase;
         font-weight: 200;
@@ -39,9 +41,11 @@
         font-size: 2.25rem;
         box-sizing: border-box;
     }
+
     p {
         line-height: 1.875rem;
     }
+
     .btn {
         display: inline-block;
         background-color: $white;
@@ -55,8 +59,10 @@
         margin-bottom: 0;
         cursor: pointer;
         border: none;
+
+        &:hover {
+            background-color: $fadedwhite;
+        }
     }
-    .btn:hover {
-        background-color: $fadedwhite;
-    }
+
 }

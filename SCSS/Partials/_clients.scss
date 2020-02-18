@@ -17,6 +17,18 @@
 
 .busseys {
     width: 16.453125rem;
+
+    &:hover {
+        .logo {
+            display: block;
+        }
+
+        .tooltip {
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
 }
 
 .busseys-logo {
@@ -37,14 +49,50 @@
 
 .crane {
     width: 22.640625rem;
+
+    &:hover {
+        .logo {
+            display: block;
+        }
+
+        .tooltip {
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
 }
 
 .beat {
     width: 9.203125rem;
+
+    &:hover {
+        .logo {
+            display: block;
+        }
+
+        .tooltip {
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
 }
 
 .northern {
     width: 24.828125rem;
+
+    &:hover {
+        .logo {
+            display: block;
+        }
+
+        .tooltip {
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
 }
 
 .busseys,
@@ -72,52 +120,6 @@
 
 .Clients .bw {
     z-index: 2;
-}
-
-.busseys:hover {
-    .logo {
-        display: block;
-    }
-
-    .tooltip {
-        visibility: visible;
-        opacity: 1;
-
-    }
-}
-
-.beat:hover {
-    .logo {
-        display: block;
-    }
-    .tooltip {
-        visibility: visible;
-        opacity: 1;
-
-    }
-}
-
-.crane:hover {
-    .logo {
-        display: block;
-    }
-
-    .tooltip {
-        visibility: visible;
-        opacity: 1;
-
-    }
-}
-
-.northern:hover {
-    .logo {
-        display: block;
-    }
-    .tooltip {
-        visibility: visible;
-        opacity: 1;
-
-    }
 }
 
 .tooltip {

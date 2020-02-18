@@ -129,6 +129,9 @@
     justify-content: center;
     align-items: center;
     background-color: $lightblue;
+    &:hover {
+        background-color: $blue;
+    }
 }
 
 .contact-btn {
@@ -136,22 +139,22 @@
     justify-content: center;
     align-items: center;
     background-color: $grey;
+    &:hover {
+        background-color: $fadedgrey;
+    }
+    
 }
 
 .header-buttons .menu-btn {
     background-color: $darkgrey;
     display: inline-block;
     font-size: 0.75rem;
+    &:hover {
+        background-color: $black;
+    }
 }
 
-.support-btn:hover {
-    background-color: $blue;
-}
 
-.contact-btn:hover {
-    background-color: $fadedgrey;
-}
 
-.menu-btn:hover {
-    background-color: $black;
-}
+
+

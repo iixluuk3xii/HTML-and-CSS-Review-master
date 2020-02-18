@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap);
 #logos {
   background-color: #fff;
   box-shadow: inset 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
@@ -1111,6 +1112,15 @@
   width: 16.453125rem;
 }
 
+.busseys:hover .logo {
+  display: block;
+}
+
+.busseys:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 .busseys-logo {
   left: 14.8%;
 }
@@ -1131,12 +1141,39 @@
   width: 22.640625rem;
 }
 
+.crane:hover .logo {
+  display: block;
+}
+
+.crane:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 .beat {
   width: 9.203125rem;
 }
 
+.beat:hover .logo {
+  display: block;
+}
+
+.beat:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 .northern {
   width: 24.828125rem;
+}
+
+.northern:hover .logo {
+  display: block;
+}
+
+.northern:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 .busseys,
@@ -1167,42 +1204,6 @@
 
 .Clients .bw {
   z-index: 2;
-}
-
-.busseys:hover .logo {
-  display: block;
-}
-
-.busseys:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-.beat:hover .logo {
-  display: block;
-}
-
-.beat:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-.crane:hover .logo {
-  display: block;
-}
-
-.crane:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-.northern:hover .logo {
-  display: block;
-}
-
-.northern:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
 }
 
 .tooltip {
@@ -1454,6 +1455,14 @@
   overflow: hidden;
 }
 
+.card-img-top:hover .fog {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-img-top:hover img {
+  transform: scale(1.1);
+}
+
 .category {
   position: absolute;
   top: 10px;
@@ -1518,14 +1527,6 @@
   background-color: #d64541;
 }
 
-.card-img-top:hover .fog {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.card-img-top:hover img {
-  transform: scale(1.1);
-}
-
 .Author .icon {
   margin: 0;
   max-width: 2.9375rem;
@@ -1547,10 +1548,15 @@
   vertical-align: middle;
 }
 
+.btn1,
+.btn2 {
+  margin-top: 25px;
+}
+
 .card-body .btn {
   display: flex;
-  width: 6.0125rem;
-  height: 2.15rem;
+  width: 96.218px;
+  height: 35px;
   align-items: center;
   font-size: 1.063rem;
 }
@@ -1690,11 +1696,19 @@
   background-color: #4183d7;
 }
 
+.support-btn:hover {
+  background-color: #286abd;
+}
+
 .contact-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #999aa2;
+}
+
+.contact-btn:hover {
+  background-color: #848584;
 }
 
 .header-buttons .menu-btn {
@@ -1703,15 +1717,7 @@
   font-size: 0.75rem;
 }
 
-.support-btn:hover {
-  background-color: #286abd;
-}
-
-.contact-btn:hover {
-  background-color: #848584;
-}
-
-.menu-btn:hover {
+.header-buttons .menu-btn:hover {
   background-color: #22242e;
 }
 
@@ -1775,7 +1781,7 @@
   width: 13rem;
 }
 
-.cards span {
+.cards .dash {
   height: 0.1875rem;
   width: 1.75rem;
   margin: auto;
@@ -1823,36 +1829,6 @@
   height: 2.15rem;
 }
 
-.web-design .btn,
-.web-design .icon {
-  background-color: #926fb1;
-}
-
-.IT-support .btn,
-.IT-support .icon {
-  background-color: #4183d7;
-}
-
-.Telecoms-services .btn,
-.Telecoms-services .icon {
-  background-color: #d64541;
-}
-
-.Bespoke-software .btn,
-.Bespoke-software .icon {
-  background-color: #67809f;
-}
-
-.Digital-marketing .btn,
-.Digital-marketing .icon {
-  background-color: #2ecc71;
-}
-
-.Cyber-security .btn,
-.Cyber-security .icon {
-  background-color: #f62459;
-}
-
 .web-design:hover {
   background-color: #926fb1;
   color: #fff;
@@ -1863,6 +1839,11 @@
 .web-design:hover span {
   background-color: #fff;
   color: #926fb1;
+}
+
+.web-design .btn,
+.web-design .icon {
+  background-color: #926fb1;
 }
 
 .IT-support:hover {
@@ -1877,6 +1858,11 @@
   color: #4183d7;
 }
 
+.IT-support .btn,
+.IT-support .icon {
+  background-color: #4183d7;
+}
+
 .Telecoms-services:hover {
   background-color: #d64541;
   color: #fff;
@@ -1887,6 +1873,11 @@
 .Telecoms-services:hover span {
   background-color: #fff;
   color: #d64541;
+}
+
+.Telecoms-services .btn,
+.Telecoms-services .icon {
+  background-color: #d64541;
 }
 
 .Bespoke-software:hover {
@@ -1901,6 +1892,11 @@
   color: #67809f;
 }
 
+.Bespoke-software .btn,
+.Bespoke-software .icon {
+  background-color: #67809f;
+}
+
 .Digital-marketing:hover {
   background-color: #2ecc71;
   color: #fff;
@@ -1913,6 +1909,11 @@
   color: #2ecc71;
 }
 
+.Digital-marketing .btn,
+.Digital-marketing .icon {
+  background-color: #2ecc71;
+}
+
 .Cyber-security:hover {
   background-color: #f62459;
   color: #fff;
@@ -1923,6 +1924,11 @@
 .Cyber-security:hover span {
   background-color: #fff;
   color: #f62459;
+}
+
+.Cyber-security .btn,
+.Cyber-security .icon {
+  background-color: #f62459;
 }
 
 footer {
@@ -1940,6 +1946,11 @@ footer {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .social,

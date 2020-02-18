@@ -32,20 +32,24 @@
     transform: translateX(0);
     transition: transform .4s;
     color: $white;
+
     h1 {
         text-transform: uppercase;
         font-weight: 200;
         font-size: 3rem;
         margin: 0 0 1.5625rem;
     }
+
     p,
     a {
         font-size: 1.25rem;
     }
+
     p {
         margin: 0 0 2.1875rem;
         line-height: 2.25rem;
     }
+
     a {
         padding: 1.25rem 1.25rem 0;
         display: inline-block;
@@ -54,6 +58,7 @@
         text-align: center;
         height: 2.625rem;
     }
+
     .container {
         margin: 0 auto;
         width: 73.125rem;
@@ -95,6 +100,7 @@
 
 div .focus-dot {
     background: $white;
+
     &::before {
         content: '';
         position: absolute;
@@ -105,6 +111,7 @@ div .focus-dot {
         left: -5px;
         top: -5px;
     }
+
     &:hover {
         background-color: $white;
     }
@@ -114,36 +121,38 @@ div .focus-dot {
 // slides ---------------------------------------------------------------------------------------------------------------------------
 
 #photo1 {
-    background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/Wacom-scroll-photo.jpg);
+    background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/Wacom-scroll-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
 
     a {
         background-color: $lightpurple;
     }
+
     a:hover {
         background-color: $purple;
     }
 }
 
 #photo2 {
-    background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/Support-scroll-photo.jpg);
+    background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/Support-scroll-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     a {
         background-color: $lightblue;
     }
+
     a:hover {
         background-color: $blue;
     }
 }
 
 #photo3 {
-    background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/phone-scroll-photo.jpg);
+    background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/phone-scroll-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -151,13 +160,14 @@ div .focus-dot {
     a {
         background-color: $red;
     }
+
     a:hover {
         background-color: $darkred;
     }
 }
 
 #photo4 {
-    background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/graph-scroll-photo.jpg);
+    background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/graph-scroll-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -165,13 +175,14 @@ div .focus-dot {
     a {
         background-color: $steelblue;
     }
+
     a:hover {
         background-color: $darksteelblue;
     }
 }
 
 #photo5 {
-    background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/home-scroll-photo.jpg);
+    background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/home-scroll-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -179,13 +190,14 @@ div .focus-dot {
     a {
         background-color: $lightgreen;
     }
+
     a:hover {
         background-color: $green;
     }
 }
 
 #photo6 {
-    background-image: linear-gradient(70deg, black, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../IMGs/Lock-scroll-photo.jpg);
+    background-image: linear-gradient(70deg, black, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../IMGs/Lock-scroll-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -193,6 +205,7 @@ div .focus-dot {
     a {
         background-color: $rose;
     }
+
     a:hover {
         background-color: $darkrose;
     }

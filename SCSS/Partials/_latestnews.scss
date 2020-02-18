@@ -96,10 +96,9 @@
         background-color: $lightpurple;
         text-transform: uppercase;
         color: $white;
-    }
-
-    .btn:hover {
-        background-color: $purple;
+        &:hover {
+            background-color: $purple;
+        }
     }
 }
 
@@ -119,11 +118,10 @@
         background-color: $lightblue;
         text-transform: uppercase;
         color: $white;
-    }
-
-    .btn:hover {
-        background-color: $blue;
-    }
+        &:hover {
+            background-color: $blue;
+        }
+    }  
 }
 
 #card3 {
@@ -142,10 +140,9 @@
         background-color: $red;
         text-transform: uppercase;
         color: $white;
-    }
-
-    .btn:hover {
-        background-color: $darkred;
+        &:hover {
+            background-color: $darkred;
+        }
     }
 }
 
@@ -181,6 +178,16 @@
 
 .card-img-top {
     overflow: hidden;
+    &:hover {
+
+        .fog {
+            background-color: rgba(255, 255, 255, 0.400);
+        }
+    
+        img {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .category {
@@ -225,13 +232,12 @@
             border-top: 10px solid rgba(0, 0, 0, 0.651);
         }
     }
-}
-
-.category:hover {
-    .tooltip {
-        visibility: visible;
-        opacity: 1;
-        
+    &:hover {
+        .tooltip {
+            visibility: visible;
+            opacity: 1;
+            
+        }
     }
 }
 
@@ -246,19 +252,6 @@
 #card3 .category {
     background-color: $red;
 }
-
-.card-img-top:hover {
-
-    .fog {
-        background-color: rgba(255, 255, 255, 0.400);
-    }
-
-    img {
-        transform: scale(1.1);
-    }
-}
-
-
 
 .Author .icon {
     margin: 0;
@@ -281,10 +274,15 @@
     }
 }
 
+.btn1,
+.btn2 {
+    margin-top: 25px;
+}
+
 .card-body .btn {
     display: flex;
-    width: 6.0125rem;
-    height: 2.15rem;
+    width: 96.218px;
+    height: 35px;
     align-items: center;
     font-size: 1.063rem;
 }

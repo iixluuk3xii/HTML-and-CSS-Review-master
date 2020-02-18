@@ -5,6 +5,10 @@
 
 @import 'Partials/Attributes', 'Partials/partners', 'Partials/mediaq', 'Partials/clients', 'Partials/latestnews', 'partials/StickeyHeaderOnScroll', 'Partials/header', 'Partials/infocards', 'Partials/footer', 'Partials/culturesection', 'Partials/navbar', 'Partials/gallery', 'Partials/livechat', 'Partials/Mobilemenu';
 
+//  font import
+
+@import url(https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap);
+
 * {
     // border: 1px solid;
     font-family: 'Poppins', sans-serif;
