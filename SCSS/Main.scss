@@ -3,7 +3,7 @@
 // font-family: 'Poppins', sans-serif;  ---
 // Fontfamilys ----------------------------
 
-@import 'Partials/Attributes', 'Partials/partners', 'Partials/mediaq', 'Partials/clients', 'Partials/latestnews', 'partials/StickeyHeaderOnScroll', 'Partials/header', 'Partials/infocards', 'Partials/footer', 'Partials/culturesection', 'Partials/navbar', 'Partials/gallery', 'Partials/livechat', 'Partials/Mobilemenu';
+@import 'Partials/Attributes', 'Partials/partners', 'Partials/mediaq', 'Partials/cookie', 'Partials/clients', 'Partials/latestnews', 'partials/StickeyHeaderOnScroll', 'Partials/header', 'Partials/infocards', 'Partials/footer', 'Partials/culturesection', 'Partials/navbar', 'Partials/gallery', 'Partials/livechat', 'Partials/Mobilemenu';
 
 //  font import
 
@@ -17,7 +17,7 @@
 html, 
 body {
     width: 100%;
-    min-width: 575px;
+    min-width: 580px;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -32,7 +32,6 @@ body {
     width: 100%;
     position: absolute;
     z-index: 1;
-    transform: translateX(0);
     transition: transform .5s;
 }
 
@@ -91,4 +90,8 @@ small {
 .overflow {
     z-index: 1000;
     transition: transform .5s;
+}
+
+.menu-slide{
+    transform: translateX(-350px);
 }

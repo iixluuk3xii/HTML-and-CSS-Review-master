@@ -1,11 +1,18 @@
+"use strict";
+
 var overflow = document.querySelector('.overflow');
 var gallery = document.querySelector('.gallery');
 var header = document.querySelector('#header');
 var viewPort = document.querySelector('#viewport');
-var position = viewPort.scrollTop;
+var position = viewPort.scrollTop; // 
 
-var ua = window.navigator.userAgent;
-var msie = ua.indexOf("MSIE ");
+function slideElement(element, ammount) {
+  setTimeout(function () {
+    element.style.transform = 'translateY(' + ammount + '%)';
+    element.style.transition = "transform 0.25s";
+  }, 200);
+} // 
+
 
 function slideElementDown(element) {
   setTimeout(function () {
@@ -14,9 +21,9 @@ function slideElementDown(element) {
   }, 200);
 }
 
-function slideElementUp(element, callback) {
+function slideElementUp(element, callback, ammount) {
   setTimeout(function () {
-    element.style.transform = "translateY(-211.59px)";
+    element.style.transform = "translateY(" + ammount + "px)";
     element.style.transition = "transform 0.25s";
   }, 200);
   callback();
@@ -25,13 +32,6 @@ function slideElementUp(element, callback) {
 function makeElementSticky(element) {
   setTimeout(function () {
     element.style.position = 'sticky';
-    element.style.top = '0';
-  }, 450);
-}
-
-function makeElementFixed(element) {
-  setTimeout(function () {
-    element.style.position = 'fixed';
     element.style.top = '0';
   }, 450);
 }
@@ -48,56 +48,23 @@ function ShowElement(element) {
   element.style.display = 'block';
 }
 
-// If Internet Explorer
-if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+viewPort.addEventListener('scroll', function () {
+  var scroll = viewPort.scrollTop; // if scrolling down move the header into the hidden part of the overflow div
 
-    overflow.style.width = (screen.width - 17) + 'px';
+  if (scroll > position) {
+    if (scroll > 300) {
+      slideElementUp(header, function () {
+        return makeElementSticky(overflow);
+      }, -212);
+    }
+  } // if scrolling up slide the header into frame
+  else if (scroll < position) {
+      slideElementDown(header);
 
-    viewPort.addEventListener('scroll', function () {
-      var scroll = viewPort.scrollTop; // if scrolling down move the header into the hidden part of the overflow div
-    
-      if (scroll > position) {
-        if (scroll > 300) {
-          slideElementUp(header, function () {
-            makeElementFixed(overflow);
-            setTimeout(function () {
-              gallery.style.marginTop = '211.59px';
-            }, 450);
-            
-          });
-        }
-      } // if scrolling up slide the header into frame
-      else if (scroll < position) {
-          slideElementDown(header);
-    
-          if (scroll === 0) {
-            gallery.style.marginTop = '';
-            removeElementSticky(overflow);
-          }
-        }
-    
-      position = scroll;
-    });
-} else {
-  viewPort.addEventListener('scroll', function () {
-    var scroll = viewPort.scrollTop; // if scrolling down move the header into the hidden part of the overflow div
-  
-    if (scroll > position) {
-      if (scroll > 300) {
-        slideElementUp(header, function () {
-          return makeElementSticky(overflow);
-        });
+      if (scroll === 0) {
+        removeElementSticky(overflow);
       }
-    } // if scrolling up slide the header into frame
-    else if (scroll < position) {
-        slideElementDown(header);
-  
-        if (scroll === 0) {
-          removeElementSticky(overflow);
-        }
-      }
-  
-    position = scroll;
-  });
-}
-  
+    }
+
+  position = scroll;
+});

@@ -26,45 +26,12 @@ function getOffset(el) {
         top: rect.top + window.scrollY
     };
 }
-// this function sets the carousel to image 1
-function moveCarousleTo0px() {
-    for (let i = 0; i < photos.length; i++) {
-        photos[i].style.transform = 'translateX(0px)';
+// this function controls the translation of the images in the gallery
+function moveCarousleToXXXXpx(XXXX) {
+    for (var i = 0; i < photos.length; i++) {
+      photos[i].style.transform = 'translateX(' + XXXX + '%)';
     }
-}
-// this function sets the carousel to image 2
-function moveCarousleTo1903px() {
-    for (let i = 0; i < photos.length; i++) {
-        photos[i].style.transform = 'translateX(-1903px)';
-    }
-}
-// this function sets the carousel to image 3
-function moveCarousleTo3806px() {
-    for (let i = 0; i < photos.length; i++) {
-        photos[i].style.transform = 'translateX(-3806px)';
-    }
-}
-// this function sets the carousel to image 4
-function moveCarousleTo5709px() {
-    for (let i = 0; i < photos.length; i++) {
-        photos[i].style.transform = 'translateX(-5709px)';
-    }
-}
-// this function sets the carousel to image 5
-function moveCarousleTo7612px() {
-    for (let i = 0; i < photos.length; i++) {
-        photos[i].style.transform = 'translateX(-7612px)';
-    }
-}
-// this function sets the carousel to image 6
-function moveCarousleTo9515px() {
-    for (let i = 0; i < photos.length; i++) {
-        photos[i].style.transform = 'translateX(-9515px)';
-    }
-}
-
-// Carousel Movement functions // ----------------------------------------------------------------------
-
+  }
 // adds the focus class to the dot corresponding with that frame of the gallery
 function addFocus(dot) {
     dot.classList.add('focus-dot');
@@ -78,55 +45,55 @@ function removeFocus(callback) {
 }
 
 // the main function that controls the carousel nased on which button has been pressed
-function moveCarousel(eventTarget) {
+function moveCarousel() {
     // let eventTarget = event.target;
-    if (eventTarget === dot1) {
+    if (event.currentTarget === dot1) {
         if (getOffset(frame1).left === 0) {
             // Do nothing as it is currently the frame on screen
-        } else if (getOffset(frame1).left <= -1903 || getOffset(frame1).left >= 1903) {
-            moveCarousleTo0px()
+        } else if (getOffset(frame1).left <= 1903 || getOffset(frame1).left >= 1903) {
+            moveCarousleToXXXXpx(0)
             removeFocus(() => addFocus(dot1))
         }
-    } else if (event.target === dot2) {
+    } else if (event.currentTarget === dot2) {
         if (getOffset(frame2).left === 0) {
             // Do nothing as it is currently the frame on screen
-        } else if (getOffset(frame2).left <= -1903 || getOffset(frame2).left >= 1903) {
-            moveCarousleTo1903px()
+        } else if (getOffset(frame2).left <= 1903 || getOffset(frame2).left >= 1903) {
+            moveCarousleToXXXXpx(-100)
             removeFocus(() => addFocus(dot2))
         }
-    } else if (event.target === dot3) {
+    } else if (event.currentTarget === dot3) {
         if (getOffset(frame3).left === 0) {
             // Do nothing as it is currently the frame on screen
-        } else if (getOffset(frame3).left <= -1903 || getOffset(frame3).left >= 1903) {
-            moveCarousleTo3806px()
+        } else if (getOffset(frame3).left <= 1903 || getOffset(frame3).left >= 1903) {
+            moveCarousleToXXXXpx(-200)
             removeFocus(() => addFocus(dot3))
         }
-    } else if (eventTarget === dot4) {
+    } else if (event.currentTarget === dot4) {
         if (getOffset(frame4).left === 0) {
             // Do nothing as it is currently the frame on screen
-        } else if (getOffset(frame4).left <= -1903 || getOffset(frame4).left >= 1903) {
-            moveCarousleTo5709px()
+        } else if (getOffset(frame4).left <= 1903 || getOffset(frame4).left >= 1903) {
+            moveCarousleToXXXXpx(-300)
             removeFocus(() => addFocus(dot4))
         }
-    } else if (event.target === dot5) {
+    } else if (event.currentTarget === dot5) {
         if (getOffset(frame5).left === 0) {
             // Do nothing as it is currently the frame on screen
-        } else if (getOffset(frame5).left <= -1903 || getOffset(frame5).left >= 1903) {
-                moveCarousleTo7612px()
+        } else if (getOffset(frame5).left <= 1903 || getOffset(frame5).left >= 1903) {
+            moveCarousleToXXXXpx(-400)
                 removeFocus(() => addFocus(dot5))  
         }
-    } else if (event.target === dot6) {
+    } else if (event.currentTarget === dot6) {
         if (getOffset(frame6).left === 0) {
             // Do nothing as it is currently the frame on screen
         } else if (getOffset(frame6).left >= -1903 || getOffset(frame6).left >= 1903) {
-            moveCarousleTo9515px()
+            moveCarousleToXXXXpx(-500)
             removeFocus(() => addFocus(dot6))
         }
     }
 }
 
 // sets the starting translate style of the first image to 0px
-frame1.style.transform = 'translateX(0px)';
+frame1.style.transform = 'translateX(0%)';
 
 // the event lsitener for the carousel/gallery buttons
 galleryDots.forEach((dot) => {
@@ -137,23 +104,23 @@ galleryDots.forEach((dot) => {
 
 // this block starts the automatic looping for the carousel and changes the frame every 5 seconds
 setInterval(() => {
-    if (frame1.style.transform === 'translateX(0px)') {
-        moveCarousleTo1903px()
+    if (frame1.style.transform === 'translateX(0%)') {
+        moveCarousleToXXXXpx(-100)
         removeFocus(() => addFocus(dot2))
-    } else if (frame1.style.transform === 'translateX(-1903px)') {
-        moveCarousleTo3806px()
+    } else if (frame1.style.transform === 'translateX(-100%)') {
+        moveCarousleToXXXXpx(-200)
         removeFocus(() => addFocus(dot3))
-    } else if (frame1.style.transform === 'translateX(-3806px)') {
-        moveCarousleTo5709px()
+    } else if (frame1.style.transform === 'translateX(-200%)') {
+        moveCarousleToXXXXpx(-300)
         removeFocus(() => addFocus(dot4))
-    } else if (frame1.style.transform === 'translateX(-5709px)') {
-        moveCarousleTo7612px()
+    } else if (frame1.style.transform === 'translateX(-300%)') {
+        moveCarousleToXXXXpx(-400)
         removeFocus(() => addFocus(dot5))
-    } else if (frame1.style.transform === 'translateX(-7612px)') {
-        moveCarousleTo9515px()
+    } else if (frame1.style.transform === 'translateX(-400%)') {
+        moveCarousleToXXXXpx(-500)
         removeFocus(() => addFocus(dot6))
-    } else if (frame1.style.transform === 'translateX(-9515px)') {
-        moveCarousleTo0px()
+    } else if (frame1.style.transform === 'translateX(-500%)') {
+        moveCarousleToXXXXpx(0)
         removeFocus(() => addFocus(dot1))
     }
 }, 5000);
