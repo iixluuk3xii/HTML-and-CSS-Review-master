@@ -519,6 +519,9 @@
     max-width: 58.75rem;
     font-size: 12px;
   }
+  .cookie {
+    font-size: 13px;
+  }
   #gallery,
   .photo-holder {
     height: 598px;
@@ -701,6 +704,15 @@
   #header .head-inner .container .support-btn,
   #header .head-inner .container .contact-btn {
     display: none;
+  }
+  .cookie {
+    font-size: 13px;
+  }
+  .Q-margin {
+    margin: 0 50px;
+  }
+  .cookie .btn {
+    text-align: center;
   }
   #main-nav {
     display: none;
@@ -895,6 +907,9 @@
   }
   #header .head-inner .container .phone {
     display: inline-block;
+  }
+  .cookie {
+    font-size: 12px;
   }
   #main-nav {
     display: none;
@@ -1109,6 +1124,13 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.Q-margin {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cookieYes,

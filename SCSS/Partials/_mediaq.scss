@@ -517,6 +517,14 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
 
     // 
 
+    // cookie --------------------------------------------------
+
+    .cookie {
+        font-size: 13px;
+    }
+
+    // ---------------------------------------------------------
+
     // gallery ----------------------------------------------------
 
     #gallery,
@@ -804,6 +812,22 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
     }
 
     // --------------------------------------------
+
+    // cookie --------------------------------------------------
+
+    .cookie {
+        font-size: 13px;
+    }
+
+    .Q-margin {
+        margin: 0 50px;
+    }
+
+    .cookie .btn {
+        text-align: center;
+    }
+
+    // ---------------------------------------------------------
 
     // NavBar
 
@@ -1106,6 +1130,10 @@ only screen and (-ms-high-contrast: active) and (max-width : 768px) {
     }
 
     // --------------------------------------------
+
+    .cookie {
+        font-size: 12px;
+    }
 
     // NavBar
 
