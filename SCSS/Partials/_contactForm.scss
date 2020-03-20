@@ -1,0 +1,255 @@
+#form,
+#form-bar {
+  background-color: $white;
+}
+
+#form-bar {
+  height: 45.4px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.form-background {
+  background-color: $white;
+}
+
+.bar-title {
+  display: flex;
+  align-self: center;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 14px 0 13px;
+  font-size: 13px;
+  color: $darkgrey;
+  box-sizing: border-box;
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.slash {
+  margin: 0 5px;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  height: 462px;
+  width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#fields {
+  width: 800px;
+}
+
+#details {
+  width: 400px;
+  padding: 0 15px;
+}
+
+.title {
+  background-color: $white;
+  height: 67.2px;
+  padding-bottom: 16px;
+  padding-top: 33px;
+  h1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    width: 1170px;
+    font-size: 2.25rem;
+    font-weight: normal;
+    color: $darkgrey;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  height: 89.5px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+.m-field {
+  display: flex;
+  flex-direction: column;
+  min-height: 127.4px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    &::after {
+      content: "*";
+      color: $required;
+    }
+  }
+  .check {
+    border-radius: 3px;
+    background-color: $white;
+    border: 3px solid #333645;
+    height: 32px;
+    width: 32px;
+  }
+  .message {
+    height: 100px;
+    min-height: 100px;
+    min-width: 770px;
+    max-width: 770px;
+    resize: vertical;
+    border-radius: 2px;
+    border-color: #ccc;
+    &:focus {
+        border-color: #5bc0de;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,0.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,0.6);
+      }
+  }
+  input {
+    width: 370px;
+    height: 47px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    &:focus {
+        border-color: #5bc0de;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,0.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,0.6);
+      }
+  }
+  p {
+    font-weight: 600;
+    color: $black;
+    line-height: 32px;
+    a {
+      font-weight: 600;
+      color: $black;
+    }
+  }
+}
+
+.send {
+  height: 46.4px;
+  padding: 5px 15px;
+  font-size: 17.008px;
+  color: $white;
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-width: 0;
+  border-style: none;
+  border-image: none;
+  margin-left: 15px;
+}
+
+.row-sm {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 68px;
+  margin-bottom: 25px;
+}
+
+.phone-num {
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+.email {
+  font-size: 26px;
+}
+
+.big {
+  color: $lightpurple;
+  text-decoration: none;
+  font-weight: 600;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.txt {
+  height: 29.7px;
+  margin-bottom: 25px;
+  h4 a {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.icon--black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  background-color: $black;
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.75rem;
+  margin: 0 auto 1.0625rem;
+
+  i {
+    font-size: 1.5em;
+  }
+}
+
+.map--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 555px;
+  text-align: center;
+  border-radius: 0.1875rem;
+  cursor: pointer;
+  padding: 30px;
+  margin: 0 15px;
+  box-shadow: 0 0.1875rem 2.1875rem rgba(0, 0, 0, 0.1);
+  border: 0.0625rem solid #ccc;
+  box-sizing: border-box;
+  &:hover {
+    background-color: $lightpurple;
+    color: $white;
+
+    .icon,
+    span {
+      background-color: $white;
+      color: $lightpurple;
+    }
+  }
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PP {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  padding-top: 40px;
+}

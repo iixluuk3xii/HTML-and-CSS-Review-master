@@ -10,7 +10,7 @@
 
                     <div class="col-left left">
 
-                        <a class="NM-logo" href="#">
+                        <a class="NM-logo" href="index.php">
                             <img src="../IMGs/NM-logo.png" alt="Netmatters logo">
                         </a>
 
@@ -22,7 +22,7 @@
                             <div class="phone"><a><i class="fas fa-wifi"></i><i class="fas fa-phone"></i><span class="hide-dot"></span></a></div>
                             <a class="support-btn btn" href="#" role="button"><i class="fas fa-mouse">
                                 </i>Support</a>
-                            <a class="contact-btn btn" href="#" role="button"><i class="fas fa-paper-plane">
+                            <a class="contact-btn btn" href="contact.php" role="button"><i class="fas fa-paper-plane">
                                 </i>Contact</a>
                             <button class="hamburger menu-btn btn hamburger--spin" type="button">
                                 <span class="hamburger-box">

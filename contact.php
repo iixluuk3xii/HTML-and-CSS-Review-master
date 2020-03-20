@@ -1,5 +1,5 @@
 <?php
-$title = "Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters";
+$title = "Contact Us | Netmatters";
 $style = "../CSS/Main.css";
 ?>
 <!DOCTYPE html>
@@ -48,41 +48,13 @@ include(__DIR__ . '/INC/htmlHead.php');
 
         <!-- /StickeyHeader -->
 
-        <!-- Gallery -->
+        <!-- Form -->
 
         <?php
-        include(__DIR__ . '/INC/carousel.php');
-        ?>
+include(__DIR__ . '/INC/contactForm.php');
+?>
 
-        <!-- /Gallery -->
-
-        <!-- information cards -->
-
-        <?php
-        include(__DIR__ . '/INC/infoSection.php');
-        ?>
-
-        <!-- /information cards -->
-
-        <!-- Culture information -->
-
-        <?php
-        include(__DIR__ . '/INC/CultureSection.php');
-        ?>
-
-        <!-- /Culture information -->
-
-        <!-- News updates -->
-
-        <?php
-        include(__DIR__ . '/INC/newsCards.php');
-        ?>
-
-        <!-- /News updates -->
-
-        <?php
-        include(__DIR__ . '/INC/accreditations.php');
-        ?>
+        <!-- /Form -->
 
         <!-- Footer -->
 
