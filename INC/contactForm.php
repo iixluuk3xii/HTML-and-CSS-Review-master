@@ -1,3 +1,7 @@
+<?php
+include('contactAction.php');
+?>
+
 <div id="form-bar">
     <ul class="bar-title">
         <li>
@@ -15,7 +19,7 @@
 <div class="form-background">
     <div id="form">
         <div id="fields">
-            <form method="POST" accept-charset="UTF-8" id="contact-form" novalidate="novalidate">
+            <form method="POST" accept-charset="UTF-8" id="contact-form" action="" novalidate="novalidate">
                 <div class="row">
                     <span class="field">
                         <label for="name">Your Name </label>
@@ -43,13 +47,13 @@
                     </span>
                 </div>
                 <div class="row PP">
-                    <input type="checkbox" class="check">
+                    <input name="marketing" type="checkbox" class="check" value="1">
                     <p>Please tick this box if you wish to receive marketing information from us.
                         Please see our
                         <a href="">Privacy Policy</a>
                         for more information on how we use your data</p>
                 </div>
-                <button class="btn send">SEND ENQUIRY</button>
+                <input type="submit" value="SEND ENQUIRY" class="btn send">
             </form>
         </div>
         <div id="details">

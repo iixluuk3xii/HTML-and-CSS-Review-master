@@ -10,3 +10,5 @@ $stm = $pdo->query("SELECT * FROM newscards");
 
 $cards = $stm->fetchAll();
 
+?>
+
