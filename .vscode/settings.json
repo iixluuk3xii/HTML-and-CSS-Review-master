@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "database": "netmattersnewscards",
+            "dialect": "MySQL",
+            "name": "NewsCards",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
