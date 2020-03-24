@@ -1,32 +1,34 @@
 <?php
-
 include('newsCardsDBRequest.php');
 
-if (
-    isset($_POST['name'])
-) { // Fetching variables of the form
+if (isset($_POST['name'])) { // Fetching variables of the form
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['number'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
-    if(empty($_POST['marketing']))
-    {
+    $token = $_POST['token'];
+    if (empty($_POST['marketing'])) {
         $marketing = 0;
-    } else 
-    {
+    } else {
         $marketing = $_POST['marketing'];
     }
-    if ($name != '' || $email != '' || $phone != "" || $subject != "" || $message != "") {
-        //Insert Query
-        $sql = "INSERT INTO contactmessages(name, email, phone, subject, message, marketing)   
-        values(?, ?, ?, ?, ?, ?)";
 
-        $insertStm = $pdo->prepare($sql);
-        $insertStm->execute([$name, $email, $phone, $subject, $message, $marketing]);
-        
-        echo "<p>Your message has been sent succesfully.</p>";
-    } else {
-        echo "<p>Please Fill in the Blank Fields.</p>";
+    if ($name != "" || $email != "" || $phone != "" || $subject != "" || $message != "") {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            if (!empty($phone)) {
+                $pattern = '/^(?:\(\+?44\)\s?|\+?44 ?)?(?:0|\(0\))?\s?(?:(?:1\d{3}|7[1-9]\d{2}|20\s?[78])\s?\d\s?\d{2}[ -]?\d{3}|2\d{2}\s?\d{3}[ -]?\d{4})$/';
+                if (preg_match($pattern, $phone)) {
+
+                    //Insert Query
+                    $sql = "INSERT INTO contactmessages(name, email, phone, subject, message, marketing)   
+                values(?, ?, ?, ?, ?, ?)";
+
+                    $insertStm = $pdo->prepare($sql);
+                    $insertStm->execute([$name, $email, $phone, $subject, $message, $marketing]);
+                    unset($_POST);
+                }
+            }
+        }
     }
 }

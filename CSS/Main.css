@@ -1383,7 +1383,7 @@
 #form-bar {
   height: 45.4px;
   position: relative;
-  z-index: 10;
+  z-index: 2;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -1420,32 +1420,30 @@
 #form {
   display: flex;
   justify-content: center;
-  height: 462px;
   width: 1170px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-/* line 46, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 45, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 #fields {
   width: 800px;
 }
 
-/* line 50, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 49, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 #details {
   width: 400px;
   padding: 0 15px;
 }
 
-/* line 55, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 54, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .title {
   background-color: #fff;
   height: 67.2px;
-  padding-bottom: 16px;
   padding-top: 33px;
 }
 
-/* line 60, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 58, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .title h1 {
   display: flex;
   align-items: center;
@@ -1457,7 +1455,12 @@
   color: #333645;
 }
 
-/* line 72, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 70, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+#contact-form {
+  padding-top: 16px;
+}
+
+/* line 74, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .field {
   display: flex;
   flex-direction: column;
@@ -1466,7 +1469,7 @@
   padding: 0 15px;
 }
 
-/* line 80, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 82, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .m-field {
   display: flex;
   flex-direction: column;
@@ -1476,25 +1479,25 @@
   padding: 0 15px;
 }
 
-/* line 89, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 91, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row {
   display: flex;
 }
 
-/* line 91, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 93, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row label {
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 1rem;
 }
 
-/* line 95, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 97, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row label::after {
   content: "*";
   color: #d24d57;
 }
 
-/* line 100, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 102, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .check {
   border-radius: 3px;
   background-color: #fff;
@@ -1503,9 +1506,11 @@
   width: 32px;
 }
 
-/* line 107, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 109, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .message {
+  box-sizing: border-box;
   height: 100px;
+  padding: 15px;
   min-height: 100px;
   min-width: 770px;
   max-width: 770px;
@@ -1514,7 +1519,7 @@
   border-color: #ccc;
 }
 
-/* line 115, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 119, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .message:focus {
   border-color: #5bc0de;
   outline: 0;
@@ -1522,7 +1527,7 @@
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-/* line 122, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 126, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row input {
   width: 370px;
   height: 47px;
@@ -1534,7 +1539,7 @@
   border-radius: 2px;
 }
 
-/* line 131, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 135, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row input:focus {
   border-color: #5bc0de;
   outline: 0;
@@ -1542,20 +1547,20 @@
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-/* line 138, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 142, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row p {
   font-weight: 600;
   color: #22242e;
   line-height: 32px;
 }
 
-/* line 142, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 146, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row p a {
   font-weight: 600;
   color: #22242e;
 }
 
-/* line 149, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 153, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .send {
   height: 46.4px;
   padding: 5px 15px;
@@ -1571,7 +1576,7 @@
   margin-left: 15px;
 }
 
-/* line 164, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 168, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row-sm {
   display: flex;
   flex-direction: column;
@@ -1580,42 +1585,42 @@
   margin-bottom: 25px;
 }
 
-/* line 172, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 176, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .phone-num {
   font-size: 32px;
   margin-top: 5px;
 }
 
-/* line 177, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 181, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .email {
   font-size: 26px;
 }
 
-/* line 181, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 185, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .big {
   color: #926fb1;
   text-decoration: none;
   font-weight: 600;
 }
 
-/* line 185, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 189, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .big:hover {
   text-decoration: underline;
 }
 
-/* line 190, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 194, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .txt {
   height: 29.7px;
   margin-bottom: 25px;
 }
 
-/* line 193, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 197, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .txt h4 a {
   color: #22242e;
   text-decoration: none;
 }
 
-/* line 199, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 203, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .icon--black {
   display: flex;
   align-items: center;
@@ -1628,12 +1633,12 @@
   margin: 0 auto 1.0625rem;
 }
 
-/* line 210, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 214, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .icon--black i {
   font-size: 1.5em;
 }
 
-/* line 215, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 219, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .map--card {
   display: flex;
   flex-direction: column;
@@ -1649,20 +1654,20 @@
   box-sizing: border-box;
 }
 
-/* line 228, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 232, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .map--card:hover {
   background-color: #926fb1;
   color: #fff;
 }
 
-/* line 232, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 236, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .map--card:hover .icon,
 .map--card:hover span {
   background-color: #fff;
   color: #926fb1;
 }
 
-/* line 240, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 244, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .map {
   display: flex;
   flex-direction: column;
@@ -1670,16 +1675,45 @@
   align-items: center;
 }
 
-/* line 247, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 251, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .PP {
   padding: 0 15px;
   display: flex;
   align-items: center;
 }
 
-/* line 253, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 257, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .location {
   padding-top: 40px;
+}
+
+/* line 261, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+#flash {
+  padding: 15px;
+}
+
+/* line 265, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+.flash {
+  padding: 15px;
+  margin: 15px 30px 15px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px #22242e solid;
+  border-radius: 3px;
+  color: #fff;
+  display: none;
+}
+
+/* line 276, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+.bad {
+  border-color: #c42e2a;
+  background-color: #c42e2a;
+}
+
+/* line 282, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+.good {
+  border-color: #25a25a;
+  background-color: #25a25a;
 }
 
 /* line 1, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_clients.scss */

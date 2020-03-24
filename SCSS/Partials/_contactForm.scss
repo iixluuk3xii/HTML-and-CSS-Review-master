@@ -6,7 +6,7 @@
 #form-bar {
   height: 45.4px;
   position: relative;
-  z-index: 10;
+  z-index: 2;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -37,7 +37,6 @@
 #form {
   display: flex;
   justify-content: center;
-  height: 462px;
   width: 1170px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -55,7 +54,6 @@
 .title {
   background-color: $white;
   height: 67.2px;
-  padding-bottom: 16px;
   padding-top: 33px;
   h1 {
     display: flex;
@@ -67,6 +65,10 @@
     font-weight: normal;
     color: $darkgrey;
   }
+}
+
+#contact-form {
+  padding-top: 16px;
 }
 
 .field {
@@ -105,7 +107,9 @@
     width: 32px;
   }
   .message {
+    box-sizing: border-box;
     height: 100px;
+    padding: 15px;
     min-height: 100px;
     min-width: 770px;
     max-width: 770px;
@@ -252,4 +256,31 @@
 
 .location {
   padding-top: 40px;
+}
+
+#flash {
+  padding: 15px;
+}
+
+.flash {
+  padding: 15px;
+  margin: 15px 30px 15px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px $black solid;
+  border-radius: 3px;
+  color: $white;
+  display: none;
+}
+
+.bad {
+  border-color: $darkred;
+  background-color: $darkred;
+  
+}
+
+.good {
+  border-color: $green;
+  background-color: $green;
+  
 }

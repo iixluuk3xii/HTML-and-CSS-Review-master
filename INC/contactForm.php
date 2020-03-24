@@ -1,7 +1,3 @@
-<?php
-include('contactAction.php');
-?>
-
 <div id="form-bar">
     <ul class="bar-title">
         <li>
@@ -17,33 +13,53 @@ include('contactAction.php');
     <h1>How Can We Help You?</h1>
 </div>
 <div class="form-background">
+    <?php
+    include('contactAction.php');
+    ?>
     <div id="form">
         <div id="fields">
+            <div id="flash">
+                <div id="missing-fields" class="flash bad">
+                    <strong>Please Fill in all of the Requiered Fields.</strong>
+                </div>
+                <div id="invalid-email" class="flash bad">
+                    <strong>Please Enter a Valid Email Address.</strong>
+                </div>
+                <div id="invalid-phone" class="flash bad">
+                    <strong>Please Enter a Valid Phone Number.</strong>
+                </div>
+                <!-- <div id="invalid-token" class="flash bad">
+                    <strong>Session Token is Invalid, Please Refresh the Page and Try Again.</strong>
+                </div> -->
+                <div id="success" class="flash good">
+                    <strong>Thank You for Contacting Us, Your Message Has Been Sent Successfuly.</strong>
+                </div>
+            </div>
             <form method="POST" accept-charset="UTF-8" id="contact-form" action="" novalidate="novalidate">
                 <div class="row">
                     <span class="field">
                         <label for="name">Your Name </label>
-                        <input name="name" type="text">
+                        <input name="name" type="text" id="name" value="<?php if (isset($_POST["name"])) echo $_POST["name"]; ?>">
                     </span>
                     <span class="field">
                         <label for="email">Your Email </label>
-                        <input name="email" type="text">
+                        <input name="email" type="text" id="email" value="<?php if (isset($_POST["email"])) echo $_POST["email"]; ?>">
                     </span>
                 </div>
                 <div class="row">
                     <span class="field">
                         <label for="number">Your Telephone Number </label>
-                        <input name="number" type="text">
+                        <input name="number" type="text" id="phone" value="<?php if (isset($_POST["number"])) echo $_POST["number"]; ?>">
                     </span>
                     <span class="field">
                         <label for="subject">Subject </label>
-                        <input name="subject" type="text">
+                        <input name="subject" type="text" id="subject" value="<?php if (isset($_POST["subject"])) echo $_POST["subject"]; ?>">
                     </span>
                 </div>
                 <div class="row">
                     <span class="m-field">
                         <label for="message">Message </label>
-                        <textarea name="message" class="message" cols="50" rows="10"></textarea>
+                        <textarea name="message" id="message" class="message" cols="50" rows="10" ><?php if (isset($_POST["message"])) echo $_POST["message"]; ?></textarea>
                     </span>
                 </div>
                 <div class="row PP">
@@ -53,7 +69,8 @@ include('contactAction.php');
                         <a href="">Privacy Policy</a>
                         for more information on how we use your data</p>
                 </div>
-                <input type="submit" value="SEND ENQUIRY" class="btn send">
+                <input type="submit" value="SEND ENQUIRY" id="send" class="btn send">
+                <input id="token" type="hidden" name="token" value="<?php echo $_SESSION['CSRF']; ?>" />
             </form>
         </div>
         <div id="details">

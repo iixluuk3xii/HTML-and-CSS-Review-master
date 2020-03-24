@@ -1,3 +1,6 @@
+<?php
+include('Session.php');
+?>
 <head>
 
     <title><?php echo $title ?></title>
