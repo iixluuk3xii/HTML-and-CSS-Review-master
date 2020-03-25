@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 23, 2020 at 12:59 PM
+-- Generation Time: Mar 25, 2020 at 12:39 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -21,6 +21,21 @@ SET time_zone = "+00:00";
 --
 -- Database: `netmattersnewscards`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactmessages`
+--
+
+CREATE TABLE `contactmessages` (
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` text NOT NULL,
+  `marketing` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 

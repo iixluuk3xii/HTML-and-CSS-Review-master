@@ -22,10 +22,20 @@ if (isset($_POST['name'])) { // Fetching variables of the form
 
                     //Insert Query
                     $sql = "INSERT INTO contactmessages(name, email, phone, subject, message, marketing)   
-                values(?, ?, ?, ?, ?, ?)";
+                    values(?, ?, ?, ?, ?, ?)";
 
-                    $insertStm = $pdo->prepare($sql);
-                    $insertStm->execute([$name, $email, $phone, $subject, $message, $marketing]);
+                    try {
+                        $insertStm = $pdo->prepare($sql);
+                    } catch (Exception $e) {
+                        $e->getMessage();
+                    }
+                    
+                    try {
+                        $insertStm->execute([$name, $email, $phone, $subject, $message, $marketing]);
+                    } catch (Exception $e) {
+                        $e->getMessage();
+                    }
+                    
                     unset($_POST);
                 }
             }

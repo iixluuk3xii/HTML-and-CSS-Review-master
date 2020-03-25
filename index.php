@@ -107,7 +107,7 @@ include(__DIR__ . '/INC/htmlHead.php');
     <!-- Scripts -->
 
     <?php
-    include(__DIR__ . '/INC/scripts.php');
+    include(__DIR__ . '/INC/scriptsIndex.php');
     ?>
 
     <!-- /Scripts -->

@@ -3,5 +3,4 @@
 <script src="JS/ES5/bannerSlider.js" crossorigin="anonymous"></script>
 <script src="JS/ES5/cookie.js" crossorigin="anonymous"></script>
 <script src="JS/ES5/mobileMenu.js" crossorigin="anonymous"></script>
-<script src="JS/ES6/FrontEndFormValidation.js" crossorigin="anonymous"></script>
 

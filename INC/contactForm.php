@@ -28,10 +28,7 @@
                 <div id="invalid-phone" class="flash bad">
                     <strong>Please Enter a Valid Phone Number.</strong>
                 </div>
-                <!-- <div id="invalid-token" class="flash bad">
-                    <strong>Session Token is Invalid, Please Refresh the Page and Try Again.</strong>
-                </div> -->
-                <div id="success" class="flash good">
+                <div id='success' class='flash good'>
                     <strong>Thank You for Contacting Us, Your Message Has Been Sent Successfuly.</strong>
                 </div>
             </div>
@@ -59,11 +56,14 @@
                 <div class="row">
                     <span class="m-field">
                         <label for="message">Message </label>
-                        <textarea name="message" id="message" class="message" cols="50" rows="10" ><?php if (isset($_POST["message"])) echo $_POST["message"]; ?></textarea>
+                        <textarea name="message" id="message" class="message" cols="50" rows="10"><?php if (isset($_POST["message"])) echo $_POST["message"]; ?></textarea>
                     </span>
                 </div>
                 <div class="row PP">
+                    <span class="pretty-checkbox">
+                    <i class="fas fa-check"></i>
                     <input name="marketing" type="checkbox" class="check" value="1">
+                    </span>
                     <p>Please tick this box if you wish to receive marketing information from us.
                         Please see our
                         <a href="">Privacy Policy</a>

@@ -22,7 +22,7 @@ var hide = function hide(x, element) {
   element.style.visibility = 'hidden';
   element.style.transition = 'visibility 0s 1s, opacity 1s linear';
   setTimeout(function () {
-    return x();
+    return x;
   }, 1000);
 }; //----------------------------------------------------------------------------------------------------------------------------------------------------------
 // event listeners -----------------------------------------------------------------------------
@@ -36,6 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
 }); //adds event listeners to the cookies buttons
 
 cookieButtonYes.addEventListener('click', function () {
-  return hide(removeCookie, cookie);
+  return hide(removeCookie(), cookie);
 });
 cookieButtonNo.addEventListener('click', openCookies); //----------------------------------------------------------------------------------------------------------------------------------------------------------

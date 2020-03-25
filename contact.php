@@ -79,7 +79,7 @@ include(__DIR__ . '/INC/contactForm.php');
     <!-- Scripts -->
 
     <?php
-    include(__DIR__ . '/INC/scripts.php');
+    include(__DIR__ . '/INC/scriptsContact.php');
     ?>
 
     <!-- /Scripts -->
