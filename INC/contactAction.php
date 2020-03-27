@@ -1,44 +1,88 @@
 <?php
+
 include('newsCardsDBRequest.php');
+include('Session.php');
 
-if (isset($_POST['name'])) { // Fetching variables of the form
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['number'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-    $token = $_POST['token'];
-    if (empty($_POST['marketing'])) {
-        $marketing = 0;
+$name = isset($_POST['name']) ? $_POST['name'] : '';
+$email = isset($_POST['email']) ? $_POST['email'] : '';
+$number = isset($_POST['number']) ? $_POST['number'] : '';
+$subject = isset($_POST['subject']) ? $_POST['subject'] : '';
+$message = isset($_POST['message']) ? $_POST['message'] : '';
+$testnumber = isset($_POST['number']) ? true : false;
+
+function validatePhone($phone)
+{
+    if (preg_match('/^\+[0-9]{1,2}-[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $phone)) {
+        return true;
     } else {
-        $marketing = $_POST['marketing'];
-    }
-
-    if ($name != "" || $email != "" || $phone != "" || $subject != "" || $message != "") {
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            if (!empty($phone)) {
-                $pattern = '/^(?:\(\+?44\)\s?|\+?44 ?)?(?:0|\(0\))?\s?(?:(?:1\d{3}|7[1-9]\d{2}|20\s?[78])\s?\d\s?\d{2}[ -]?\d{3}|2\d{2}\s?\d{3}[ -]?\d{4})$/';
-                if (preg_match($pattern, $phone)) {
-
-                    //Insert Query
-                    $sql = "INSERT INTO contactmessages(name, email, phone, subject, message, marketing)   
-                    values(?, ?, ?, ?, ?, ?)";
-
-                    try {
-                        $insertStm = $pdo->prepare($sql);
-                    } catch (Exception $e) {
-                        $e->getMessage();
-                    }
-                    
-                    try {
-                        $insertStm->execute([$name, $email, $phone, $subject, $message, $marketing]);
-                    } catch (Exception $e) {
-                        $e->getMessage();
-                    }
-                    
-                    unset($_POST);
-                }
-            }
-        }
+        return false;
     }
 }
+
+if ($testnumber === true) {
+    $matchNumber = $_POST['number'];
+} else {
+    $matchNumber = '';
+}
+
+$matchNumber = '';
+
+if (empty($_POST['marketing'])) {
+    $marketing = 0;
+} else {
+    $marketing = $_POST['marketing'];
+}
+
+$ok = true;
+$isName = true;
+$isEmail = true;
+$isPhone = true;
+$isSubject = true;
+$isMessage = true;
+
+if (!isset($name) || empty($name)) {
+    $ok = false;
+    $isName = false;
+}
+
+if (!isset($email) || empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $ok = false;
+    $isEmail = false;
+}
+
+if (!isset($number) || empty($number) || validatePhone($number)) {
+    $ok = false;
+    $isPhone = false;
+}
+
+if (!isset($subject) || empty($subject)) {
+    $ok = false;
+    $isSubject = false;
+}
+
+if (!isset($message) || empty($message)) {
+    $ok = false;
+    $isMessage = false;
+}
+
+if ($ok) {
+    //Insert Query
+    $sql = "INSERT INTO contactmessages(name, email, phone, subject, message, marketing)   
+                    values(?, ?, ?, ?, ?, ?)";
+
+    $values = [$name, $email, $number, $subject, $message, $marketing];
+    $insertStm = $pdo->prepare($sql);
+    $insertStm->execute($values);
+}
+
+echo json_encode(
+    array(
+        'ok' => $ok,
+        'name' => $isName,
+        'email' => $isEmail,
+        'number' => $isPhone,
+        'subject' => $isSubject,
+        'message' => $isMessage,
+        'tick' => $marketing,
+    )
+);

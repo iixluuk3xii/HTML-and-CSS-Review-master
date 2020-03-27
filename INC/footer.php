@@ -48,7 +48,7 @@
             <h4>Website</h4>
             <ul>
                 <li><a href="" target="_blank">Sitemap</a></li>
-                <li>&copy; Copyright Netmatters Ltd. 2019</li>
+                <li>&copy; Copyright Netmatters Ltd. <?php echo date("Y") ?></li>
                 <li><a href="" target="_blank">All rights reserved</a></li>
             </ul>
 

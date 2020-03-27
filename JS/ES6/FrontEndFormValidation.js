@@ -1,13 +1,13 @@
 const $name = document.querySelector("#name");
 const $email = document.querySelector("#email");
-const $phone = document.querySelector("#phone");
+const $number = document.querySelector("#number");
 const $subject = document.querySelector("#subject");
 const $message = document.querySelector("#message");
-const $token = document.querySelector("#token");
 
 const $checkRow = document.querySelector(".PP");
+const $realCheckBox = document.querySelector(".check");
+let $isChecked = false;
 const $checkBox = document.querySelector(".pretty-checkbox");
-const $checkMark = document.querySelector(".fa-check");
 
 const $form = document.querySelector("#contact-form");
 const $button = document.querySelector("#send");
@@ -15,9 +15,21 @@ const $button = document.querySelector("#send");
 const $fieldsEmpty = document.querySelector("#missing-fields");
 const $invalidEmail = document.querySelector("#invalid-email");
 const $invalidPhone = document.querySelector("#invalid-phone");
-// const $invalidToken = document.querySelector("#invalid-token");
+const $invalidServer = document.querySelector("#invalid-server");
 
 const $success = document.querySelector("#success");
+
+function addClass(element, className) {
+  element.classList.add(className);
+}
+
+function removeClass(element, className) {
+  element.classList.remove(className);
+}
+
+function toggleClass(element, className) {
+  element.classList.toggle(className);
+}
 
 function dislayFlash(flash) {
   flash.style.display = "block";
@@ -27,167 +39,225 @@ function hideFlash(flash) {
   flash.style.display = "none";
 }
 
-function isEmpty(
-  field1 = null,
-  field2 = null,
-  field3 = null,
-  field4 = null,
-  field5 = null,
-  flash,
-  form = null
-) {
-  if (
-    field1.value === "" ||
-    field2.value === "" ||
-    field3.value === "" ||
-    field4.value === "" ||
-    field5.value === ""
-  ) {
-    dislayFlash(flash);
-  } else {
-    hideFlash(flash);
-  }
-}
-
-function ValidateEmail(field, flash) {
-  const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (field.value.match(mailformat)) {
-    dislayFlash(flash);
-  } else {
-    hideFlash(flash);
-  }
-}
-
-function ValidatePhone(field, flash) {
-  const phoneformat = /^(?:\(\+?44\)\s?|\+?44 ?)?(?:0|\(0\))?\s?(?:(?:1\d{3}|7[1-9]\d{2}|20\s?[78])\s?\d\s?\d{2}[ -]?\d{3}|2\d{2}\s?\d{3}[ -]?\d{4})$/;
-  if (field.value.match(phoneformat)) {
-    dislayFlash(flash);
-  } else {
-    hideFlash(flash);
-  }
-}
-
 function changefieldValue(field, value) {
   field.value = value;
-}
-
-function removeClass(element, className) {
-  element.classList.remove(className);
 }
 
 function changeOpacity(flash, value) {
   flash.style.opacity = value;
 }
 
-function addClass(element, className) {
-  element.classList.add(className);
+function addEventListener(
+  element,
+  event,
+  callback,
+  callback2 = null,
+  callBackParam1 = null,
+  callBackParam2 = null,
+  callBackParam3 = null
+) {
+  element.addEventListener(event, () => {
+    callback(callBackParam1, callBackParam2, callBackParam3);
+    callback2();
+  });
 }
 
-$name.addEventListener("click", () => {
-  removeClass($name, "invalidField");
-});
+function isChecked() {
+  if ($checkBox.classList.contains("ticked")) {
+    $realCheckBox.checked = true;
+    return ($isChecked = 1);
+  } else {
+    $realCheckBox.checked = false;
+    return ($isChecked = 0);
+  }
+}
 
-$email.addEventListener("click", () => {
-  removeClass($email, "invalidField");
-});
+function isEmpty(field){
+  if (field.value === "") {
+    return false;
+  } else {
+    return true;
+  }
+}
 
-$phone.addEventListener("click", () => {
-  removeClass($phone, "invalidField");
-});
-
-$subject.addEventListener("click", () => {
-  removeClass($subject, "invalidField");
-});
-
-$message.addEventListener("click", () => {
-  removeClass($message, "invalidField");
-});
-
-$form.addEventListener("submit", event => {
-  const phoneformat = /^(?:\(\+?44\)\s?|\+?44 ?)?(?:0|\(0\))?\s?(?:(?:1\d{3}|7[1-9]\d{2}|20\s?[78])\s?\d\s?\d{2}[ -]?\d{3}|2\d{2}\s?\d{3}[ -]?\d{4})$/;
+function ValidateEmail(field) {
   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  let validPhone = false;
-  let validEmail = false;
-  let fieldsFilled = false;
+  if (field.value.match(mailformat)) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
+function ValidatePhone(field) {
+  const phoneformat = /^(?:\(\+?44\)\s?|\+?44 ?)?(?:0|\(0\))?\s?(?:(?:1\d{3}|7[1-9]\d{2}|20\s?[78])\s?\d\s?\d{2}[ -]?\d{3}|2\d{2}\s?\d{3}[ -]?\d{4})$/;
+  if (field.value.match(phoneformat)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function doNothing() {}
+
+function handleResponse(responseObject) {
+  if (responseObject.ok) {
+    dislayFlash($success);
+    hideFlash($invalidServer);
+    setTimeout(() => {
+      changeOpacity($success, "1");
+      changeOpacity($invalidEmail, "0");
+    }, 100);
+  } else {
+    dislayFlash($invalidServer);
+      hideFlash($success);
+      setTimeout(() => {
+        changeOpacity($success, "0");
+        changeOpacity($invalidServer, "1");
+      }, 100);
+  }
+}
+
+function submitForm(callback) {
+  const request = new XMLHttpRequest();
+  request.withCredentials = true;
+  request.onload = () => {
+    let responseObject = null;
+
+    try {
+      responseObject = JSON.parse(request.responseText);
+      console.log("object created successfully");
+      console.log(responseObject);
+    } catch (e) {
+      console.log(e.name);
+      console.log(e.message);
+    }
+
+    if (responseObject) {
+      handleResponse(responseObject);
+      callback();
+    }
+  };
+
+  const requestData = `name=${$name.value}&email=${$email.value}&number=${$number.value}&subject=${$subject.value}&message=${$message.value}&marketing=${$isChecked}`;
+
+  request.open("post", "../../INC/contactAction.php");
+
+  request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  request.send(requestData);
+}
+
+function clearForm() {
+  changefieldValue($name, "");
+  changefieldValue($email, "");
+  changefieldValue($number, "");
+  changefieldValue($subject, "");
+  changefieldValue($message, "");
+
+  removeClass($checkBox, "ticked");
+  $realCheckBox.checked = false;
+}
+
+addEventListener($name, "click", removeClass, doNothing, $name, "invalidField");
+addEventListener(
+  $email,
+  "click",
+  removeClass,
+  doNothing,
+  $email,
+  "invalidField"
+);
+addEventListener(
+  $number,
+  "click",
+  removeClass,
+  doNothing,
+  $number,
+  "invalidField"
+);
+addEventListener(
+  $subject,
+  "click",
+  removeClass,
+  doNothing,
+  $subject,
+  "invalidField"
+);
+addEventListener(
+  $message,
+  "click",
+  removeClass,
+  doNothing,
+  $message,
+  "invalidField"
+);
+addEventListener(
+  $checkRow,
+  "click",
+  toggleClass,
+  isChecked,
+  $checkBox,
+  "ticked"
+);
+
+$button.addEventListener("click", event => {
+  event.preventDefault();
   hideFlash($success);
 
-  if ($phone.value.match(phoneformat)) {
+  if (ValidatePhone($number)) {
     hideFlash($invalidPhone);
     changeOpacity($invalidPhone, "");
-    validPhone = true;
   } else {
-    event.preventDefault();
     dislayFlash($invalidPhone);
     setTimeout(() => {
       changeOpacity($invalidPhone, "1");
     }, 100);
-    addClass($phone, "invalidField");
-    validPhone = false;
+    addClass($number, "invalidField");
   }
 
-  if ($email.value.match(mailformat)) {
+  if (ValidateEmail($email)) {
     hideFlash($invalidEmail);
     changeOpacity($invalidEmail, "");
-    validEmail = true;
   } else {
-    event.preventDefault();
     setTimeout(() => {
       changeOpacity($invalidEmail, "1");
     }, 100);
     dislayFlash($invalidEmail);
     addClass($email, "invalidField");
-    validEmail = false;
   }
 
-  if (
-    $name.value == "" ||
-    $email.value == "" ||
-    $phone.value == "" ||
-    $subject.value == "" ||
-    $message.value == ""
-  ) {
-    event.preventDefault();
-    if ($name.value == "") {
+  if (isEmpty($name) && isEmpty($email) && isEmpty($number) && isEmpty($subject) && isEmpty($message)) {
+    changeOpacity($fieldsEmpty, "");
+    hideFlash($fieldsEmpty);
+    console.log('fields are all filled');
+  } else {
+    if (isEmpty($name)) {
       addClass($name, "invalidField");
     }
-    if ($email.value == "") {
+    if (isEmpty($email)) {
       addClass($email, "invalidField");
     }
-    if ($phone.value == "") {
-      addClass($phone, "invalidField");
+    if (isEmpty($number)) {
+      addClass($number, "invalidField");
     }
-    if ($subject.value == "") {
+    if (isEmpty($subject)) {
       addClass($subject, "invalidField");
     }
-    if ($message.value == "") {
+    if (isEmpty($message)) {
       addClass($message, "invalidField");
     }
     dislayFlash($fieldsEmpty);
-    fieldsFilled = false;
     setTimeout(() => {
       changeOpacity($fieldsEmpty, "1");
     }, 100);
-  } else {
-    changeOpacity($fieldsEmpty, "");
-    hideFlash($fieldsEmpty);
-    fieldsFilled = true;
   }
 
-  if (validEmail === true && validPhone === true && fieldsFilled === true) {
-    event.preventDefault();
-    dislayFlash($success);
-    changeOpacity($success, "1");
-
-    changefieldValue($name, "");
-    changefieldValue($email, "");
-    changefieldValue($phone, "");
-    changefieldValue($subject, "");
-    changefieldValue($message, "");
-    document.querySelector(".check").checked = false;
-
-    validPhone = false;
-    validEmail = false;
-    fieldsFilled = false;
+  if (
+    ValidateEmail($email) &&
+    ValidatePhone($number) &&
+    isEmpty($number, $email, $name, $subject, $message)
+  ) {
+    submitForm(clearForm);
   }
 });

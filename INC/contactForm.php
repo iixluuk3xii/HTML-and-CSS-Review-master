@@ -13,9 +13,6 @@
     <h1>How Can We Help You?</h1>
 </div>
 <div class="form-background">
-    <?php
-    include('contactAction.php');
-    ?>
     <div id="form">
         <div id="fields">
             <div id="flash">
@@ -28,25 +25,29 @@
                 <div id="invalid-phone" class="flash bad">
                     <strong>Please Enter a Valid Phone Number.</strong>
                 </div>
+                <div id="invalid-server" class="flash bad">
+                    <strong>Sorry, Something Went Wrong With the Server Request.</strong><br>
+                <strong>Please Refresh the Page and Try Again.</strong>
+            </div>
                 <div id='success' class='flash good'>
                     <strong>Thank You for Contacting Us, Your Message Has Been Sent Successfuly.</strong>
                 </div>
             </div>
-            <form method="POST" accept-charset="UTF-8" id="contact-form" action="" novalidate="novalidate">
+            <form method="POST" accept-charset="UTF-8" id="contact-form" action="contactAction.php" novalidate="novalidate">
                 <div class="row">
                     <span class="field">
                         <label for="name">Your Name </label>
-                        <input name="name" type="text" id="name" value="<?php if (isset($_POST["name"])) echo $_POST["name"]; ?>">
+                        <input name="name" autocomplete="on" type="text" id="name" value="<?php if (isset($_POST["name"])) echo $_POST["name"]; ?>">
                     </span>
                     <span class="field">
                         <label for="email">Your Email </label>
-                        <input name="email" type="text" id="email" value="<?php if (isset($_POST["email"])) echo $_POST["email"]; ?>">
+                        <input name="email" autocomplete="on" type="text" id="email" value="<?php if (isset($_POST["email"])) echo $_POST["email"]; ?>">
                     </span>
                 </div>
                 <div class="row">
                     <span class="field">
                         <label for="number">Your Telephone Number </label>
-                        <input name="number" type="text" id="phone" value="<?php if (isset($_POST["number"])) echo $_POST["number"]; ?>">
+                        <input name="number" autocomplete="on" type="tel" id="number" value="<?php if (isset($_POST["number"])) echo $_POST["number"]; ?>">
                     </span>
                     <span class="field">
                         <label for="subject">Subject </label>
@@ -69,8 +70,7 @@
                         <a href="">Privacy Policy</a>
                         for more information on how we use your data</p>
                 </div>
-                <input type="submit" value="SEND ENQUIRY" id="send" class="btn send">
-                <input id="token" type="hidden" name="token" value="<?php echo $_SESSION['CSRF']; ?>" />
+                <button type="submit" id="send" class="btn send">SEND ENQUIRY</button>
             </form>
         </div>
         <div id="details">
