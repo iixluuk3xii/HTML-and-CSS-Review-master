@@ -1,1396 +1,1614 @@
 // IE fix --------------------------------------------------
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-    .decription .popup .tooltip {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .decription .popup .tooltip {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: -158px;
+    left: -20px;
+    width: 220px;
+    background-color: $darkgrey;
+    color: $white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: none;
+    transition: visibility 0s, opacity 0s linear;
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    span {
+      width: 28px;
+      height: 3px;
+      background-color: $white;
+      margin: 10px 0 10px;
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: -40px;
+      right: 88px;
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-top: 40px solid $darkgrey;
+    }
+  }
+
+  .Clients .crane {
+    .tooltip {
+      top: -223px;
+      left: 15px;
+      width: 220px;
+    }
+  }
+
+  .Clients .beat {
+    .tooltip {
+      top: -158px;
+      left: -63px;
+      width: 220px;
+    }
+  }
+
+  .Clients .northern {
+    .tooltip {
+      top: -223px;
+      left: 40px;
+      width: 220px;
+    }
+  }
+
+  .google .popup {
+    small {
+      display: inline-block;
+    }
+
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px;
+    position: absolute;
+    left: -10px;
+    top: -80px;
+    color: $fadedgrey;
+    font-size: 13px;
+    width: 130px;
+    height: 60px;
+    background-color: $white;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s ease-in;
+
+    .arrow {
+      position: absolute;
+      bottom: -10px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 10px solid $white;
+      box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
+      z-index: 101;
+    }
+  }
+
+  .card-img-top .category {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 10px;
+    color: $white;
+    text-transform: uppercase;
+    z-index: 51;
+
+    .tooltip {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      visibility: hidden;
+      opacity: 0;
+      padding: 10px 20px;
+      position: absolute;
+      top: -65px;
+      left: -68px;
+      width: 150px;
+      height: 30px;
+      background-color: rgba(0, 0, 22, 0.651);
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.5;
+      text-transform: none;
+      transition: visibility 0s, opacity 0.2s linear;
+
+      p {
+        margin: 0;
+        font-size: 10px;
+      }
+
+      .middle {
+        padding-top: 8px;
+      }
+
+      .arrow {
+        position: absolute;
+        bottom: -10px;
+        left: 90px;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 10px solid rgba(0, 0, 0, 0.651);
+      }
+    }
+  }
+
+  .navbar-nav {
+    .web:hover {
+      background-color: $lightpurple;
+      border-right: 0.0625rem solid $lightpurple;
+      border-left: 0.0625rem solid $lightpurple;
+
+      i {
+        color: $white;
+      }
+
+      .strip {
         display: block;
-        visibility: hidden;
-        opacity: 0;
-        padding: 20px;
         position: absolute;
-        top: -158px;
-        left: -20px;
-        width: 220px;
-        background-color: $darkgrey;
+      }
+    }
+
+    .IT:hover {
+      background-color: $lightblue;
+      border-right: 0.0625rem solid $lightblue;
+      border-left: 0.0625rem solid $lightblue;
+
+      i {
         color: $white;
-        font-size: 12px;
-        text-align: center;
-        line-height: 1.5;
-        text-transform: none;
-        transition: visibility 0s, opacity 0s linear;
+      }
 
-        h2 {
-            margin: 0;
-        }
-
-        p {
-            font-size: .9rem;
-            margin: 0;
-        }
-
-        span {
-            width: 28px;
-            height: 3px;
-            background-color: $white;
-            margin: 10px 0 10px;
-        }
-
-        .arrow {
-            position: absolute;
-            bottom: -40px;
-            right: 88px;
-            width: 0;
-            height: 0;
-            border-left: 40px solid transparent;
-            border-right: 40px solid transparent;
-            border-top: 40px solid $darkgrey;
-        }
-    }
-
-    .Clients .crane {
-        .tooltip {
-            top: -223px;
-            left: 15px;
-            width: 220px;
-        }
-    }
-
-    .Clients .beat {
-        .tooltip {
-            top: -158px;
-            left: -63px;
-            width: 220px;
-        }
-    }
-
-    .Clients .northern {
-        .tooltip {
-            top: -223px;
-            left: 40px;
-            width: 220px;
-        }
-    }
-
-    .google .popup {
-        small {
-            display: inline-block;
-        }
-
-        display: inline-block;
-        vertical-align: middle;
-        text-align: left;
-        padding: 10px;
+      .strip {
+        display: block;
         position: absolute;
-        left: -10px;
-        top: -80px;
-        color: $fadedgrey;
-        font-size: 13px;
-        width: 130px;
-        height: 60px;
-        background-color: $white;
-        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
-        z-index: 100;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s,
-        opacity .2s ease-in;
-
-        .arrow {
-            position: absolute;
-            bottom: -10px;
-            width: 0;
-            height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-top: 10px solid $white;
-            box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
-            z-index: 101;
-        }
+      }
     }
 
-    .card-img-top .category {
-        position: absolute;
-        top: 10px;
-        right: 0;
-        font-size: 12px;
-        font-weight: 600;
-        padding: 0 10px;
+    .telecoms:hover {
+      background-color: $red;
+      border-right: 0.0625rem solid $red;
+      border-left: 0.0625rem solid $red;
+
+      i {
         color: $white;
-        text-transform: uppercase;
-        z-index: 51;
+      }
 
-        .tooltip {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            visibility: hidden;
-            opacity: 0;
-            padding: 10px 20px;
-            position: absolute;
-            top: -65px;
-            left: -68px;
-            width: 150px;
-            height: 30px;
-            background-color: rgba(0, 0, 22, 0.651);
-            font-weight: 500;
-            font-size: 12px;
-            text-align: center;
-            line-height: 1.5;
-            text-transform: none;
-            transition: visibility 0s, opacity .2s linear;
-
-            p {
-                margin: 0;
-                font-size: 10px;
-            }
-
-            .middle {
-                padding-top: 8px;
-            }
-
-            .arrow {
-                position: absolute;
-                bottom: -10px;
-                left: 90px;
-                width: 0;
-                height: 0;
-                border-left: 8px solid transparent;
-                border-right: 8px solid transparent;
-                border-top: 10px solid rgba(0, 0, 0, 0.651);
-            }
-        }
+      .strip {
+        display: block;
+        position: absolute;
+      }
     }
 
-    .navbar-nav {
-        .web:hover {
-            background-color: $lightpurple;
-            border-right: 0.0625rem solid $lightpurple;
-            border-left: 0.0625rem solid $lightpurple;
+    .software:hover {
+      background-color: $steelblue;
+      border-right: 0.0625rem solid $steelblue;
+      border-left: 0.0625rem solid $steelblue;
 
-            i {
-                color: $white;
-            }
+      i {
+        color: $white;
+      }
 
-            .strip {
-                display: block;
-                position: absolute;
-            }
-        }
-
-        .IT:hover {
-            background-color: $lightblue;
-            border-right: 0.0625rem solid $lightblue;
-            border-left: 0.0625rem solid $lightblue;
-
-            i {
-                color: $white;
-            }
-
-            .strip {
-                display: block;
-                position: absolute;
-            }
-        }
-
-        .telecoms:hover {
-            background-color: $red;
-            border-right: 0.0625rem solid $red;
-            border-left: 0.0625rem solid $red;
-
-            i {
-                color: $white;
-            }
-
-            .strip {
-                display: block;
-                position: absolute;
-            }
-        }
-
-        .software:hover {
-            background-color: $steelblue;
-            border-right: 0.0625rem solid $steelblue;
-            border-left: 0.0625rem solid $steelblue;
-
-            i {
-                color: $white;
-            }
-
-            .strip {
-                display: block;
-                position: absolute;
-            }
-        }
-
-        .marketing:hover {
-            background-color: $lightgreen;
-            border-right: 0.0625rem solid $lightgreen;
-            border-left: 0.0625rem solid $lightgreen;
-
-            i {
-                color: $white;
-            }
-
-            .strip {
-                display: block;
-                position: absolute;
-            }
-        }
-
-        .security:hover {
-            background-color: $rose;
-            border-right: 0.0625rem solid $rose;
-            border-left: 0.0625rem solid $rose;
-
-            i {
-                color: $white;
-            }
-
-            .strip {
-                display: block;
-                position: absolute;
-            }
-        }
-
-        .strip .nav-menu {
-            display: flex;
-            position: static;
-            text-transform: uppercase;
-            font-size: 1rem;
-            height: 2.8125rem;
-            width: 73.125rem;
-            color: $white;
-            margin: 0 auto;
-            list-style-type: none;
-
-            li:not(:first-child) {
-                padding-left: 30px;
-            }
-        }
+      .strip {
+        display: block;
+        position: absolute;
+      }
     }
+
+    .marketing:hover {
+      background-color: $lightgreen;
+      border-right: 0.0625rem solid $lightgreen;
+      border-left: 0.0625rem solid $lightgreen;
+
+      i {
+        color: $white;
+      }
+
+      .strip {
+        display: block;
+        position: absolute;
+      }
+    }
+
+    .security:hover {
+      background-color: $rose;
+      border-right: 0.0625rem solid $rose;
+      border-left: 0.0625rem solid $rose;
+
+      i {
+        color: $white;
+      }
+
+      .strip {
+        display: block;
+        position: absolute;
+      }
+    }
+
+    .strip .nav-menu {
+      display: flex;
+      position: static;
+      text-transform: uppercase;
+      font-size: 1rem;
+      height: 2.8125rem;
+      width: 73.125rem;
+      color: $white;
+      margin: 0 auto;
+      list-style-type: none;
+
+      li:not(:first-child) {
+        padding-left: 30px;
+      }
+    }
+  }
 }
 
-@media only screen and (-ms-high-contrast: none) and (max-width : 1260px),
-only screen and (-ms-high-contrast: active) and (max-width : 1260px) {
+@media only screen and (-ms-high-contrast: none) and (max-width: 1260px),
+  only screen and (-ms-high-contrast: active) and (max-width: 1260px) {
+  #head,
+  #news-cards,
+  #partners,
+  #logos {
+    justify-content: flex-start;
+  }
 
-    #head,
-    #news-cards,
-    #partners,
-    #logos {
-        justify-content: flex-start;
+  // clients ---------------------------
+
+  #logos .container {
+    .busseys .busseys-logo {
+      width: 174.34px;
+      height: 64.91px;
+      left: 9.5%;
     }
 
-    // clients ---------------------------
-
-    #logos .container {
-
-        .busseys .busseys-logo {
-            width: 174.34px;
-            height: 64.91px;
-            left: 9.5%;
-
-        }
-
-        .crane .crane-logo {
-            width: 244.34px;
-            height: 59.59px;
-            left: 7.3%;
-        }
-
-        .beat .beat-logo {
-            width: 65.57px;
-            height: 63.74px;
-            left: 26.3%;
-
-        }
-
-        .beat-logo-BW {
-            width: 65.57px;
-            height: 63.74px;
-        }
-
-        .northern .northern-diver-logo {
-            width: 268.99px;
-            height: 58.47px;
-            left: 6.6%;
-
-        }
-
-        .busseys .decription {
-            .tooltip {
-                top: -180px;
-                left: -45px;
-            }
-        }
-
-        .crane .decription {
-            .tooltip {
-                top: -242px;
-                left: -15px;
-            }
-        }
-
-        .beat .decription {
-            .tooltip {
-                top: -180px;
-                left: -80px;
-            }
-        }
-
-        .northern .decription {
-            .tooltip {
-                top: -240px;
-                left: 0px;
-            }
-        }
+    .crane .crane-logo {
+      width: 244.34px;
+      height: 59.59px;
+      left: 7.3%;
     }
 
-    #partners .container {
-
-        .accreditations {
-
-            #f50 {
-                .logo {
-                    left: 32.5%;
-                }
-            }
-
-            #qms {
-                .logo {
-                    left: 27.8%;
-                }
-            }
-
-            #carbon {
-                .logo {
-                    height: 70px;
-                    width: 175px;
-                    left: 12%;
-                }
-            }
-        }
+    .beat .beat-logo {
+      width: 65.57px;
+      height: 63.74px;
+      left: 26.3%;
     }
 
+    .beat-logo-BW {
+      width: 65.57px;
+      height: 63.74px;
+    }
+
+    .northern .northern-diver-logo {
+      width: 268.99px;
+      height: 58.47px;
+      left: 6.6%;
+    }
+
+    .busseys .decription {
+      .tooltip {
+        top: -180px;
+        left: -45px;
+      }
+    }
+
+    .crane .decription {
+      .tooltip {
+        top: -242px;
+        left: -15px;
+      }
+    }
+
+    .beat .decription {
+      .tooltip {
+        top: -180px;
+        left: -80px;
+      }
+    }
+
+    .northern .decription {
+      .tooltip {
+        top: -240px;
+        left: 0px;
+      }
+    }
+  }
+
+  #partners .container {
+    .accreditations {
+      #f50 {
+        .logo {
+          left: 32.5%;
+        }
+      }
+
+      #qms {
+        .logo {
+          left: 27.8%;
+        }
+      }
+
+      #carbon {
+        .logo {
+          height: 70px;
+          width: 175px;
+          left: 12%;
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (-ms-high-contrast: none) and (max-width : 990px),
-only screen and (-ms-high-contrast: active) and (max-width : 990px) {
+@media only screen and (-ms-high-contrast: none) and (max-width: 990px),
+  only screen and (-ms-high-contrast: active) and (max-width: 990px) {
+  #head,
+  #news-cards,
+  #partners,
+  #logos {
+    justify-content: flex-start;
+  }
 
-    #head,
-    #news-cards,
-    #partners,
-    #logos {
-        justify-content: flex-start;
+  #logos .container .Clients {
+    .busseys-logo {
+      left: 11.5%;
+      width: 131px;
+      height: 48.77px;
     }
 
-    #logos .container .Clients {
-
-        .busseys-logo {
-            left: 11.5%;
-            width: 131px;
-            height: 48.77px;
-        }
-
-        .crane-logo {
-            width: 186.84px;
-            height: 45.57px;
-            left: 9%;
-        }
-
-        .beat-logo {
-
-            left: 18.8%;
-
-        }
-
-        .northern-diver-logo {
-            width: 206.51px;
-            height: 44.89px;
-            left: 8.05%;
-
-        }
-
-        .decription {
-            .tooltip {
-                bottom: 48px;
-            }
-        }
+    .crane-logo {
+      width: 186.84px;
+      height: 45.57px;
+      left: 9%;
     }
 
-    #partners .container {
-
-        .accreditations {
-            width: 46.875rem;
-
-            #f50 {
-                .logo {
-                    left: 27%;
-                }
-            }
-
-            #qms {
-                .logo {
-                    left: 22%;
-                }
-            }
-
-            #carbon {
-                .logo {
-                    height: 57.54px;
-                    width: 143.86px;
-                    left: 11%;
-                }
-            }
-        }
-
-        .google .description {
-            right: 11%;
-
-        }
+    .beat-logo {
+      left: 18.8%;
     }
 
+    .northern-diver-logo {
+      width: 206.51px;
+      height: 44.89px;
+      left: 8.05%;
+    }
+
+    .decription {
+      .tooltip {
+        bottom: 48px;
+      }
+    }
+  }
+
+  #partners .container {
+    .accreditations {
+      width: 46.875rem;
+
+      #f50 {
+        .logo {
+          left: 27%;
+        }
+      }
+
+      #qms {
+        .logo {
+          left: 22%;
+        }
+      }
+
+      #carbon {
+        .logo {
+          height: 57.54px;
+          width: 143.86px;
+          left: 11%;
+        }
+      }
+    }
+
+    .google .description {
+      right: 11%;
+    }
+  }
 }
 
-@media only screen and (-ms-high-contrast: none) and (max-width : 768px),
-only screen and (-ms-high-contrast: active) and (max-width : 768px) {
-
-    #card1,
-    #card2,
-    #card3 {
-        display: block !important;
-        max-height: 750px;
-        min-height: 645px;
-    }
+@media only screen and (-ms-high-contrast: none) and (max-width: 768px),
+  only screen and (-ms-high-contrast: active) and (max-width: 768px) {
+  #card1,
+  #card2,
+  #card3 {
+    display: block !important;
+    max-height: 750px;
+    min-height: 645px;
+  }
 }
 
 // IE fix // -------------------------------------------------------
 
 // min-width : 1260px  ---------------------------------------------
 
-@media only screen and (min-width : 1260px) {
-    // latest news -----------------------------------
+@media only screen and (min-width: 1260px) {
+  // latest news -----------------------------------
 
-    #card1,
-    #card2,
-    #card3 {
-        width: 455px;
-    }
+  #card1,
+  #card2,
+  #card3 {
+    width: 455px;
+  }
 
-    #card2 {
-        margin: 0 15px;
-        box-sizing: border-box;
-    }
-
+  #card2 {
+    margin: 0 15px;
+    box-sizing: border-box;
+  }
 }
 
 // --------------------------------------------
 
 // max-width : 1260px  ---------------------------------------------
 
-@media only screen and (max-width : 1260px) {
-
-    // header -------------------------------
-
-    #header .head-inner .container {
-        margin: 0 auto;
-        max-width: 58.75rem;
+@media only screen and (max-width: 1260px) {
+  // Contact Page -------------------------
+  #form-bar {
+    .bar-title {
+        width: 58.75rem;
+      margin: 0 auto;
     }
+  }
 
-    #main-nav {
-        max-width: 78.75rem;
+  #viewport {
+    .title {
+      padding-top: 50px;
+      background-color: $white;
+      .fixed-width {
+        width: 58.75rem;
+        margin: 0 auto 28px;
+      }
+    }
+  }
 
-        .container {
-            max-width: 58.75rem;
-        }
-
-        .navbar-nav {
-            max-width: 58.75rem;
-
-            .nav-menu {
-                max-width: 58.75rem;
-                font-size: 12px;
-
+  .form-background #form {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 58.75rem;
+    padding: 0;
+    #details {
+        padding-left: 0;
+    }
+    #fields {
+      width: 100%;
+      form {
+        .row {
+          align-items: stretch;
+          width: 100%;
+          .name,
+          .number {
+              margin-right: 15px;
+          }
+          .email,
+          .subject {
+              margin-left: 15px;
+          }
+          .field {
+              padding-left: 0;
+              padding-right: 0;
+            width: 50%;
+            #subject,
+            #email {
+                margin-right: 15px;
             }
+            input {
+              width: 100%;
+            }
+          }
+          .m-field {
+            width: 100%;
+            padding-left: 0;
+            #message {
+              max-width: 940px;
+              min-width: 940px;
+              width: 100%;
+              padding-left: 0
+            }
+          }
         }
+      }
+    }
+  }
+
+  .map {
+    .map--card {
+      height: 326.4px;
+      width: 440px;
+    }
+    iframe {
+      height: 326.4px;
+      width: 440px;
+    }
+  }
+
+  // header -------------------------------
+
+  #header .head-inner .container {
+    margin: 0 auto;
+    max-width: 58.75rem;
+  }
+
+  #main-nav {
+    max-width: 78.75rem;
+
+    .container {
+      max-width: 58.75rem;
     }
 
-    // 
+    .navbar-nav {
+      max-width: 58.75rem;
 
-    // cookie --------------------------------------------------
-
-    .cookie {
-        font-size: 13px;
-    }
-
-    // ---------------------------------------------------------
-
-    // gallery ----------------------------------------------------
-
-    #gallery,
-    .photo-holder {
-        height: 598px;
-    }
-
-
-    #photo1 .container,
-    #photo2 .container,
-    #photo3 .container,
-    #photo4 .container,
-    #photo5 .container,
-    #photo6 .container {
+      .nav-menu {
         max-width: 58.75rem;
+        font-size: 12px;
+      }
     }
+  }
 
-    #controls {
-        bottom: 12rem;
+  //
+
+  // cookie --------------------------------------------------
+
+  .cookie {
+    font-size: 13px;
+  }
+
+  // ---------------------------------------------------------
+
+  // gallery ----------------------------------------------------
+
+  #gallery,
+  .photo-holder {
+    height: 598px;
+  }
+
+  #photo1 .container,
+  #photo2 .container,
+  #photo3 .container,
+  #photo4 .container,
+  #photo5 .container,
+  #photo6 .container {
+    max-width: 58.75rem;
+  }
+
+  #controls {
+    bottom: 12rem;
+  }
+
+  //
+
+  // info link cards -----------------------------------------
+
+  .cards {
+    justify-content: center;
+
+    .web-design,
+    .IT-support,
+    .Telecoms-services,
+    .Bespoke-software,
+    .Digital-marketing,
+    .Cyber-security {
+      width: 393px;
+      margin: 15px;
     }
+  }
 
-    // 
+  //
 
-    // info link cards -----------------------------------------
+  // culture section -------------------------------------------
 
-    .cards {
+  #culture {
+    background-position: center;
+    background-position: right;
+    height: 28.9375rem;
+
+    .container {
+      width: 58.75rem;
+
+      .culture {
+        width: 58.75rem;
         justify-content: center;
-
-        .web-design,
-        .IT-support,
-        .Telecoms-services,
-        .Bespoke-software,
-        .Digital-marketing,
-        .Cyber-security {
-            width: 393px;
-            margin: 15px;
-        }
-    }
-
-    // 
-
-    // culture section -------------------------------------------
-
-    #culture {
-        background-position: center;
-        background-position: right;
-        height: 28.9375rem;
-
-        .container {
-            width: 58.75rem;
-
-            .culture {
-                width: 58.75rem;
-                justify-content: center;
-                align-content: center;
-                margin: 0 auto;
-            }
-        }
-    }
-
-    // 
-
-    // latest news ---------------------------------------------
-
-    #bar ul {
-        width: 58.75rem;
-    }
-
-    #card3 {
-        display: none;
-    }
-
-    #card1,
-    #card2 {
-        width: 455px;
-    }
-
-    #card1 {
-        margin-right: 15px;
-    }
-
-    #card2 {
-        margin-left: 15px;
-    }
-
-    #news-cards {
-
-        .container {
-
-            width: 58.75rem;
-
-            .img-container {
-                max-height: 263px;
-            }
-
-        }
-    }
-
-    // --------------------------------------
-
-    // clients ---------------------------
-
-    #logos .container {
-
-        .busseys-logo {
-            width: 175.5px;
-            height: 65.344px;
-            left: 9.5%;
-
-        }
-
-        .crane-logo {
-            width: 241.500px;
-            height: 58.891px;
-            left: 7.3%;
-        }
-
-        .beat-logo {
-            width: 65.563px;
-            height: 63.734px;
-            left: 26.3%;
-
-        }
-
-        .beat-logo-BW {
-            width: 65.57px;
-            height: 63.74px;
-        }
-
-        .northern-diver-logo {
-            width: 264.828px;
-            height: 57.563px;
-            left: 6.6%;
-
-        }
-
-        .busseys .decription {
-            .tooltip {
-                top: -180px;
-                left: -45px;
-            }
-        }
-
-        .crane .decription {
-            .tooltip {
-                top: -242px;
-                left: -15px;
-            }
-        }
-
-        .beat .decription {
-            .tooltip {
-                top: -180px;
-                left: -80px;
-            }
-        }
-
-        .northern .decription {
-            .tooltip {
-                top: -240px;
-                left: 0px;
-            }
-        }
-    }
-
-    // --------------------------------------------
-
-    // footer --------------------------
-
-    #logos .container {
-        width: 58.75rem;
-    }
-
-    footer {
-        height: 27.375rem;
-    }
-
-    #foot {
-        width: 58.75rem;
-        height: 27.375rem;
-        flex-wrap: wrap;
-
-        .contact {
-            width: 50%;
-            height: 12.3125rem;
-            padding: 0;
-        }
-
-        .about {
-            width: 50%;
-            height: 13.6875rem;
-            padding: 0;
-        }
-
-        .website {
-            width: 50%;
-            height: 6.8125rem;
-            padding: 0;
-        }
-
-        #social {
-            width: 50%;
-            height: 11.8125rem;
-            padding: 0;
-        }
-
-        .social-btns {
-            box-sizing: border-box;
-
-            a {
-                width: 100%;
-
-                height: 3.4375rem;
-            }
-
-            #padding1,
-            #padding2,
-            #padding3 {
-                width: 50%;
-                box-sizing: border-box;
-                padding: 0 15px 0 0;
-            }
-
-            #padding2 {
-                margin-right: 0;
-                padding-right: 0;
-                padding-left: 15px;
-            }
-        }
-    }
-
-    // partners ----------------------------------------
-
-    #partners .container {
-        width: 58.75rem;
+        align-content: center;
         margin: 0 auto;
+      }
+    }
+  }
 
-        .accreditations {
-            width: 58.75rem;
+  //
 
-            .f50 {
-                .logo {
-                    left: 33%;
-                }
-            }
+  // latest news ---------------------------------------------
 
-            .qms {
-                .logo {
-                    left: 28.5%;
-                }
-            }
+  #bar ul {
+    width: 58.75rem;
+  }
 
-            .carbon {
-                .logo {
-                    left: 11.5%;
-                }
-            }
-        }
+  #card3 {
+    display: none;
+  }
 
-        .google .description {
-            right: 11%;
+  #card1,
+  #card2 {
+    width: 455px;
+  }
 
-        }
+  #card1 {
+    margin-right: 15px;
+  }
+
+  #card2 {
+    margin-left: 15px;
+  }
+
+  #news-cards {
+    .container {
+      width: 58.75rem;
+
+      .img-container {
+        max-height: 263px;
+      }
+    }
+  }
+
+  // --------------------------------------
+
+  // clients ---------------------------
+
+  #logos .container {
+    .busseys-logo {
+      width: 175.5px;
+      height: 65.344px;
+      left: 9.5%;
     }
 
+    .crane-logo {
+      width: 241.5px;
+      height: 58.891px;
+      left: 7.3%;
+    }
+
+    .beat-logo {
+      width: 65.563px;
+      height: 63.734px;
+      left: 26.3%;
+    }
+
+    .beat-logo-BW {
+      width: 65.57px;
+      height: 63.74px;
+    }
+
+    .northern-diver-logo {
+      width: 264.828px;
+      height: 57.563px;
+      left: 6.6%;
+    }
+
+    .busseys .decription {
+      .tooltip {
+        top: -180px;
+        left: -45px;
+      }
+    }
+
+    .crane .decription {
+      .tooltip {
+        top: -242px;
+        left: -15px;
+      }
+    }
+
+    .beat .decription {
+      .tooltip {
+        top: -180px;
+        left: -80px;
+      }
+    }
+
+    .northern .decription {
+      .tooltip {
+        top: -240px;
+        left: 0px;
+      }
+    }
+  }
+
+  // --------------------------------------------
+
+  // footer --------------------------
+
+  #logos .container {
+    width: 58.75rem;
+  }
+
+  footer {
+    height: 27.375rem;
+  }
+
+  #foot {
+    width: 58.75rem;
+    height: 27.375rem;
+    flex-wrap: wrap;
+
+    .contact {
+      width: 50%;
+      height: 12.3125rem;
+      padding: 0;
+    }
+
+    .about {
+      width: 50%;
+      height: 13.6875rem;
+      padding: 0;
+    }
+
+    .website {
+      width: 50%;
+      height: 6.8125rem;
+      padding: 0;
+    }
+
+    #social {
+      width: 50%;
+      height: 11.8125rem;
+      padding: 0;
+    }
+
+    .social-btns {
+      box-sizing: border-box;
+
+      a {
+        width: 100%;
+
+        height: 3.4375rem;
+      }
+
+      #padding1,
+      #padding2,
+      #padding3 {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 15px 0 0;
+      }
+
+      #padding2 {
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  // partners ----------------------------------------
+
+  #partners .container {
+    width: 58.75rem;
+    margin: 0 auto;
+
+    .accreditations {
+      width: 58.75rem;
+
+      .f50 {
+        .logo {
+          left: 33%;
+        }
+      }
+
+      .qms {
+        .logo {
+          left: 28.5%;
+        }
+      }
+
+      .carbon {
+        .logo {
+          left: 11.5%;
+        }
+      }
+    }
+
+    .google .description {
+      right: 11%;
+    }
+  }
 }
 
 // --------------------------------------------
 
-
 // max-width : 990px ----------------------------------------------
 
-@media only screen and (max-width : 990px) {
+@media only screen and (max-width: 990px) {
+  // contact page -----------------------------
+  #form-bar {
+    .bar-title {
+      width: 750px;
+      margin: 0 auto;
+      padding-left: 15px;
+    padding-right: 15px;
+    }
+  }
 
-    // Header
-
-    #header .head-inner .container {
-        margin: 0 auto;
-        max-width: 46.875rem;
-
-        .support-btn,
-        .contact-btn {
-            display: none;
+  #viewport {
+    .title {
+      padding: 24px 0;
+      height: 39.2px;
+      background-color: $black;
+      .fixed-width {
+          width: 750px;
+          margin: 0 auto;
+          padding-left: 15px;
+    padding-right: 15px;
+        background-color: $black;
+        h1 {
+          color: $white;
         }
+      }
     }
+  }
 
-    // --------------------------------------------
-
-    // cookie --------------------------------------------------
-
-    .cookie {
-        font-size: 13px;
+  .form-background #form {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 750px;
+    padding-left: 15px;
+    padding-right: 15px;
+    #details {
+      padding-left: 0;
+      margin: 50px 0 0;
     }
-
-    .Q-margin {
-        margin: 0 50px;
+    #fields {
+      width: 100%;
+      margin: 0 auto;
+      form {
+        .row {
+          align-items: stretch;
+          flex-direction: column;
+          width: 100%;
+          .field {
+            width: 100%;
+            padding-left: 0;
+            margin-left: 0;
+            margin-right: 0;
+            input {
+              width: 100%;
+            }
+          }
+          .m-field {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            #message {
+              max-width: 720px;
+              min-width: 720px;
+              width: 720px;
+            }
+          }
+        }
+      }
     }
+  }
 
-    .cookie .btn {
-        text-align: center;
+  .map {
+    .map--card {
+      height: 348px;
+      width: 330px;
     }
-
-    // ---------------------------------------------------------
-
-    // NavBar
-
-    #main-nav {
-        display: none;
+    iframe {
+      height: 348px;
+      width: 330px;
     }
+  }
 
-    // --------------------------------------------
+  // Header
 
-    // Gallery
+  #header .head-inner .container {
+    margin: 0 auto;
+    max-width: 46.875rem;
 
-    #holder,
-    #gallery {
-        height: 697px;
+    .support-btn,
+    .contact-btn {
+      display: none;
     }
+  }
 
-    #photo1 .container,
-    #photo2 .container,
-    #photo3 .container,
-    #photo4 .container,
-    #photo5 .container,
-    #photo6 .container {
-        max-width: 46.875rem;
-        text-align: center;
+  // --------------------------------------------
+
+  // cookie --------------------------------------------------
+
+  .cookie {
+    font-size: 13px;
+  }
+
+  .Q-margin {
+    margin: 0 50px;
+  }
+
+  .cookie .btn {
+    text-align: center;
+  }
+
+  // ---------------------------------------------------------
+
+  // NavBar
+
+  #main-nav {
+    display: none;
+  }
+
+  // --------------------------------------------
+
+  // Gallery
+
+  #holder,
+  #gallery {
+    height: 697px;
+  }
+
+  #photo1 .container,
+  #photo2 .container,
+  #photo3 .container,
+  #photo4 .container,
+  #photo5 .container,
+  #photo6 .container {
+    max-width: 46.875rem;
+    text-align: center;
+  }
+
+  #controls {
+    bottom: 3.75rem;
+  }
+
+  // --------------------------------------------
+
+  // Info card links
+
+  .cards {
+    justify-content: center;
+
+    .web-design,
+    .IT-support,
+    .Telecoms-services,
+    .Bespoke-software,
+    .Digital-marketing,
+    .Cyber-security {
+      width: 17.6875rem;
+      margin: 15px;
     }
+  }
 
-    #controls {
-        bottom: 3.75rem;
-    }
+  // --------------------------------------------
 
-    // --------------------------------------------
+  // Culture
 
-    // Info card links
+  #culture {
+    background-image: none;
 
-    .cards {
+    .container {
+      width: 46.875rem;
+
+      .culture {
+        width: 46.875rem;
         justify-content: center;
-
-        .web-design,
-        .IT-support,
-        .Telecoms-services,
-        .Bespoke-software,
-        .Digital-marketing,
-        .Cyber-security {
-            width: 17.6875rem;
-            margin: 15px;
-        }
-    }
-
-    // --------------------------------------------
-
-    // Culture
-
-    #culture {
-        background-image: none;
-
-        .container {
-            width: 46.875rem;
-
-            .culture {
-                width: 46.875rem;
-                justify-content: center;
-                align-content: center;
-                margin: 0 auto;
-            }
-        }
-    }
-
-    // --------------------------------------------
-
-    // Latest News
-
-    #bar ul {
-        width: 46.875rem;
-    }
-
-    #news-cards .container {
-        width: 46.875rem;
+        align-content: center;
         margin: 0 auto;
+      }
+    }
+  }
 
-        .img-container {
-            max-height: 200px;
-        }
+  // --------------------------------------------
+
+  // Latest News
+
+  #bar ul {
+    width: 46.875rem;
+  }
+
+  #news-cards .container {
+    width: 46.875rem;
+    margin: 0 auto;
+
+    .img-container {
+      max-height: 200px;
+    }
+  }
+
+  #card3 {
+    display: none;
+  }
+
+  #card1,
+  #card2 {
+    width: 21.5625rem;
+  }
+
+  #card1 {
+    margin-right: 15px;
+  }
+
+  #card2 {
+    margin-left: 15px;
+  }
+
+  // clients ---------------------------
+
+  #logos .container {
+    width: 46.875rem;
+
+    .busseys-logo {
+      width: 132.75px;
+      height: 49.42px;
+      left: 12%;
     }
 
-    #card3 {
-        display: none;
+    .crane-logo {
+      width: 182.67px;
+      height: 44.45px;
+      left: 9%;
     }
 
-    #card1,
-    #card2 {
-        width: 21.5625rem;
+    .beat-logo {
+      width: 65.57px;
+      height: 63.74px;
+      left: 21.8%;
     }
 
-    #card1 {
-        margin-right: 15px;
+    .beat-logo-BW {
+      width: 65.57px;
+      height: 63.74px;
     }
 
-    #card2 {
-        margin-left: 15px;
+    .northern-diver-logo {
+      width: 200.33px;
+      height: 43.55px;
+      left: 8.05%;
     }
 
-    // clients ---------------------------
-
-    #logos .container {
-        width: 46.875rem;
-
-        .busseys-logo {
-            width: 132.75px;
-            height: 49.42px;
-            left: 12%;
-
-        }
-
-        .crane-logo {
-            width: 182.67px;
-            height: 44.45px;
-            left: 9%;
-        }
-
-        .beat-logo {
-            width: 65.57px;
-            height: 63.74px;
-            left: 21.8%;
-
-        }
-
-        .beat-logo-BW {
-            width: 65.57px;
-            height: 63.74px;
-        }
-
-        .northern-diver-logo {
-            width: 200.33px;
-            height: 43.55px;
-            left: 8.05%;
-
-        }
-
-        .busseys .decription {
-            .tooltip {
-                top: -180px;
-                left: -64px;
-            }
-        }
-
-        .crane .decription {
-            .tooltip {
-                top: -242px;
-                left: -50px;
-            }
-        }
-
-        .beat .decription {
-            .tooltip {
-                top: -180px;
-                left: -88px;
-            }
-        }
-
-        .northern .decription {
-            .tooltip {
-                top: -240px;
-                left: -32px;
-            }
-        }
+    .busseys .decription {
+      .tooltip {
+        top: -180px;
+        left: -64px;
+      }
     }
 
-    // --------------------------------------------
-
-    // Footer
-
-    footer {
-        height: 27.375rem;
-
+    .crane .decription {
+      .tooltip {
+        top: -242px;
+        left: -50px;
+      }
     }
 
-    #feet {
-        padding-left: 15px;
+    .beat .decription {
+      .tooltip {
+        top: -180px;
+        left: -88px;
+      }
     }
 
-    #foot .social-btns #padding2 {
-        padding-left: 0;
+    .northern .decription {
+      .tooltip {
+        top: -240px;
+        left: -32px;
+      }
+    }
+  }
+
+  // --------------------------------------------
+
+  // Footer
+
+  footer {
+    height: 27.375rem;
+  }
+
+  #feet {
+    padding-left: 15px;
+  }
+
+  #foot .social-btns #padding2 {
+    padding-left: 0;
+  }
+
+  #foot {
+    width: 46.875rem;
+    height: 27.375rem;
+    flex-wrap: wrap;
+
+    .contact {
+      width: 23.4375rem;
+      height: 12.3125rem;
+      padding: 0;
     }
 
-    #foot {
-        width: 46.875rem;
-        height: 27.375rem;
-        flex-wrap: wrap;
-
-        .contact {
-            width: 23.4375rem;
-            height: 12.3125rem;
-            padding: 0;
-        }
-
-        .about {
-            width: 23.4375rem;
-            height: 13.6875rem;
-            padding: 0;
-        }
-
-        .website {
-            width: 23.4375rem;
-            height: 6.8125rem;
-            padding: 0;
-        }
-
-        #social {
-            width: 23.4375rem;
-            height: 11.8125rem;
-            padding: 0;
-        }
-
-        .social-btns {
-            a {
-                width: 9.8125rem;
-                height: 3.4375rem;
-            }
-        }
+    .about {
+      width: 23.4375rem;
+      height: 13.6875rem;
+      padding: 0;
     }
 
-    // --------------------------------------------
-
-    // acreditations
-
-    #partners .container {
-        width: 46.875rem;
-        margin: 0 auto;
-
-        .accreditations {
-            width: 46.875rem;
-
-            .f50 {
-                .logo {
-                    left: 29%;
-                }
-            }
-
-            .qms {
-                .logo {
-                    left: 24%;
-                }
-            }
-
-            .carbon {
-                .logo {
-                    height: 56px;
-                    width: 140.03px;
-                    left: 11%;
-                }
-            }
-        }
-
-        .google .description {
-            right: 11%;
-
-        }
+    .website {
+      width: 23.4375rem;
+      height: 6.8125rem;
+      padding: 0;
     }
 
-    // --------------------------------------------
+    #social {
+      width: 23.4375rem;
+      height: 11.8125rem;
+      padding: 0;
+    }
 
+    .social-btns {
+      a {
+        width: 9.8125rem;
+        height: 3.4375rem;
+      }
+    }
+  }
+
+  // --------------------------------------------
+
+  // acreditations
+
+  #partners .container {
+    width: 46.875rem;
+    margin: 0 auto;
+
+    .accreditations {
+      width: 46.875rem;
+
+      .f50 {
+        .logo {
+          left: 29%;
+        }
+      }
+
+      .qms {
+        .logo {
+          left: 24%;
+        }
+      }
+
+      .carbon {
+        .logo {
+          height: 56px;
+          width: 140.03px;
+          left: 11%;
+        }
+      }
+    }
+
+    .google .description {
+      right: 11%;
+    }
+  }
+
+  // --------------------------------------------
 }
 
 // --------------------------------------------
 
 // max-width : 768px --------------------------
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
 
-    // Header
+// contact form -----------------------------------
 
-    #header .head-inner .container {
+#form-bar {
+    .bar-title {
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 15px;
+    padding-right: 15px;
+    }
+  }
+
+  #viewport {
+    .title {
+      padding: 24px 0;
+      height: 39.2px;
+      background-color: $black;
+      .fixed-width {
+          width: 100%;
+          margin: 0 auto;
+          padding-left: 15px;
+    padding-right: 15px;
+        background-color: $black;
+        h1 {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .form-background {
+      width: 100%;
+    #form {
+        flex-direction: column-reverse;
         margin: 0 auto;
         width: 100%;
-        min-width: 520px;
-
-        .header-row {
-            width: 100%;
-            min-width: 520px;
-            box-sizing: border-box;
-        }
-
-        .col-left {
-            margin-left: 15px;
-        }
-
-        .col-right {
-            margin-right: 15px;
-        }
-
-        .support-btn,
-        .contact-btn {
-            display: none;
-        }
-
-        .phone {
-            display: inline-block;
-        }
-
-    }
-
-    // --------------------------------------------
-
-    .cookie {
-        font-size: 12px;
-    }
-
-    // NavBar
-
-    #main-nav {
-        display: none;
-    }
-
-    // --------------------------------------------
-
-    // Gallery
-
-    #holder,
-    #gallery {
-        width: 100%;
-        min-width: 520px;
-        height: 697px;
-    }
-
-    #photo1 .container,
-    #photo2 .container,
-    #photo3 .container,
-    #photo4 .container,
-    #photo5 .container,
-    #photo6 .container {
-        width: 100%;
-        min-width: 100%;
-        text-align: center;
-    }
-
-    // --------------------------------------------
-
-    // Info card links
-
-    #cards {
-        justify-content: center;
-        width: 100%;
-        min-width: 520px;
-
-        .web-design,
-        .IT-support,
-        .Telecoms-services,
-        .Bespoke-software,
-        .Digital-marketing,
-        .Cyber-security {
-            width: 672px;
-            min-width: 288px;
-            margin: 30px 15px 0;
-            padding: 30px;
-        }
-
-        .web-design {
-            margin-top: 0;
-        }
-    }
-
-    // --------------------------------------------
-
-    // Culture
-
-    #culture {
-        background-image: none;
-        width: 100%;
-        height: auto;
-        min-width: 520px;
-        box-sizing: border-box;
-
-        .container {
-            width: 100%;
-            min-width: 520px;
-            padding: 50px 15px;
-            box-sizing: border-box;
-
-            .culture {
-                width: 100%;
-                min-width: 490px;
-                justify-content: center;
-                align-content: center;
-                margin: 0 auto;
-            }
-        }
-    }
-
-    // --------------------------------------------
-
-    // Latest News
-
-    #bar {
-        width: 100%;
-    }
-
-    #bar ul {
-        width: 100%;
-        min-width: 520px;
         padding-left: 15px;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    #news-cards {
-        width: 100%;
-        min-width: 520px;
-        box-sizing: border-box;
-
-        .container {
+        padding-right: 15px;
+        #details {
+          padding-left: 0;
+          margin: 50px 0 0;
+        }
+        #contact-form {
             width: 100%;
-            max-width: 575px;
-            min-width: 490px;
-            padding: 50px 15px;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            box-sizing: border-box;
-
-            .img-container,
-            .fog {
-                max-height: 315px;
-            }
         }
-    }
+        #fields {
+          width: 100%;
+          margin: 0 auto;
+          form {
+            .row {
+              align-items: stretch;
+              flex-direction: column;
+              width: 100%;
+              .field {
+                width: 100%;
+                padding-left: 0;
+    
+                input {
+                  width: 100%;
+                }
+              }
+              .m-field {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                #message {
+                  max-width: 100%;
+                  min-width: 100%;
+                  width: 100%;
+                }
+              }
+            }
+            .PP {
+                width: 100%;
+                padding: 0 30px 0 15px;
+                margin: 0 auto 25px;
+                height: auto;
+              }
+          }
+        }
+      }
+  }
 
-    #card3 {
-        display: flex;
-    }
+.container .map-padding {
+    padding-top: 0;
+}
 
-    #card1,
-    #card2,
-    #card3 {
-        max-width: 545px;
+  .map {
+      width: 100%;
+      margin: 30px 30px;
+    .map--card {
+      height:300px;
+      width: 100%;
+    }
+    .map-holder {
         width: 100%;
-        min-width: 114px;
-        height: auto;
-        margin: 0 15px;
+        height: 300px;
+        iframe {
+            height: 100%;
+            width: 100%;
+          }
+    }
+    
+  }
 
-        .card-img-top,
-        .card-body {
+  // Header
 
-            .img-container {
-                box-sizing: border-box;
-            }
+  #header .head-inner .container {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 520px;
 
-            display: table;
-            height: fit-content;
-            box-sizing: border-box;
-
-            .Author {
-                display: flex;
-            }
-        }
-
-
+    .header-row {
+      width: 100%;
+      min-width: 520px;
+      box-sizing: border-box;
     }
 
-    #card2,
-    #card3 {
-        margin-top: 50px;
+    .col-left {
+      margin-left: 15px;
     }
 
-    // --------------------------------------------
-
-    // clients ----------------------------------
-
-    #logos {
-        display: none;
+    .col-right {
+      margin-right: 15px;
     }
 
-    // --------------------------------------------
-
-    // Footer
-
-    footer {
-        height: fit-content;
+    .support-btn,
+    .contact-btn {
+      display: none;
     }
 
-    #feet {
-        padding: 47px 15px;
-        box-sizing: border-box;
+    .phone {
+      display: inline-block;
+    }
+  }
+
+  // --------------------------------------------
+
+  .cookie {
+    font-size: 12px;
+  }
+
+  // NavBar
+
+  #main-nav {
+    display: none;
+  }
+
+  // --------------------------------------------
+
+  // Gallery
+
+  #holder,
+  #gallery {
+    width: 100%;
+    min-width: 520px;
+    height: 697px;
+  }
+
+  #photo1 .container,
+  #photo2 .container,
+  #photo3 .container,
+  #photo4 .container,
+  #photo5 .container,
+  #photo6 .container {
+    width: 100%;
+    min-width: 100%;
+    text-align: center;
+  }
+
+  // --------------------------------------------
+
+  // Info card links
+
+  #cards {
+    justify-content: center;
+    width: 100%;
+    min-width: 520px;
+
+    .web-design,
+    .IT-support,
+    .Telecoms-services,
+    .Bespoke-software,
+    .Digital-marketing,
+    .Cyber-security {
+      width: 672px;
+      min-width: 288px;
+      margin: 30px 15px 0;
+      padding: 30px;
     }
 
-    #foot {
+    .web-design {
+      margin-top: 0;
+    }
+  }
+
+  // --------------------------------------------
+
+  // Culture
+
+  #culture {
+    background-image: none;
+    width: 100%;
+    height: auto;
+    min-width: 520px;
+    box-sizing: border-box;
+
+    .container {
+      width: 100%;
+      min-width: 520px;
+      padding: 50px 15px;
+      box-sizing: border-box;
+
+      .culture {
         width: 100%;
         min-width: 490px;
-        margin: 0;
-        height: auto;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // --------------------------------------------
+
+  // Latest News
+
+  #bar {
+    width: 100%;
+  }
+
+  #bar ul {
+    width: 100%;
+    min-width: 520px;
+    padding-left: 15px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  #news-cards {
+    width: 100%;
+    min-width: 520px;
+    box-sizing: border-box;
+
+    .container {
+      width: 100%;
+      max-width: 575px;
+      min-width: 490px;
+      padding: 50px 15px;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      box-sizing: border-box;
+
+      .img-container,
+      .fog {
+        max-height: 315px;
+      }
+    }
+  }
+
+  #card3 {
+    display: flex;
+  }
+
+  #card1,
+  #card2,
+  #card3 {
+    max-width: 545px;
+    width: 100%;
+    min-width: 114px;
+    height: auto;
+    margin: 0 15px;
+
+    .card-img-top,
+    .card-body {
+      .img-container {
         box-sizing: border-box;
+      }
 
-        .contact {
-            width: 23.4375rem;
-            height: 12.3125rem;
-            padding: 0;
-            margin-bottom: 30px;
-        }
+      display: table;
+      height: fit-content;
+      box-sizing: border-box;
 
-        .about {
-            width: 23.4375rem;
-            height: 13.6875rem;
-            padding: 0;
-            margin-bottom: 30px;
-        }
+      .Author {
+        display: flex;
+      }
+    }
+  }
 
-        .website {
-            width: 23.4375rem;
-            height: 6.8125rem;
-            padding: 0;
-            margin-bottom: 30px;
-        }
+  #card2,
+  #card3 {
+    margin-top: 50px;
+  }
 
-        #social {
-            width: 100%;
-            height: 11.8125rem;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  // --------------------------------------------
 
-        .social-btns {
-            box-sizing: border-box;
-            width: 100%;
-            justify-content: space-between;
+  // clients ----------------------------------
 
-            a {
-                box-sizing: border-box;
-                width: 100%;
-                height: 55px;
-                margin: 30px 0 0 0;
-            }
+  #logos {
+    display: none;
+  }
 
-            #padding1 {
-                width: 50%;
-                padding-right: 15px;
-                box-sizing: border-box;
-            }
+  // --------------------------------------------
 
-            #padding2 {
-                width: 50%;
-                padding-left: 15px;
-                box-sizing: border-box;
-            }
+  // Footer
 
-            #padding3 {
-                width: 50%;
-                padding-right: 15px;
-                box-sizing: border-box;
-            }
+  footer {
+    height: fit-content;
+  }
 
-        }
+  #feet {
+    padding: 47px 15px;
+    box-sizing: border-box;
+  }
+
+  #foot {
+    width: 100%;
+    min-width: 490px;
+    margin: 0;
+    height: auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    .contact {
+      width: 23.4375rem;
+      height: 12.3125rem;
+      padding: 0;
+      margin-bottom: 30px;
     }
 
-    // --------------------------------------------
-
-    // acreditations
-
-    #partners {
-        display: none;
+    .about {
+      width: 23.4375rem;
+      height: 13.6875rem;
+      padding: 0;
+      margin-bottom: 30px;
     }
 
-    // --------------------------------------------
+    .website {
+      width: 23.4375rem;
+      height: 6.8125rem;
+      padding: 0;
+      margin-bottom: 30px;
+    }
 
+    #social {
+      width: 100%;
+      height: 11.8125rem;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .social-btns {
+      box-sizing: border-box;
+      width: 100%;
+      justify-content: space-between;
+
+      a {
+        box-sizing: border-box;
+        width: 100%;
+        height: 55px;
+        margin: 30px 0 0 0;
+      }
+
+      #padding1 {
+        width: 50%;
+        padding-right: 15px;
+        box-sizing: border-box;
+      }
+
+      #padding2 {
+        width: 50%;
+        padding-left: 15px;
+        box-sizing: border-box;
+      }
+
+      #padding3 {
+        width: 50%;
+        padding-right: 15px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  // --------------------------------------------
+
+  // acreditations
+
+  #partners {
+    display: none;
+  }
+
+  // --------------------------------------------
 }
 
 // --------------------------------------------

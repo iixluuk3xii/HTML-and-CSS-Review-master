@@ -55,15 +55,21 @@
   background-color: $white;
   height: 67.2px;
   padding-top: 33px;
-  h1 {
+  .fixed-width {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
-    margin: 0 auto;
-    width: 1170px;
-    font-size: 2.25rem;
-    font-weight: normal;
-    color: $darkgrey;
+    h1 {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin: 0 auto;
+      width: 1170px;
+      font-size: 2.25rem;
+      font-weight: normal;
+      color: $darkgrey;
+    }
   }
 }
 

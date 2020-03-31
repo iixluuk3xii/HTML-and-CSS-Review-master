@@ -169,7 +169,7 @@
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* line 5, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 4, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .decription .popup .tooltip {
     display: block;
     visibility: hidden;
@@ -187,23 +187,23 @@
     text-transform: none;
     transition: visibility 0s, opacity 0s linear;
   }
-  /* line 22, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 21, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .decription .popup .tooltip h2 {
     margin: 0;
   }
-  /* line 26, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 25, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .decription .popup .tooltip p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin: 0;
   }
-  /* line 31, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 30, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .decription .popup .tooltip span {
     width: 28px;
     height: 3px;
     background-color: #fff;
     margin: 10px 0 10px;
   }
-  /* line 38, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 37, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .decription .popup .tooltip .arrow {
     position: absolute;
     bottom: -40px;
@@ -214,25 +214,25 @@
     border-right: 40px solid transparent;
     border-top: 40px solid #333645;
   }
-  /* line 51, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 50, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .Clients .crane .tooltip {
     top: -223px;
     left: 15px;
     width: 220px;
   }
-  /* line 59, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 58, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .Clients .beat .tooltip {
     top: -158px;
     left: -63px;
     width: 220px;
   }
-  /* line 67, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 66, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .Clients .northern .tooltip {
     top: -223px;
     left: 40px;
     width: 220px;
   }
-  /* line 74, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 73, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .google .popup {
     display: inline-block;
     vertical-align: middle;
@@ -251,13 +251,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity .2s ease-in;
+    transition: visibility 0s, opacity 0.2s ease-in;
   }
-  /* line 75, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 74, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .google .popup small {
     display: inline-block;
   }
-  /* line 99, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 97, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .google .popup .arrow {
     position: absolute;
     bottom: -10px;
@@ -269,7 +269,7 @@
     box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.1);
     z-index: 101;
   }
-  /* line 112, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 110, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .card-img-top .category {
     position: absolute;
     top: 10px;
@@ -281,7 +281,7 @@
     text-transform: uppercase;
     z-index: 51;
   }
-  /* line 123, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 121, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .card-img-top .category .tooltip {
     display: inline-block;
     vertical-align: middle;
@@ -300,18 +300,18 @@
     text-align: center;
     line-height: 1.5;
     text-transform: none;
-    transition: visibility 0s, opacity .2s linear;
+    transition: visibility 0s, opacity 0.2s linear;
   }
-  /* line 143, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 141, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .card-img-top .category .tooltip p {
     margin: 0;
     font-size: 10px;
   }
-  /* line 148, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 146, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .card-img-top .category .tooltip .middle {
     padding-top: 8px;
   }
-  /* line 152, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 150, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .card-img-top .category .tooltip .arrow {
     position: absolute;
     bottom: -10px;
@@ -322,97 +322,97 @@
     border-right: 8px solid transparent;
     border-top: 10px solid rgba(0, 0, 0, 0.651);
   }
-  /* line 166, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 164, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .web:hover {
     background-color: #926fb1;
     border-right: 0.0625rem solid #926fb1;
     border-left: 0.0625rem solid #926fb1;
   }
-  /* line 171, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 169, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .web:hover i {
     color: #fff;
   }
-  /* line 175, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 173, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .web:hover .strip {
     display: block;
     position: absolute;
   }
-  /* line 181, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 179, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .IT:hover {
     background-color: #4183d7;
     border-right: 0.0625rem solid #4183d7;
     border-left: 0.0625rem solid #4183d7;
   }
-  /* line 186, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 184, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .IT:hover i {
     color: #fff;
   }
-  /* line 190, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 188, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .IT:hover .strip {
     display: block;
     position: absolute;
   }
-  /* line 196, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 194, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .telecoms:hover {
     background-color: #d64541;
     border-right: 0.0625rem solid #d64541;
     border-left: 0.0625rem solid #d64541;
   }
-  /* line 201, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 199, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .telecoms:hover i {
     color: #fff;
   }
-  /* line 205, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 203, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .telecoms:hover .strip {
     display: block;
     position: absolute;
   }
-  /* line 211, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 209, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .software:hover {
     background-color: #67809f;
     border-right: 0.0625rem solid #67809f;
     border-left: 0.0625rem solid #67809f;
   }
-  /* line 216, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 214, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .software:hover i {
     color: #fff;
   }
-  /* line 220, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 218, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .software:hover .strip {
     display: block;
     position: absolute;
   }
-  /* line 226, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 224, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .marketing:hover {
     background-color: #2ecc71;
     border-right: 0.0625rem solid #2ecc71;
     border-left: 0.0625rem solid #2ecc71;
   }
-  /* line 231, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 229, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .marketing:hover i {
     color: #fff;
   }
-  /* line 235, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 233, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .marketing:hover .strip {
     display: block;
     position: absolute;
   }
-  /* line 241, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 239, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .security:hover {
     background-color: #f62459;
     border-right: 0.0625rem solid #f62459;
     border-left: 0.0625rem solid #f62459;
   }
-  /* line 246, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 244, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .security:hover i {
     color: #fff;
   }
-  /* line 250, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 248, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .security:hover .strip {
     display: block;
     position: absolute;
   }
-  /* line 256, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 254, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .strip .nav-menu {
     display: flex;
     position: static;
@@ -424,78 +424,78 @@
     margin: 0 auto;
     list-style-type: none;
   }
-  /* line 267, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 265, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .navbar-nav .strip .nav-menu li:not(:first-child) {
     padding-left: 30px;
   }
 }
 
 @media only screen and (-ms-high-contrast: none) and (max-width: 1260px), only screen and (-ms-high-contrast: active) and (max-width: 1260px) {
-  /* line 277, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 274, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #head,
   #news-cards,
   #partners,
   #logos {
     justify-content: flex-start;
   }
-  /* line 288, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 284, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .busseys .busseys-logo {
     width: 174.34px;
     height: 64.91px;
     left: 9.5%;
   }
-  /* line 295, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 290, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .crane .crane-logo {
     width: 244.34px;
     height: 59.59px;
     left: 7.3%;
   }
-  /* line 301, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 296, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat .beat-logo {
     width: 65.57px;
     height: 63.74px;
     left: 26.3%;
   }
-  /* line 308, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 302, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat-logo-BW {
     width: 65.57px;
     height: 63.74px;
   }
-  /* line 313, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 307, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .northern .northern-diver-logo {
     width: 268.99px;
     height: 58.47px;
     left: 6.6%;
   }
-  /* line 321, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 314, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .busseys .decription .tooltip {
     top: -180px;
     left: -45px;
   }
-  /* line 328, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 321, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .crane .decription .tooltip {
     top: -242px;
     left: -15px;
   }
-  /* line 335, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 328, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat .decription .tooltip {
     top: -180px;
     left: -80px;
   }
-  /* line 342, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 335, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .northern .decription .tooltip {
     top: -240px;
     left: 0px;
   }
-  /* line 354, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 345, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations #f50 .logo {
     left: 32.5%;
   }
-  /* line 360, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 351, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations #qms .logo {
     left: 27.8%;
   }
-  /* line 366, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 357, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations #carbon .logo {
     height: 70px;
     width: 175px;
@@ -504,65 +504,65 @@
 }
 
 @media only screen and (-ms-high-contrast: none) and (max-width: 990px), only screen and (-ms-high-contrast: active) and (max-width: 990px) {
-  /* line 380, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 369, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #head,
   #news-cards,
   #partners,
   #logos {
     justify-content: flex-start;
   }
-  /* line 389, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 377, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .Clients .busseys-logo {
     left: 11.5%;
     width: 131px;
     height: 48.77px;
   }
-  /* line 395, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 383, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .Clients .crane-logo {
     width: 186.84px;
     height: 45.57px;
     left: 9%;
   }
-  /* line 401, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 389, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .Clients .beat-logo {
     left: 18.8%;
   }
-  /* line 407, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 393, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .Clients .northern-diver-logo {
     width: 206.51px;
     height: 44.89px;
     left: 8.05%;
   }
-  /* line 415, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 400, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .Clients .decription .tooltip {
     bottom: 48px;
   }
-  /* line 423, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 407, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations {
     width: 46.875rem;
   }
-  /* line 427, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 411, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations #f50 .logo {
     left: 27%;
   }
-  /* line 433, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 417, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations #qms .logo {
     left: 22%;
   }
-  /* line 439, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 423, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations #carbon .logo {
     height: 57.54px;
     width: 143.86px;
     left: 11%;
   }
-  /* line 447, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 431, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .google .description {
     right: 11%;
   }
 }
 
 @media only screen and (-ms-high-contrast: none) and (max-width: 768px), only screen and (-ms-high-contrast: active) and (max-width: 768px) {
-  /* line 458, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 439, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1,
   #card2,
   #card3 {
@@ -573,13 +573,13 @@
 }
 
 @media only screen and (min-width: 1260px) {
-  /* line 474, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 455, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1,
   #card2,
   #card3 {
     width: 455px;
   }
-  /* line 480, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 461, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card2 {
     margin: 0 15px;
     box-sizing: border-box;
@@ -587,38 +587,120 @@
 }
 
 @media only screen and (max-width: 1260px) {
-  /* line 495, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 474, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #form-bar .bar-title {
+    width: 58.75rem;
+    margin: 0 auto;
+  }
+  /* line 481, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #viewport .title {
+    padding-top: 50px;
+    background-color: #fff;
+  }
+  /* line 484, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #viewport .title .fixed-width {
+    width: 58.75rem;
+    margin: 0 auto 28px;
+  }
+  /* line 491, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 58.75rem;
+    padding: 0;
+  }
+  /* line 496, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #details {
+    padding-left: 0;
+  }
+  /* line 499, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields {
+    width: 100%;
+  }
+  /* line 502, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row {
+    align-items: stretch;
+    width: 100%;
+  }
+  /* line 505, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .name,
+  .form-background #form #fields form .row .number {
+    margin-right: 15px;
+  }
+  /* line 509, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .email,
+  .form-background #form #fields form .row .subject {
+    margin-left: 15px;
+  }
+  /* line 513, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .field {
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+  /* line 517, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .field #subject,
+  .form-background #form #fields form .row .field #email {
+    margin-right: 15px;
+  }
+  /* line 521, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .field input {
+    width: 100%;
+  }
+  /* line 525, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .m-field {
+    width: 100%;
+    padding-left: 0;
+  }
+  /* line 528, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .m-field #message {
+    max-width: 940px;
+    min-width: 940px;
+    width: 100%;
+    padding-left: 0;
+  }
+  /* line 541, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .map .map--card {
+    height: 326.4px;
+    width: 440px;
+  }
+  /* line 545, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .map iframe {
+    height: 326.4px;
+    width: 440px;
+  }
+  /* line 553, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container {
     margin: 0 auto;
     max-width: 58.75rem;
   }
-  /* line 500, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 558, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #main-nav {
     max-width: 78.75rem;
   }
-  /* line 503, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 561, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #main-nav .container {
     max-width: 58.75rem;
   }
-  /* line 507, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 565, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #main-nav .navbar-nav {
     max-width: 58.75rem;
   }
-  /* line 510, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 568, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #main-nav .navbar-nav .nav-menu {
     max-width: 58.75rem;
     font-size: 12px;
   }
-  /* line 522, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 579, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .cookie {
     font-size: 13px;
   }
-  /* line 530, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 587, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #gallery,
   .photo-holder {
     height: 598px;
   }
-  /* line 536, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 592, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #photo1 .container,
   #photo2 .container,
   #photo3 .container,
@@ -627,15 +709,15 @@
   #photo6 .container {
     max-width: 58.75rem;
   }
-  /* line 545, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 601, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #controls {
     bottom: 12rem;
   }
-  /* line 553, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 609, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .cards {
     justify-content: center;
   }
-  /* line 556, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 612, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .cards .web-design,
   .cards .IT-support,
   .cards .Telecoms-services,
@@ -645,149 +727,149 @@
     width: 393px;
     margin: 15px;
   }
-  /* line 571, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 627, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture {
     background-position: center;
     background-position: right;
     height: 28.9375rem;
   }
-  /* line 576, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 632, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture .container {
     width: 58.75rem;
   }
-  /* line 579, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 635, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture .container .culture {
     width: 58.75rem;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
   }
-  /* line 592, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 648, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #bar ul {
     width: 58.75rem;
   }
-  /* line 596, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 652, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card3 {
     display: none;
   }
-  /* line 600, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 656, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1,
   #card2 {
     width: 455px;
   }
-  /* line 605, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 661, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1 {
     margin-right: 15px;
   }
-  /* line 609, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 665, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card2 {
     margin-left: 15px;
   }
-  /* line 615, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 670, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #news-cards .container {
     width: 58.75rem;
   }
-  /* line 619, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 673, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #news-cards .container .img-container {
     max-height: 263px;
   }
-  /* line 632, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 684, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .busseys-logo {
     width: 175.5px;
     height: 65.344px;
     left: 9.5%;
   }
-  /* line 639, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 690, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .crane-logo {
-    width: 241.500px;
+    width: 241.5px;
     height: 58.891px;
     left: 7.3%;
   }
-  /* line 645, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 696, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat-logo {
     width: 65.563px;
     height: 63.734px;
     left: 26.3%;
   }
-  /* line 652, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 702, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat-logo-BW {
     width: 65.57px;
     height: 63.74px;
   }
-  /* line 657, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 707, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .northern-diver-logo {
     width: 264.828px;
     height: 57.563px;
     left: 6.6%;
   }
-  /* line 665, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 714, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .busseys .decription .tooltip {
     top: -180px;
     left: -45px;
   }
-  /* line 672, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 721, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .crane .decription .tooltip {
     top: -242px;
     left: -15px;
   }
-  /* line 679, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 728, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat .decription .tooltip {
     top: -180px;
     left: -80px;
   }
-  /* line 686, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 735, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .northern .decription .tooltip {
     top: -240px;
     left: 0px;
   }
-  /* line 697, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 746, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container {
     width: 58.75rem;
   }
-  /* line 701, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 750, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   footer {
     height: 27.375rem;
   }
-  /* line 705, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 754, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot {
     width: 58.75rem;
     height: 27.375rem;
     flex-wrap: wrap;
   }
-  /* line 710, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 759, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .contact {
     width: 50%;
     height: 12.3125rem;
     padding: 0;
   }
-  /* line 716, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 765, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .about {
     width: 50%;
     height: 13.6875rem;
     padding: 0;
   }
-  /* line 722, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 771, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .website {
     width: 50%;
     height: 6.8125rem;
     padding: 0;
   }
-  /* line 728, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 777, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot #social {
     width: 50%;
     height: 11.8125rem;
     padding: 0;
   }
-  /* line 734, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 783, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns {
     box-sizing: border-box;
   }
-  /* line 737, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 786, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns a {
     width: 100%;
     height: 3.4375rem;
   }
-  /* line 743, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 792, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns #padding1,
   #foot .social-btns #padding2,
   #foot .social-btns #padding3 {
@@ -795,72 +877,154 @@
     box-sizing: border-box;
     padding: 0 15px 0 0;
   }
-  /* line 751, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 800, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns #padding2 {
     margin-right: 0;
     padding-right: 0;
     padding-left: 15px;
   }
-  /* line 761, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 810, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container {
     width: 58.75rem;
     margin: 0 auto;
   }
-  /* line 765, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 814, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations {
     width: 58.75rem;
   }
-  /* line 769, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 818, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations .f50 .logo {
     left: 33%;
   }
-  /* line 775, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 824, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations .qms .logo {
     left: 28.5%;
   }
-  /* line 781, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 830, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations .carbon .logo {
     left: 11.5%;
   }
-  /* line 787, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 836, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .google .description {
     right: 11%;
   }
 }
 
 @media only screen and (max-width: 990px) {
-  /* line 804, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 849, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #form-bar .bar-title {
+    width: 750px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 858, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #viewport .title {
+    padding: 24px 0;
+    height: 39.2px;
+    background-color: #22242e;
+  }
+  /* line 862, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #viewport .title .fixed-width {
+    width: 750px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #22242e;
+  }
+  /* line 868, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #viewport .title .fixed-width h1 {
+    color: #fff;
+  }
+  /* line 875, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 750px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 881, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #details {
+    padding-left: 0;
+    margin: 50px 0 0;
+  }
+  /* line 885, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 889, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row {
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* line 893, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .field {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 898, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .field input {
+    width: 100%;
+  }
+  /* line 902, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .m-field {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 906, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .m-field #message {
+    max-width: 720px;
+    min-width: 720px;
+    width: 720px;
+  }
+  /* line 918, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .map .map--card {
+    height: 348px;
+    width: 330px;
+  }
+  /* line 922, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .map iframe {
+    height: 348px;
+    width: 330px;
+  }
+  /* line 930, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container {
     margin: 0 auto;
     max-width: 46.875rem;
   }
-  /* line 808, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 934, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container .support-btn,
   #header .head-inner .container .contact-btn {
     display: none;
   }
-  /* line 818, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 944, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .cookie {
     font-size: 13px;
   }
-  /* line 822, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 948, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .Q-margin {
     margin: 0 50px;
   }
-  /* line 826, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 952, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .cookie .btn {
     text-align: center;
   }
-  /* line 834, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 960, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #main-nav {
     display: none;
   }
-  /* line 842, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 968, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #holder,
   #gallery {
     height: 697px;
   }
-  /* line 847, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 973, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #photo1 .container,
   #photo2 .container,
   #photo3 .container,
@@ -870,15 +1034,15 @@
     max-width: 46.875rem;
     text-align: center;
   }
-  /* line 857, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 983, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #controls {
     bottom: 3.75rem;
   }
-  /* line 865, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 991, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .cards {
     justify-content: center;
   }
-  /* line 868, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 994, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .cards .web-design,
   .cards .IT-support,
   .cards .Telecoms-services,
@@ -888,226 +1052,335 @@
     width: 17.6875rem;
     margin: 15px;
   }
-  /* line 883, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1009, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture {
     background-image: none;
   }
-  /* line 886, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1012, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture .container {
     width: 46.875rem;
   }
-  /* line 889, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1015, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture .container .culture {
     width: 46.875rem;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
   }
-  /* line 902, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1028, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #bar ul {
     width: 46.875rem;
   }
-  /* line 906, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1032, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #news-cards .container {
     width: 46.875rem;
     margin: 0 auto;
   }
-  /* line 910, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1036, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #news-cards .container .img-container {
     max-height: 200px;
   }
-  /* line 915, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1041, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card3 {
     display: none;
   }
-  /* line 919, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1045, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1,
   #card2 {
     width: 21.5625rem;
   }
-  /* line 924, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1050, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1 {
     margin-right: 15px;
   }
-  /* line 928, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1054, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card2 {
     margin-left: 15px;
   }
-  /* line 934, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1060, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container {
     width: 46.875rem;
   }
-  /* line 937, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1063, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .busseys-logo {
     width: 132.75px;
     height: 49.42px;
     left: 12%;
   }
-  /* line 944, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1069, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .crane-logo {
     width: 182.67px;
     height: 44.45px;
     left: 9%;
   }
-  /* line 950, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1075, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat-logo {
     width: 65.57px;
     height: 63.74px;
     left: 21.8%;
   }
-  /* line 957, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1081, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat-logo-BW {
     width: 65.57px;
     height: 63.74px;
   }
-  /* line 962, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1086, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .northern-diver-logo {
     width: 200.33px;
     height: 43.55px;
     left: 8.05%;
   }
-  /* line 970, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1093, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .busseys .decription .tooltip {
     top: -180px;
     left: -64px;
   }
-  /* line 977, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1100, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .crane .decription .tooltip {
     top: -242px;
     left: -50px;
   }
-  /* line 984, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1107, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .beat .decription .tooltip {
     top: -180px;
     left: -88px;
   }
-  /* line 991, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1114, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos .container .northern .decription .tooltip {
     top: -240px;
     left: -32px;
   }
-  /* line 1002, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1125, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   footer {
     height: 27.375rem;
   }
-  /* line 1007, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1129, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #feet {
     padding-left: 15px;
   }
-  /* line 1011, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1133, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns #padding2 {
     padding-left: 0;
   }
-  /* line 1015, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1137, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot {
     width: 46.875rem;
     height: 27.375rem;
     flex-wrap: wrap;
   }
-  /* line 1020, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1142, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .contact {
     width: 23.4375rem;
     height: 12.3125rem;
     padding: 0;
   }
-  /* line 1026, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1148, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .about {
     width: 23.4375rem;
     height: 13.6875rem;
     padding: 0;
   }
-  /* line 1032, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1154, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .website {
     width: 23.4375rem;
     height: 6.8125rem;
     padding: 0;
   }
-  /* line 1038, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1160, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot #social {
     width: 23.4375rem;
     height: 11.8125rem;
     padding: 0;
   }
-  /* line 1045, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1167, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns a {
     width: 9.8125rem;
     height: 3.4375rem;
   }
-  /* line 1056, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1178, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container {
     width: 46.875rem;
     margin: 0 auto;
   }
-  /* line 1060, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1182, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations {
     width: 46.875rem;
   }
-  /* line 1064, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1186, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations .f50 .logo {
     left: 29%;
   }
-  /* line 1070, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1192, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations .qms .logo {
     left: 24%;
   }
-  /* line 1076, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1198, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .accreditations .carbon .logo {
     height: 56px;
     width: 140.03px;
     left: 11%;
   }
-  /* line 1084, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1206, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners .container .google .description {
     right: 11%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 1102, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1223, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #form-bar .bar-title {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 1232, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #viewport .title {
+    padding: 24px 0;
+    height: 39.2px;
+    background-color: #22242e;
+  }
+  /* line 1236, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #viewport .title .fixed-width {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #22242e;
+  }
+  /* line 1242, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  #viewport .title .fixed-width h1 {
+    color: #fff;
+  }
+  /* line 1249, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background {
+    width: 100%;
+  }
+  /* line 1251, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 1257, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #details {
+    padding-left: 0;
+    margin: 50px 0 0;
+  }
+  /* line 1261, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #contact-form {
+    width: 100%;
+  }
+  /* line 1264, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 1268, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row {
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* line 1272, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .field {
+    width: 100%;
+    padding-left: 0;
+  }
+  /* line 1276, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .field input {
+    width: 100%;
+  }
+  /* line 1280, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .m-field {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 1284, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .row .m-field #message {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+  }
+  /* line 1291, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .form-background #form #fields form .PP {
+    width: 100%;
+    padding: 0 30px 0 15px;
+    margin: 0 auto 25px;
+    height: auto;
+  }
+  /* line 1302, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .container .map-padding {
+    padding-top: 0;
+  }
+  /* line 1306, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .map {
+    width: 100%;
+    margin: 30px 30px;
+  }
+  /* line 1309, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .map .map--card {
+    height: 300px;
+    width: 100%;
+  }
+  /* line 1313, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .map .map-holder {
+    width: 100%;
+    height: 300px;
+  }
+  /* line 1316, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  .map .map-holder iframe {
+    height: 100%;
+    width: 100%;
+  }
+  /* line 1326, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container {
     margin: 0 auto;
     width: 100%;
     min-width: 520px;
   }
-  /* line 1107, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1331, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container .header-row {
     width: 100%;
     min-width: 520px;
     box-sizing: border-box;
   }
-  /* line 1113, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1337, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container .col-left {
     margin-left: 15px;
   }
-  /* line 1117, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1341, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container .col-right {
     margin-right: 15px;
   }
-  /* line 1121, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1345, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container .support-btn,
   #header .head-inner .container .contact-btn {
     display: none;
   }
-  /* line 1126, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1350, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #header .head-inner .container .phone {
     display: inline-block;
   }
-  /* line 1134, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1357, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   .cookie {
     font-size: 12px;
   }
-  /* line 1140, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1363, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #main-nav {
     display: none;
   }
-  /* line 1148, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1371, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #holder,
   #gallery {
     width: 100%;
     min-width: 520px;
     height: 697px;
   }
-  /* line 1155, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1378, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #photo1 .container,
   #photo2 .container,
   #photo3 .container,
@@ -1118,13 +1391,13 @@
     min-width: 100%;
     text-align: center;
   }
-  /* line 1170, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1393, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #cards {
     justify-content: center;
     width: 100%;
     min-width: 520px;
   }
-  /* line 1175, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1398, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #cards .web-design,
   #cards .IT-support,
   #cards .Telecoms-services,
@@ -1136,11 +1409,11 @@
     margin: 30px 15px 0;
     padding: 30px;
   }
-  /* line 1187, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1410, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #cards .web-design {
     margin-top: 0;
   }
-  /* line 1196, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1419, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture {
     background-image: none;
     width: 100%;
@@ -1148,14 +1421,14 @@
     min-width: 520px;
     box-sizing: border-box;
   }
-  /* line 1203, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1426, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture .container {
     width: 100%;
     min-width: 520px;
     padding: 50px 15px;
     box-sizing: border-box;
   }
-  /* line 1209, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1432, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #culture .container .culture {
     width: 100%;
     min-width: 490px;
@@ -1163,11 +1436,11 @@
     align-content: center;
     margin: 0 auto;
   }
-  /* line 1223, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1446, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #bar {
     width: 100%;
   }
-  /* line 1227, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1450, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #bar ul {
     width: 100%;
     min-width: 520px;
@@ -1175,13 +1448,13 @@
     margin: 0;
     box-sizing: border-box;
   }
-  /* line 1235, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1458, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #news-cards {
     width: 100%;
     min-width: 520px;
     box-sizing: border-box;
   }
-  /* line 1240, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1463, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #news-cards .container {
     width: 100%;
     max-width: 575px;
@@ -1192,16 +1465,16 @@
     align-content: center;
     box-sizing: border-box;
   }
-  /* line 1250, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1473, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #news-cards .container .img-container,
   #news-cards .container .fog {
     max-height: 315px;
   }
-  /* line 1257, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1480, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card3 {
     display: flex;
   }
-  /* line 1261, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1484, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1,
   #card2,
   #card3 {
@@ -1211,7 +1484,7 @@
     height: auto;
     margin: 0 15px;
   }
-  /* line 1270, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1493, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1 .card-img-top,
   #card1 .card-body,
   #card2 .card-img-top,
@@ -1222,7 +1495,7 @@
     height: fit-content;
     box-sizing: border-box;
   }
-  /* line 1273, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1495, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1 .card-img-top .img-container,
   #card1 .card-body .img-container,
   #card2 .card-img-top .img-container,
@@ -1231,7 +1504,7 @@
   #card3 .card-body .img-container {
     box-sizing: border-box;
   }
-  /* line 1281, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1503, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card1 .card-img-top .Author,
   #card1 .card-body .Author,
   #card2 .card-img-top .Author,
@@ -1240,25 +1513,25 @@
   #card3 .card-body .Author {
     display: flex;
   }
-  /* line 1289, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1509, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #card2,
   #card3 {
     margin-top: 50px;
   }
-  /* line 1298, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1518, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #logos {
     display: none;
   }
-  /* line 1306, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1526, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   footer {
     height: fit-content;
   }
-  /* line 1310, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1530, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #feet {
     padding: 47px 15px;
     box-sizing: border-box;
   }
-  /* line 1315, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1535, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot {
     width: 100%;
     min-width: 490px;
@@ -1267,66 +1540,66 @@
     flex-wrap: wrap;
     box-sizing: border-box;
   }
-  /* line 1323, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1543, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .contact {
     width: 23.4375rem;
     height: 12.3125rem;
     padding: 0;
     margin-bottom: 30px;
   }
-  /* line 1330, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1550, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .about {
     width: 23.4375rem;
     height: 13.6875rem;
     padding: 0;
     margin-bottom: 30px;
   }
-  /* line 1337, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1557, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .website {
     width: 23.4375rem;
     height: 6.8125rem;
     padding: 0;
     margin-bottom: 30px;
   }
-  /* line 1344, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1564, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot #social {
     width: 100%;
     height: 11.8125rem;
     padding: 0;
     box-sizing: border-box;
   }
-  /* line 1351, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1571, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns {
     box-sizing: border-box;
     width: 100%;
     justify-content: space-between;
   }
-  /* line 1356, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1576, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns a {
     box-sizing: border-box;
     width: 100%;
     height: 55px;
     margin: 30px 0 0 0;
   }
-  /* line 1363, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1583, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns #padding1 {
     width: 50%;
     padding-right: 15px;
     box-sizing: border-box;
   }
-  /* line 1369, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1589, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns #padding2 {
     width: 50%;
     padding-left: 15px;
     box-sizing: border-box;
   }
-  /* line 1375, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1595, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #foot .social-btns #padding3 {
     width: 50%;
     padding-right: 15px;
     box-sizing: border-box;
   }
-  /* line 1388, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
+  /* line 1607, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_mediaq.scss */
   #partners {
     display: none;
   }
@@ -1444,7 +1717,15 @@
 }
 
 /* line 58, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
-.title h1 {
+.title .fixed-width {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* line 63, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+.title .fixed-width h1 {
   display: flex;
   align-items: center;
   height: 100%;
@@ -1455,12 +1736,12 @@
   color: #333645;
 }
 
-/* line 70, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 76, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 #contact-form {
   padding-top: 16px;
 }
 
-/* line 74, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 80, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .field {
   display: flex;
   flex-direction: column;
@@ -1469,7 +1750,7 @@
   padding: 0 15px;
 }
 
-/* line 82, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 88, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .m-field {
   display: flex;
   flex-direction: column;
@@ -1479,25 +1760,25 @@
   padding: 0 15px;
 }
 
-/* line 91, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 97, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row {
   display: flex;
 }
 
-/* line 93, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 99, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row label {
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 1rem;
 }
 
-/* line 97, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 103, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row label::after {
   content: "*";
   color: #d24d57;
 }
 
-/* line 102, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 108, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .pretty-checkbox {
   content: "";
   border-radius: 3px;
@@ -1509,24 +1790,24 @@
   color: white;
 }
 
-/* line 111, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 117, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .pretty-checkbox .fa-check {
   margin: 5px;
 }
 
-/* line 115, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 121, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .pretty-checkbox .check {
   display: none;
 }
 
-/* line 119, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 125, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .ticked {
   opacity: 1;
   background-color: #333645;
   color: #fff;
 }
 
-/* line 124, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 130, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .message {
   box-sizing: border-box;
   height: 100px;
@@ -1539,7 +1820,7 @@
   border-color: #ccc;
 }
 
-/* line 134, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 140, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .message:focus {
   border-color: #5bc0de;
   outline: 0;
@@ -1547,7 +1828,7 @@
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-/* line 143, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 149, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row input {
   width: 370px;
   height: 47px;
@@ -1559,7 +1840,7 @@
   border-radius: 2px;
 }
 
-/* line 152, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 158, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row input:focus {
   border-color: #5bc0de;
   outline: 0;
@@ -1567,20 +1848,20 @@
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-/* line 161, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 167, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row p {
   font-weight: 600;
   color: #22242e;
   line-height: 32px;
 }
 
-/* line 165, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 171, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row p a {
   font-weight: 600;
   color: #22242e;
 }
 
-/* line 172, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 178, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .send {
   height: 46.4px;
   padding: 5px 15px;
@@ -1596,7 +1877,7 @@
   margin-left: 15px;
 }
 
-/* line 187, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 193, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row-sm {
   display: flex;
   flex-direction: column;
@@ -1605,42 +1886,42 @@
   margin-bottom: 25px;
 }
 
-/* line 195, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 201, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .phone-num {
   font-size: 32px;
   margin-top: 5px;
 }
 
-/* line 200, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 206, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .email {
   font-size: 26px;
 }
 
-/* line 204, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 210, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .big {
   color: #926fb1;
   text-decoration: none;
   font-weight: 600;
 }
 
-/* line 208, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 214, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .big:hover {
   text-decoration: underline;
 }
 
-/* line 213, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 219, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .txt {
   height: 29.7px;
   margin-bottom: 25px;
 }
 
-/* line 216, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 222, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .txt h4 a {
   color: #22242e;
   text-decoration: none;
 }
 
-/* line 222, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 228, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .icon--black {
   display: flex;
   align-items: center;
@@ -1653,12 +1934,12 @@
   margin: 0 auto 1.0625rem;
 }
 
-/* line 233, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 239, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .icon--black i {
   font-size: 1.5em;
 }
 
-/* line 238, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 244, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .map--card {
   display: flex;
   flex-direction: column;
@@ -1674,20 +1955,20 @@
   box-sizing: border-box;
 }
 
-/* line 251, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 257, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .map--card:hover {
   background-color: #926fb1;
   color: #fff;
 }
 
-/* line 255, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 261, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .map--card:hover .icon,
 .map--card:hover span {
   background-color: #fff;
   color: #926fb1;
 }
 
-/* line 263, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 269, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .map {
   display: flex;
   flex-direction: column;
@@ -1695,7 +1976,7 @@
   align-items: center;
 }
 
-/* line 270, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 276, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .PP {
   height: 79.67px;
   margin: 0 15px 30px;
@@ -1703,23 +1984,23 @@
   cursor: pointer;
 }
 
-/* line 275, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 281, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .PP p {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-/* line 281, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 287, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .location {
   padding-top: 40px;
 }
 
-/* line 285, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 291, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 #flash {
   padding: 15px;
 }
 
-/* line 289, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 295, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .flash {
   padding: 15px;
   margin: 15px 30px 15px 0;
@@ -1731,7 +2012,7 @@
   display: none;
 }
 
-/* line 300, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 306, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .bad {
   border-color: #c42e2a;
   background-color: #c42e2a;
@@ -1739,7 +2020,7 @@
   transition: opacity 1s;
 }
 
-/* line 307, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 313, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .good {
   border-color: #25a25a;
   background-color: #25a25a;
@@ -1747,7 +2028,7 @@
   transition: opacity 1s;
 }
 
-/* line 314, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
+/* line 320, ../../../../xampp/htdocs/HTML-and-CSS-Review-master/scss/Partials/_contactForm.scss */
 .row .invalidField {
   border-color: #d64541;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
