@@ -1,3 +1,5 @@
+// Styles for the top of the page 
+
 #form,
 #form-bar {
   background-color: $white;
@@ -8,10 +10,6 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
-}
-
-.form-background {
-  background-color: $white;
 }
 
 .bar-title {
@@ -34,22 +32,7 @@
   margin: 0 5px;
 }
 
-#form {
-  display: flex;
-  justify-content: center;
-  width: 1170px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-#fields {
-  width: 800px;
-}
-
-#details {
-  width: 400px;
-  padding: 0 15px;
-}
+// Styling for the Title 
 
 .title {
   background-color: $white;
@@ -73,6 +56,24 @@
   }
 }
 
+// Styling for the Form VVVVVV
+
+.form-background {
+  background-color: $white;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#fields {
+  width: 800px;
+}
+
 #contact-form {
   padding-top: 16px;
 }
@@ -92,6 +93,17 @@
   width: 100%;
   margin-bottom: 15px;
   padding: 0 15px;
+}
+
+.PP {
+  height: 79.67px;
+  margin: 0 15px 30px;
+  display: flex;
+  cursor: pointer;
+  p {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .row {
@@ -175,6 +187,8 @@
   }
 }
 
+// Send Button
+
 .send {
   height: 46.4px;
   padding: 5px 15px;
@@ -190,12 +204,28 @@
   margin-left: 15px;
 }
 
+//  Contact details and buisiness hours VVVV
+
+#details {
+  width: 400px;
+  padding: 0 15px;
+}
+
 .row-sm {
   display: flex;
   flex-direction: column;
   width: 370px;
   height: 68px;
   margin-bottom: 25px;
+}
+
+.txt {
+  height: 29.7px;
+  margin-bottom: 25px;
+  h4 a {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 .phone-num {
@@ -216,15 +246,7 @@
   }
 }
 
-.txt {
-  height: 29.7px;
-  margin-bottom: 25px;
-  h4 a {
-    color: $black;
-    text-decoration: none;
-  }
-}
-
+// Map and location detail cards VVVVV
 .icon--black {
   display: flex;
   align-items: center;
@@ -273,20 +295,7 @@
   align-items: center;
 }
 
-.PP {
-  height: 79.67px;
-  margin: 0 15px 30px;
-  display: flex;
-  cursor: pointer;
-  p {
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-}
-
-.location {
-  padding-top: 40px;
-}
+// styling for flash messages an error fields VVVV
 
 #flash {
   padding: 15px;

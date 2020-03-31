@@ -1,3 +1,4 @@
+// DOM Elements
 const $name = document.querySelector("#name");
 const $email = document.querySelector("#email");
 const $number = document.querySelector("#number");
@@ -19,6 +20,7 @@ const $invalidServer = document.querySelector("#invalid-server");
 
 const $success = document.querySelector("#success");
 
+// Functions to add, remove and toggle classes
 function addClass(element, className) {
   element.classList.add(className);
 }
@@ -31,6 +33,7 @@ function toggleClass(element, className) {
   element.classList.toggle(className);
 }
 
+// Function to hide and show flash messages 
 function dislayFlash(flash) {
   flash.style.display = "block";
 }
@@ -39,14 +42,16 @@ function hideFlash(flash) {
   flash.style.display = "none";
 }
 
-function changefieldValue(field, value) {
-  field.value = value;
-}
-
 function changeOpacity(flash, value) {
   flash.style.opacity = value;
 }
 
+// Function for emptying the fields after submission/Change the values of the input 
+function changefieldValue(field, value) {
+  field.value = value;
+}
+
+// Simple click event listerner Function
 function addEventListener(
   element,
   event,
@@ -62,6 +67,7 @@ function addEventListener(
   });
 }
 
+// Function to check if the checkbox is ticked or not
 function isChecked() {
   if ($checkBox.classList.contains("ticked")) {
     $realCheckBox.checked = true;
@@ -72,6 +78,7 @@ function isChecked() {
   }
 }
 
+// Validation to check if fields are empty
 function isEmpty(field){
   if (field.value === "") {
     return false;
@@ -80,6 +87,7 @@ function isEmpty(field){
   }
 }
 
+// Function to check if an email is valid
 function ValidateEmail(field) {
   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (field.value.match(mailformat)) {
@@ -89,6 +97,7 @@ function ValidateEmail(field) {
   }
 }
 
+// Function to check if the phone number is valid 
 function ValidatePhone(field) {
   const phoneformat = /^(?:\(\+?44\)\s?|\+?44 ?)?(?:0|\(0\))?\s?(?:(?:1\d{3}|7[1-9]\d{2}|20\s?[78])\s?\d\s?\d{2}[ -]?\d{3}|2\d{2}\s?\d{3}[ -]?\d{4})$/;
   if (field.value.match(phoneformat)) {
@@ -98,8 +107,10 @@ function ValidatePhone(field) {
   }
 }
 
+// Blank function to stop errors being thrown in callback functions 
 function doNothing() {}
 
+// Function to decide what messages are shown based on the response of the AJAX request 
 function handleResponse(responseObject) {
   if (responseObject.ok) {
     dislayFlash($success);
@@ -118,6 +129,7 @@ function handleResponse(responseObject) {
   }
 }
 
+// Ajax request function for when the form is submitted
 function submitForm(callback) {
   const request = new XMLHttpRequest();
   request.withCredentials = true;
@@ -148,6 +160,7 @@ function submitForm(callback) {
   request.send(requestData);
 }
 
+// Function that resets the form 
 function clearForm() {
   changefieldValue($name, "");
   changefieldValue($email, "");
@@ -159,6 +172,7 @@ function clearForm() {
   $realCheckBox.checked = false;
 }
 
+// Event listeners to remove the red glow on invalid fields once they are clicked to be edited
 addEventListener($name, "click", removeClass, doNothing, $name, "invalidField");
 addEventListener(
   $email,
@@ -201,6 +215,7 @@ addEventListener(
   "ticked"
 );
 
+// Event listener for when the submit button is pressed 
 $button.addEventListener("click", event => {
   event.preventDefault();
   hideFlash($success);
