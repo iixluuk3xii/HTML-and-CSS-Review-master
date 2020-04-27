@@ -11,7 +11,7 @@ $passwd = "";
 $pdo = new PDO($dsn, $user, $passwd);
 
 // Query the DB for the inforamation on the news cards
-$stm = $pdo->query("SELECT * FROM newscards LIMIT 3");
+$stm = $pdo->query("SELECT * FROM newscards ORDER BY datePosted LIMIT 3");
 
 // Fetch the data for the newscards to be used in the loop
 $cards = $stm->fetchAll();
